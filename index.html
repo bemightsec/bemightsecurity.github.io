@@ -1,120 +1,1376 @@
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>BeMight Security</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #0b1220;
-      color: #ffffff;
-      line-height: 1.6;
-    }
-    header {
-      background: linear-gradient(135deg, #0f172a, #1e3a8a);
-      padding: 60px 20px;
-      text-align: center;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2.2rem;
-    }
-    header p {
-      max-width: 700px;
-      margin: 15px auto 0;
-      font-size: 1rem;
-      color: #dbeafe;
-    }
-    nav {
-      background: #111827;
-      padding: 12px 20px;
-      text-align: center;
-    }
-    nav a {
-      color: #93c5fd;
-      text-decoration: none;
-      margin: 0 12px;
-      font-weight: bold;
-    }
-    section {
-      max-width: 900px;
-      margin: auto;
-      padding: 40px 20px;
-    }
-    .card {
-      background: #111827;
-      border: 1px solid #1f2937;
-      border-radius: 12px;
-      padding: 20px;
-      margin-bottom: 20px;
-    }
-    h2 {
-      color: #60a5fa;
-    }
-    footer {
-      text-align: center;
-      padding: 20px;
-      color: #9ca3af;
-      border-top: 1px solid #1f2937;
+  
+  <meta
+    name="generator"
+    content="Pixieset"
+  >
+
+  
+      <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="csrf-token" content="iXGhcfM68KEpePNTpH5PV8CRxztxjqqZjDDhhlDq">
+
+<title>BeMight</title>
+
+<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "WebSite",
+		"name": "BeMight",
+		"url": "https://bemightsecurity.mypixieset.com/"
+	}
+</script>
+
+<link rel="icon" type="image/png" href="https://images-pw.pixieset.com/profile/7608121/df63fd3779fc75d50c5afb9b532c56a50fb9a0958fccb95b31b4292e150ccc03.png">
+<link rel="canonical" href="https://bemightsecurity.mypixieset.com/">
+
+<meta property="og:site_name" content="BeMight">
+<meta property="og:title" content="BeMight">
+<meta property="og:url" content="https://bemightsecurity.mypixieset.com/">
+<meta property="og:type" content="website">
+
+	<meta property="og:ttl" content="864000">
+
+	<meta property="og:image" content="https://images-pw.pixieset.com/profile/7608121/2324b21870f8fce8d73d6b2c5eba1d81982087dd8cc211aabd6d66c7ace1acbd.png">
+	<meta property="og:image:width" content="2707">
+	<meta property="og:image:height" content="1212">
+
+<meta itemprop="name" content="BeMight">
+<meta itemprop="url" content="https://bemightsecurity.mypixieset.com/">
+	<meta itemprop="thumbnailUrl" content="https://images-pw.pixieset.com/profile/7608121/2324b21870f8fce8d73d6b2c5eba1d81982087dd8cc211aabd6d66c7ace1acbd.png">
+
+<meta name="twitter:title" content="BeMight">
+	<meta name="twitter:image" content="https://images-pw.pixieset.com/profile/7608121/2324b21870f8fce8d73d6b2c5eba1d81982087dd8cc211aabd6d66c7ace1acbd.png">
+<meta name="twitter:url" content="https://bemightsecurity.mypixieset.com/">
+<meta name="twitter:card" content="summary">
+
+<meta name="description" content="">
+
+  
+  
+  
+  
+  <style class="js-dom-cleanup">
+    a,
+    .dropdown-menu {
+      -webkit-transition: none !important;
+      -moz-transition: none !important;
+      -ms-transition: none !important;
+      -o-transition: none !important;
+      transition: none !important;
     }
   </style>
-</head>
-<body>
-  <header>
-    <h1>BeMight Security</h1>
-    <p>Aspiring Cybersecurity Analyst building practical skills through projects, labs, and security tools practice.</p>
-  </header>
 
-  <nav>
-    <a href="#about">About</a>
-    <a href="#projects">Projects</a>
-    <a href="#tools">Tools</a>
-    <a href="#contact">Contact</a>
-  </nav>
+  <style class="flex-blocks-styles">
+	 #block-container-9vwnQr .fb-block-padding-wrap{background-color:var(--primary-background);--backgroundColor:var(--primary-background)}#block-container-9vwnQr .fb-block{--columns:10;--rows_desktop:21;--rows_tablet:48;--rows_mobile:21;--correctionHeight:0vw;--correctionHeight_tablet:0vw;--correctionHeight_mobile:0vw}@media (min-width:992px){#block-container-9vwnQr .fb-block-padding-wrap{--padding-top-scale:0;--padding-bottom-scale:0}#block-container-9vwnQr .fb-element--el-0eb08d61b196d4{opacity:0}}@media (min-width:768px) and (max-width:991px){#block-container-9vwnQr .fb-block-padding-wrap{--padding-top-scale:0;--padding-bottom-scale:0}#block-container-9vwnQr .fb-element--el-0eb08d61b196d4{opacity:0}}@media (max-width:767px){#block-container-9vwnQr .fb-block-padding-wrap{--padding-top-scale:0;--padding-bottom-scale:0}#block-container-9vwnQr .fb-element--el-0eb08d61b196d4{opacity:0}}@media (min-width:375.1px) and (max-width:767px){.fb-block--9vwnQr .fb-block__elements{grid-template-rows:repeat(5, minmax(var(--grid-row-height), auto)) repeat(8, minmax(var(--grid-row-height-text), auto)) repeat(7, minmax(var(--grid-row-height), auto))}}#block-container-1xJv1m .fb-block-padding-wrap{background-color:var(--primary-background);--backgroundColor:var(--primary-background)}#block-container-1xJv1m .fb-block{--columns:10;--rows_desktop:22;--rows_tablet:28;--rows_mobile:31;--correctionHeight:0vw;--correctionHeight_tablet:0vw;--correctionHeight_mobile:0vw}@media (min-width:992px){#block-container-1xJv1m .fb-block-padding-wrap{--padding-top-scale:1;--padding-bottom-scale:1}}@media (min-width:768px) and (max-width:991px){#block-container-1xJv1m .fb-block-padding-wrap{--padding-top-scale:1;--padding-bottom-scale:1}}@media (max-width:767px){#block-container-1xJv1m .fb-block-padding-wrap{--padding-top-scale:1.5;--padding-bottom-scale:1.5}}@media (min-width:375.1px) and (max-width:767px){.fb-block--1xJv1m .fb-block__elements{grid-template-rows:repeat(1, minmax(var(--grid-row-height-text), auto)) repeat(1, minmax(var(--grid-row-height), auto)) repeat(5, minmax(var(--grid-row-height-text), auto)) repeat(15, minmax(var(--grid-row-height), auto)) repeat(3, minmax(var(--grid-row-height-text), auto)) repeat(5, minmax(var(--grid-row-height), auto))}}#block-container-O4E3R5 .fb-block-padding-wrap{background-color:var(--primary-background);--backgroundColor:var(--primary-background)}#block-container-O4E3R5 .fb-block{--columns:10;--rows_desktop:4;--rows_tablet:8;--rows_mobile:11;--correctionHeight:0vw;--correctionHeight_tablet:0vw;--correctionHeight_mobile:0vw}@media (min-width:992px){#block-container-O4E3R5 .fb-block-padding-wrap{--padding-top-scale:1;--padding-bottom-scale:1}}@media (min-width:768px) and (max-width:991px){#block-container-O4E3R5 .fb-block-padding-wrap{--padding-top-scale:1;--padding-bottom-scale:1}}@media (max-width:767px){#block-container-O4E3R5 .fb-block-padding-wrap{--padding-top-scale:1;--padding-bottom-scale:1}}@media (min-width:375.1px) and (max-width:767px){.fb-block--O4E3R5 .fb-block__elements{grid-template-rows:repeat(11, minmax(var(--grid-row-height-text), auto))}}#block-container-zd9x1Y .fb-block-padding-wrap{background-color:var(--primary-background);--backgroundColor:var(--primary-background)}#block-container-zd9x1Y .fb-block{--columns:10;--rows_desktop:13;--rows_tablet:14;--rows_mobile:35;--correctionHeight:0vw;--correctionHeight_tablet:0vw;--correctionHeight_mobile:0vw}@media (min-width:992px){#block-container-zd9x1Y .fb-block-padding-wrap{--padding-top-scale:0.5;--padding-bottom-scale:1}}@media (min-width:768px) and (max-width:991px){#block-container-zd9x1Y .fb-block-padding-wrap{--padding-top-scale:0.5;--padding-bottom-scale:1}}@media (max-width:767px){#block-container-zd9x1Y .fb-block-padding-wrap{--padding-top-scale:0.5;--padding-bottom-scale:1}}@media (min-width:375.1px) and (max-width:767px){.fb-block--zd9x1Y .fb-block__elements{grid-template-rows:repeat(8, minmax(var(--grid-row-height), auto)) repeat(3, minmax(var(--grid-row-height-text), auto)) repeat(9, minmax(var(--grid-row-height), auto)) repeat(3, minmax(var(--grid-row-height-text), auto)) repeat(9, minmax(var(--grid-row-height), auto)) repeat(3, minmax(var(--grid-row-height-text), auto))}}#block-container-jJLxOr .fb-block-padding-wrap{background-color:var(--primary-background);--backgroundColor:var(--primary-background)}#block-container-jJLxOr .fb-block{--columns:10;--rows_desktop:18;--rows_tablet:24;--rows_mobile:19;--correctionHeight:0vw;--correctionHeight_tablet:0vw;--correctionHeight_mobile:0vw}@media (min-width:992px){#block-container-jJLxOr .fb-block-padding-wrap{--padding-top-scale:0;--padding-bottom-scale:0}}@media (min-width:768px) and (max-width:991px){#block-container-jJLxOr .fb-block-padding-wrap{--padding-top-scale:0;--padding-bottom-scale:0}}@media (max-width:767px){#block-container-jJLxOr .fb-block-padding-wrap{--padding-top-scale:0;--padding-bottom-scale:0}}@media (min-width:375.1px) and (max-width:767px){.fb-block--jJLxOr .fb-block__elements{grid-template-rows:repeat(1, minmax(var(--grid-row-height), auto)) repeat(6, minmax(var(--grid-row-height-text), auto)) repeat(3, minmax(var(--grid-row-height), auto)) repeat(5, minmax(var(--grid-row-height-text), auto)) repeat(3, minmax(var(--grid-row-height), auto))}}#block-container-MoR0Kp .fb-block-padding-wrap{background-color:var(--primary-background);--backgroundColor:var(--primary-background)}#block-container-MoR0Kp .fb-block{--columns:10;--rows_desktop:4;--rows_tablet:5;--rows_mobile:12;--correctionHeight:0vw;--correctionHeight_tablet:0vw;--correctionHeight_mobile:0vw}@media (min-width:992px){#block-container-MoR0Kp .fb-block-padding-wrap{--padding-top-scale:0.5;--padding-bottom-scale:0.5}}@media (min-width:768px) and (max-width:991px){#block-container-MoR0Kp .fb-block-padding-wrap{--padding-top-scale:0.5;--padding-bottom-scale:0.5}}@media (max-width:767px){#block-container-MoR0Kp .fb-block-padding-wrap{--padding-top-scale:0.5;--padding-bottom-scale:0.5}}@media (min-width:375.1px) and (max-width:767px){}#block-container-77xVjr .fb-block-padding-wrap{background-color:var(--primary-background);--backgroundColor:var(--primary-background)}#block-container-77xVjr .fb-block{--columns:10;--rows_desktop:2;--rows_tablet:3;--rows_mobile:2;--correctionHeight:0vw;--correctionHeight_tablet:0vw;--correctionHeight_mobile:0vw}@media (min-width:992px){#block-container-77xVjr .fb-block-padding-wrap{--padding-top-scale:0.3;--padding-bottom-scale:0.3}}@media (min-width:768px) and (max-width:991px){#block-container-77xVjr .fb-block-padding-wrap{--padding-top-scale:0.3;--padding-bottom-scale:0.3}}@media (max-width:767px){#block-container-77xVjr .fb-block-padding-wrap{--padding-top-scale:0.3;--padding-bottom-scale:0.3}}@media (min-width:375.1px) and (max-width:767px){}#block-container-Wdqyj1 .fb-block-padding-wrap{background-color:var(--primary-background);--backgroundColor:var(--primary-background)}#block-container-Wdqyj1 .fb-block{--columns:10;--rows_desktop:14;--rows_tablet:14;--rows_mobile:3;--correctionHeight:0vw;--correctionHeight_tablet:0vw;--correctionHeight_mobile:0vw}@media (min-width:992px){#block-container-Wdqyj1 .fb-block-padding-wrap{--padding-top-scale:1;--padding-bottom-scale:1}}@media (min-width:768px) and (max-width:991px){#block-container-Wdqyj1 .fb-block-padding-wrap{--padding-top-scale:1;--padding-bottom-scale:1}}@media (max-width:767px){#block-container-Wdqyj1 .fb-block-padding-wrap{--padding-top-scale:1;--padding-bottom-scale:1}}@media (min-width:375.1px) and (max-width:767px){}@media (min-width:992px){.fb-block--9vwnQr .fb-element--el-9dbec5bf76fec6{--top:1;--left:1;--width:26;--height:21;--correctionTop:0;--correctionLeft:0;--correctionWidth:0;--correctionHeight:0;--zIndex:0;--rotation:0deg;--ratio:1.2380952380952;pointer-events:auto}}@media (min-width:768px) and (max-width:991px){.fb-block--9vwnQr .fb-element--el-9dbec5bf76fec6{--top:1;--left:1;--width:26;--height:48;--correctionTop:0;--correctionLeft:0;--correctionWidth:0;--correctionHeight:0;--zIndex:0;--rotation:0deg;--ratio:0.54166666666667;pointer-events:auto}}@media (max-width:767px){.fb-block--9vwnQr .fb-element--el-9dbec5bf76fec6{--top:1;--left:1;--width:10;--height:21;--correctionTop:0;--correctionLeft:0;--correctionWidth:0;--correctionHeight:0;--zIndex:0;--rotation:0deg;--ratio:0.47619047619048;pointer-events:auto}}@media (min-width:992px){.fb-block--9vwnQr .fb-element--el-40e810b1f66c3e{--top:5;--left:22;--width:4;--height:2;--correctionTop:0;--correctionLeft:0;--correctionWidth:0;--correctionHeight:0;--zIndex:2;--rotation:0deg;--ratio:2;pointer-events:auto}}@media (min-width:768px) and (max-width:991px){.fb-block--9vwnQr .fb-element--el-40e810b1f66c3e{--top:8;--left:20;--width:6;--height:4;--correctionTop:0;--correctionLeft:0;--correctionWidth:0;--correctionHeight:0;--zIndex:2;--rotation:0deg;--ratio:1.5;pointer-events:auto}}@media (max-width:767px){.fb-block--9vwnQr .fb-element--el-40e810b1f66c3e{--top:6;--left:2;--width:8;--height:1;--correctionTop:0;--correctionLeft:0;--correctionWidth:0;--correctionHeight:0;--zIndex:2;--rotation:0deg;--ratio:8;pointer-events:auto}}@media (min-width:992px){.fb-block--9vwnQr .fb-element--el-9b672d545fe7f3{--top:9;--left:2;--width:18;--height:5;--correctionTop:0;--correctionLeft:0;--correctionWidth:0;--correctionHeight:0;--zIndex:1;--rotation:0deg;--ratio:3.6;pointer-events:auto}}@media (min-width:768px) and (max-width:991px){.fb-block--9vwnQr .fb-element--el-9b672d545fe7f3{--top:32;--left:2;--width:18;--height:9;--correctionTop:0;--correctionLeft:0;--correctionWidth:0;--correctionHeight:0;--zIndex:1;--rotation:0deg;--ratio:2;pointer-events:auto}}@media (max-width:767px){.fb-block--9vwnQr .fb-element--el-9b672d545fe7f3{--top:7;--left:2;--width:8;--height:7;--correctionTop:0;--correctionLeft:0;--correctionWidth:0;--correctionHeight:0;--zIndex:1;--rotation:0deg;--ratio:1.1428571428571;pointer-events:auto}}@media (min-width:992px){.fb-block--9vwnQr .fb-element--el-24425bb70ca6ac{--top:18;--left:2;--width:7;--height:2;--correctionTop:0;--correctionLeft:0;--correctionWidth:0;--correctionHeight:0;--zIndex:3;--rotation:0deg;--ratio:3.5;pointer-events:auto}}@media (min-width:768px) and (max-width:991px){.fb-block--9vwnQr .fb-element--el-24425bb70ca6ac{--top:43;--left:2;--width:10;--height:3;--correctionTop:0;--correctionLeft:0;--correctionWidth:0;--correctionHeight:0;--zIndex:3;--rotation:0deg;--ratio:3.3333333333333;pointer-events:auto}}@media (max-width:767px){.fb-block--9vwnQr .fb-element--el-24425bb70ca6ac{--top:15;--left:2;--width:8;--height:3;--correctionTop:0;--correctionLeft:0;--correctionWidth:0;--correctionHeight:0;--zIndex:3;--rotation:0deg;--ratio:2.6666666666667;pointer-events:auto}}@media (min-width:992px){.fb-block--9vwnQr .fb-element--el-82247d74f6e1ec{--top:18;--left:22;--width:4;--height:2;--correctionTop:0;--correctionLeft:0;--correctionWidth:0;--correctionHeight:0;--zIndex:5;--rotation:0deg;--ratio:2;pointer-events:auto}}@media (min-width:768px) and (max-width:991px){.fb-block--9vwnQr .fb-element--el-82247d74f6e1ec{--top:43;--left:21;--width:5;--height:3;--correctionTop:0;--correctionLeft:0;--correctionWidth:0;--correctionHeight:0;--zIndex:5;--rotation:0deg;--ratio:1.6666666666667;pointer-events:auto}}@media (max-width:767px){.fb-block--9vwnQr .fb-element--el-82247d74f6e1ec{--top:18;--left:2;--width:8;--height:2;--correctionTop:0;--correctionLeft:0;--correctionWidth:0;--correctionHeight:0;--zIndex:5;--rotation:0deg;--ratio:4;pointer-events:auto}}@media (min-width:992px){.fb-block--9vwnQr .fb-element--el-bb6867accba643{--top:18;--left:23;--width:2;--height:2;--correctionTop:0;--correctionLeft:0;--correctionWidth:0;--correctionHeight:0;--zIndex:4;--rotation:0deg;--ratio:1;pointer-events:auto}}@media (min-width:768px) and (max-width:991px){.fb-block--9vwnQr .fb-element--el-bb6867accba643{--top:43;--left:22;--width:3;--height:3;--correctionTop:0;--correctionLeft:0;--correctionWidth:0;--correctionHeight:0;--zIndex:4;--rotation:0deg;--ratio:1;pointer-events:auto}}@media (max-width:767px){.fb-block--9vwnQr .fb-element--el-bb6867accba643{--top:18;--left:4;--width:4;--height:2;--correctionTop:0;--correctionLeft:0;--correctionWidth:0;--correctionHeight:0;--zIndex:4;--rotation:0deg;--ratio:2;pointer-events:auto}}@media (min-width:992px){.fb-block--1xJv1m .fb-element--el-fe6ef06f93426e{--top:1;--left:18;--width:8;--height:3;--correctionTop:0;--correctionLeft:0;--correctionWidth:0;--correctionHeight:0;--zIndex:1;--rotation:0deg;--ratio:2.6666666666667;pointer-events:auto}}@media (min-width:768px) and (max-width:991px){.fb-block--1xJv1m .fb-element--el-fe6ef06f93426e{--top:1;--left:18;--width:8;--height:3;--correctionTop:0;--correctionLeft:0;--correctionWidth:0;--correctionHeight:0;--zIndex:1;--rotation:0deg;--ratio:2.6666666666667;pointer-events:auto}}@media (max-width:767px){.fb-block--1xJv1m .fb-element--el-fe6ef06f93426e{--top:1;--left:2;--width:8;--height:1;--correctionTop:0;--correctionLeft:0;--correctionWidth:0;--correctionHeight:0;--zIndex:1;--rotation:0deg;--ratio:8;pointer-events:auto}}@media (min-width:992px){.fb-block--1xJv1m .fb-element--el-95b744d8c75266{--top:1;--left:2;--width:14;--height:6;--correctionTop:0;--correctionLeft:0;--correctionWidth:0;--correctionHeight:0;--zIndex:0;--rotation:0deg;--ratio:2.3333333333333;pointer-events:auto}}@media (min-width:768px) and (max-width:991px){.fb-block--1xJv1m .fb-element--el-95b744d8c75266{--top:1;--left:2;--width:14;--height:11;--correctionTop:0;--correctionLeft:0;--correctionWidth:0;--correctionHeight:0;--zIndex:0;--rotation:0deg;--ratio:1.2727272727273;pointer-events:auto}}@media (max-width:767px){.fb-block--1xJv1m .fb-element--el-95b744d8c75266{--top:3;--left:2;--width:8;--height:5;--correctionTop:0;--correctionLeft:0;--correctionWidth:0;--correctionHeight:0;--zIndex:0;--rotation:0deg;--ratio:1.6;pointer-events:auto}}@media (min-width:992px){.fb-block--1xJv1m .fb-element--el-6a8d7f744456b4{--top:7;--left:18;--width:7;--height:16;--correctionTop:0;--correctionLeft:0;--correctionWidth:0;--correctionHeight:0;--zIndex:2;--rotation:0deg;--ratio:0.5;pointer-events:auto}}@media (min-width:768px) and (max-width:991px){.fb-block--1xJv1m .fb-element--el-6a8d7f744456b4{--top:13;--left:18;--width:8;--height:16;--correctionTop:0;--correctionLeft:0;--correctionWidth:0;--correctionHeight:0;--zIndex:2;--rotation:0deg;--ratio:0.5;pointer-events:auto}}@media (max-width:767px){.fb-block--1xJv1m .fb-element--el-6a8d7f744456b4{--top:9;--left:2;--width:8;--height:13;--correctionTop:0;--correctionLeft:0;--correctionWidth:0;--correctionHeight:0;--zIndex:2;--rotation:0deg;--ratio:0.61538461538462;pointer-events:auto}}@media (min-width:992px){.fb-block--1xJv1m .fb-element--el-89bdee414c4982{--top:9;--left:4;--width:6;--height:5;--correctionTop:0;--correctionLeft:0;--correctionWidth:0;--correctionHeight:0;--zIndex:3;--rotation:0deg;--ratio:1.2;pointer-events:auto}}@media (min-width:768px) and (max-width:991px){.fb-block--1xJv1m .fb-element--el-89bdee414c4982{--top:16;--left:2;--width:6;--height:8;--correctionTop:0;--correctionLeft:0;--correctionWidth:0;--correctionHeight:0;--zIndex:3;--rotation:0deg;--ratio:0.75;pointer-events:auto}}@media (max-width:767px){.fb-block--1xJv1m .fb-element--el-89bdee414c4982{--top:23;--left:2;--width:8;--height:3;--correctionTop:0;--correctionLeft:0;--correctionWidth:0;--correctionHeight:0;--zIndex:3;--rotation:0deg;--ratio:2.6666666666667;pointer-events:auto}}@media (min-width:992px){.fb-block--1xJv1m .fb-element--el-47b15068256692{--top:16;--left:4;--width:7;--height:2;--correctionTop:0;--correctionLeft:0;--correctionWidth:0;--correctionHeight:0;--zIndex:6;--rotation:0deg;--ratio:3.5;pointer-events:auto}}@media (min-width:768px) and (max-width:991px){.fb-block--1xJv1m .fb-element--el-47b15068256692{--top:24;--left:2;--width:13;--height:3;--correctionTop:0;--correctionLeft:0;--correctionWidth:0;--correctionHeight:0;--zIndex:6;--rotation:0deg;--ratio:4.3333333333333;pointer-events:auto}}@media (max-width:767px){.fb-block--1xJv1m .fb-element--el-47b15068256692{--top:29;--left:2;--width:8;--height:3;--correctionTop:0;--correctionLeft:0;--correctionWidth:0;--correctionHeight:0;--zIndex:6;--rotation:0deg;--ratio:2.6666666666667;pointer-events:auto}}@media (min-width:992px){.fb-block--O4E3R5 .fb-element--el-6a518934df7e3f{--top:1;--left:3;--width:1;--height:3;--correctionTop:0;--correctionLeft:0;--correctionWidth:0;--correctionHeight:0;--zIndex:2;--rotation:0deg;--ratio:0.33333333333333;pointer-events:auto}}@media (min-width:768px) and (max-width:991px){.fb-block--O4E3R5 .fb-element--el-6a518934df7e3f{--top:1;--left:3;--width:1;--height:3;--correctionTop:0;--correctionLeft:0;--correctionWidth:0;--correctionHeight:0;--zIndex:2;--rotation:0deg;--ratio:0.33333333333333;pointer-events:auto}}@media (max-width:767px){.fb-block--O4E3R5 .fb-element--el-6a518934df7e3f{--top:1;--left:9;--width:1;--height:2;--correctionTop:0;--correctionLeft:0;--correctionWidth:0;--correctionHeight:0;--zIndex:2;--rotation:0deg;--ratio:0.5;pointer-events:auto}}@media (min-width:992px){.fb-block--O4E3R5 .fb-element--el-9d2986076b779f{--top:1;--left:6;--width:16;--height:3;--correctionTop:0;--correctionLeft:0;--correctionWidth:0;--correctionHeight:0;--zIndex:0;--rotation:0deg;--ratio:5.3333333333333;pointer-events:auto}}@media (min-width:768px) and (max-width:991px){.fb-block--O4E3R5 .fb-element--el-9d2986076b779f{--top:1;--left:4;--width:20;--height:6;--correctionTop:0;--correctionLeft:0;--correctionWidth:0;--correctionHeight:0;--zIndex:0;--rotation:0deg;--ratio:3.3333333333333;pointer-events:auto}}@media (max-width:767px){.fb-block--O4E3R5 .fb-element--el-9d2986076b779f{--top:3;--left:2;--width:8;--height:6;--correctionTop:0;--correctionLeft:0;--correctionWidth:0;--correctionHeight:0;--zIndex:0;--rotation:0deg;--ratio:1.3333333333333;pointer-events:auto}}@media (min-width:992px){.fb-block--O4E3R5 .fb-element--el-49041512d490d6{--top:1;--left:24;--width:1;--height:3;--correctionTop:0;--correctionLeft:0;--correctionWidth:0;--correctionHeight:0;--zIndex:4;--rotation:0deg;--ratio:0.33333333333333;pointer-events:auto}}@media (min-width:768px) and (max-width:991px){.fb-block--O4E3R5 .fb-element--el-49041512d490d6{--top:1;--left:24;--width:1;--height:3;--correctionTop:0;--correctionLeft:0;--correctionWidth:0;--correctionHeight:0;--zIndex:4;--rotation:0deg;--ratio:0.33333333333333;pointer-events:auto}}@media (max-width:767px){.fb-block--O4E3R5 .fb-element--el-49041512d490d6{--top:9;--left:2;--width:1;--height:2;--correctionTop:0;--correctionLeft:0;--correctionWidth:0;--correctionHeight:0;--zIndex:4;--rotation:0deg;--ratio:0.5;pointer-events:auto}}@media (min-width:992px){.fb-block--O4E3R5 .fb-element--el-0eb62e0ce0bb98{--top:4;--left:6;--width:16;--height:1;--correctionTop:0;--correctionLeft:0;--correctionWidth:0;--correctionHeight:0;--zIndex:1;--rotation:0deg;--ratio:16;pointer-events:auto}}@media (min-width:768px) and (max-width:991px){.fb-block--O4E3R5 .fb-element--el-0eb62e0ce0bb98{--top:8;--left:6;--width:16;--height:1;--correctionTop:0;--correctionLeft:0;--correctionWidth:0;--correctionHeight:0;--zIndex:1;--rotation:0deg;--ratio:16;pointer-events:auto}}@media (max-width:767px){.fb-block--O4E3R5 .fb-element--el-0eb62e0ce0bb98{--top:11;--left:2;--width:8;--height:1;--correctionTop:0;--correctionLeft:0;--correctionWidth:0;--correctionHeight:0;--zIndex:1;--rotation:0deg;--ratio:8;pointer-events:auto}}@media (min-width:992px){.fb-block--zd9x1Y .fb-element--el-e7da35b7dd5618{--top:1;--left:2;--width:8;--height:10;--correctionTop:0;--correctionLeft:0;--correctionWidth:0;--correctionHeight:0;--zIndex:0;--rotation:0deg;--ratio:0.8;pointer-events:auto}}@media (min-width:768px) and (max-width:991px){.fb-block--zd9x1Y .fb-element--el-e7da35b7dd5618{--top:1;--left:2;--width:8;--height:10;--correctionTop:0;--correctionLeft:0;--correctionWidth:0;--correctionHeight:0;--zIndex:0;--rotation:0deg;--ratio:0.8;pointer-events:auto}}@media (max-width:767px){.fb-block--zd9x1Y .fb-element--el-e7da35b7dd5618{--top:1;--left:2;--width:8;--height:8;--correctionTop:0;--correctionLeft:0;--correctionWidth:0;--correctionHeight:0;--zIndex:0;--rotation:0deg;--ratio:0.8;pointer-events:auto}}@media (min-width:992px){.fb-block--zd9x1Y .fb-element--el-f359dfaac230a0{--top:11;--left:2;--width:8;--height:2;--correctionTop:0;--correctionLeft:0;--correctionWidth:0;--correctionHeight:0;--zIndex:3;--rotation:0deg;--ratio:4;pointer-events:auto}}@media (min-width:768px) and (max-width:991px){.fb-block--zd9x1Y .fb-element--el-f359dfaac230a0{--top:11;--left:2;--width:8;--height:2;--correctionTop:0;--correctionLeft:0;--correctionWidth:0;--correctionHeight:0;--zIndex:3;--rotation:0deg;--ratio:4;pointer-events:auto}}@media (max-width:767px){.fb-block--zd9x1Y .fb-element--el-f359dfaac230a0{--top:9;--left:2;--width:8;--height:2;--correctionTop:0;--correctionLeft:0;--correctionWidth:0;--correctionHeight:0;--zIndex:3;--rotation:0deg;--ratio:4;pointer-events:auto}}@media (min-width:992px){.fb-block--zd9x1Y .fb-element--el-fc36cb1597fcaf{--top:13;--left:2;--width:8;--height:1;--correctionTop:0;--correctionLeft:0;--correctionWidth:0;--correctionHeight:0;--zIndex:6;--rotation:0deg;--ratio:8;pointer-events:auto}}@media (min-width:768px) and (max-width:991px){.fb-block--zd9x1Y .fb-element--el-fc36cb1597fcaf{--top:13;--left:2;--width:8;--height:1;--correctionTop:0;--correctionLeft:0;--correctionWidth:0;--correctionHeight:0;--zIndex:6;--rotation:0deg;--ratio:8;pointer-events:auto}}@media (max-width:767px){.fb-block--zd9x1Y .fb-element--el-fc36cb1597fcaf{--top:11;--left:2;--width:8;--height:1;--correctionTop:0;--correctionLeft:0;--correctionWidth:0;--correctionHeight:0;--zIndex:6;--rotation:0deg;--ratio:8;pointer-events:auto}}@media (min-width:992px){.fb-block--zd9x1Y .fb-element--el-157864d25cd495{--top:1;--left:10;--width:8;--height:10;--correctionTop:0;--correctionLeft:0;--correctionWidth:0;--correctionHeight:0;--zIndex:1;--rotation:0deg;--ratio:0.8;pointer-events:auto}}@media (min-width:768px) and (max-width:991px){.fb-block--zd9x1Y .fb-element--el-157864d25cd495{--top:1;--left:10;--width:8;--height:10;--correctionTop:0;--correctionLeft:0;--correctionWidth:0;--correctionHeight:0;--zIndex:1;--rotation:0deg;--ratio:0.8;pointer-events:auto}}@media (max-width:767px){.fb-block--zd9x1Y .fb-element--el-157864d25cd495{--top:13;--left:2;--width:8;--height:8;--correctionTop:0;--correctionLeft:0;--correctionWidth:0;--correctionHeight:0;--zIndex:1;--rotation:0deg;--ratio:1;pointer-events:auto}}@media (min-width:992px){.fb-block--zd9x1Y .fb-element--el-09f8b203315491{--top:11;--left:10;--width:8;--height:2;--correctionTop:0;--correctionLeft:0;--correctionWidth:0;--correctionHeight:0;--zIndex:4;--rotation:0deg;--ratio:4;pointer-events:auto}}@media (min-width:768px) and (max-width:991px){.fb-block--zd9x1Y .fb-element--el-09f8b203315491{--top:11;--left:10;--width:8;--height:2;--correctionTop:0;--correctionLeft:0;--correctionWidth:0;--correctionHeight:0;--zIndex:4;--rotation:0deg;--ratio:4;pointer-events:auto}}@media (max-width:767px){.fb-block--zd9x1Y .fb-element--el-09f8b203315491{--top:21;--left:2;--width:8;--height:2;--correctionTop:0;--correctionLeft:0;--correctionWidth:0;--correctionHeight:0;--zIndex:4;--rotation:0deg;--ratio:4;pointer-events:auto}}@media (min-width:992px){.fb-block--zd9x1Y .fb-element--el-afd5b711c97453{--top:13;--left:10;--width:8;--height:1;--correctionTop:0;--correctionLeft:0;--correctionWidth:0;--correctionHeight:0;--zIndex:7;--rotation:0deg;--ratio:8;pointer-events:auto}}@media (min-width:768px) and (max-width:991px){.fb-block--zd9x1Y .fb-element--el-afd5b711c97453{--top:13;--left:10;--width:8;--height:1;--correctionTop:0;--correctionLeft:0;--correctionWidth:0;--correctionHeight:0;--zIndex:7;--rotation:0deg;--ratio:8;pointer-events:auto}}@media (max-width:767px){.fb-block--zd9x1Y .fb-element--el-afd5b711c97453{--top:23;--left:2;--width:8;--height:1;--correctionTop:0;--correctionLeft:0;--correctionWidth:0;--correctionHeight:0;--zIndex:7;--rotation:0deg;--ratio:8;pointer-events:auto}}@media (min-width:992px){.fb-block--zd9x1Y .fb-element--el-574dab37268a78{--top:1;--left:18;--width:8;--height:10;--correctionTop:0;--correctionLeft:0;--correctionWidth:0;--correctionHeight:0;--zIndex:2;--rotation:0deg;--ratio:0.8;pointer-events:auto}}@media (min-width:768px) and (max-width:991px){.fb-block--zd9x1Y .fb-element--el-574dab37268a78{--top:1;--left:18;--width:8;--height:10;--correctionTop:0;--correctionLeft:0;--correctionWidth:0;--correctionHeight:0;--zIndex:2;--rotation:0deg;--ratio:0.8;pointer-events:auto}}@media (max-width:767px){.fb-block--zd9x1Y .fb-element--el-574dab37268a78{--top:25;--left:2;--width:8;--height:8;--correctionTop:0;--correctionLeft:0;--correctionWidth:0;--correctionHeight:0;--zIndex:2;--rotation:0deg;--ratio:1;pointer-events:auto}}@media (min-width:992px){.fb-block--zd9x1Y .fb-element--el-133539a6aa4125{--top:11;--left:18;--width:8;--height:2;--correctionTop:0;--correctionLeft:0;--correctionWidth:0;--correctionHeight:0;--zIndex:5;--rotation:0deg;--ratio:4;pointer-events:auto}}@media (min-width:768px) and (max-width:991px){.fb-block--zd9x1Y .fb-element--el-133539a6aa4125{--top:11;--left:18;--width:8;--height:2;--correctionTop:0;--correctionLeft:0;--correctionWidth:0;--correctionHeight:0;--zIndex:5;--rotation:0deg;--ratio:4;pointer-events:auto}}@media (max-width:767px){.fb-block--zd9x1Y .fb-element--el-133539a6aa4125{--top:33;--left:2;--width:8;--height:2;--correctionTop:0;--correctionLeft:0;--correctionWidth:0;--correctionHeight:0;--zIndex:5;--rotation:0deg;--ratio:4;pointer-events:auto}}@media (min-width:992px){.fb-block--zd9x1Y .fb-element--el-a7cc566633b059{--top:13;--left:18;--width:8;--height:1;--correctionTop:0;--correctionLeft:0;--correctionWidth:0;--correctionHeight:0;--zIndex:9;--rotation:0deg;--ratio:8;pointer-events:auto}}@media (min-width:768px) and (max-width:991px){.fb-block--zd9x1Y .fb-element--el-a7cc566633b059{--top:13;--left:18;--width:8;--height:1;--correctionTop:0;--correctionLeft:0;--correctionWidth:0;--correctionHeight:0;--zIndex:9;--rotation:0deg;--ratio:8;pointer-events:auto}}@media (max-width:767px){.fb-block--zd9x1Y .fb-element--el-a7cc566633b059{--top:35;--left:2;--width:8;--height:1;--correctionTop:0;--correctionLeft:0;--correctionWidth:0;--correctionHeight:0;--zIndex:9;--rotation:0deg;--ratio:8;pointer-events:auto}}@media (min-width:992px){.fb-block--jJLxOr .fb-element--el-24cb83e8018546{--top:9;--left:2;--width:10;--height:4;--correctionTop:0;--correctionLeft:0;--correctionWidth:0;--correctionHeight:0;--zIndex:2;--rotation:0deg;--ratio:2.5;pointer-events:auto}}@media (min-width:768px) and (max-width:991px){.fb-block--jJLxOr .fb-element--el-24cb83e8018546{--top:3;--left:2;--width:13;--height:6;--correctionTop:0;--correctionLeft:0;--correctionWidth:0;--correctionHeight:0;--zIndex:2;--rotation:0deg;--ratio:2.1666666666667;pointer-events:auto}}@media (max-width:767px){.fb-block--jJLxOr .fb-element--el-24cb83e8018546{--top:2;--left:2;--width:8;--height:6;--correctionTop:0;--correctionLeft:0;--correctionWidth:0;--correctionHeight:0;--zIndex:2;--rotation:0deg;--ratio:1.3333333333333;pointer-events:auto}}@media (min-width:992px){.fb-block--jJLxOr .fb-element--el-2b16082cac310d{--top:11;--left:17;--width:8;--height:3;--correctionTop:0;--correctionLeft:0;--correctionWidth:0;--correctionHeight:0;--zIndex:5;--rotation:0deg;--ratio:2.6666666666667;pointer-events:auto}}@media (min-width:768px) and (max-width:991px){.fb-block--jJLxOr .fb-element--el-2b16082cac310d{--top:12;--left:17;--width:9;--height:7;--correctionTop:0;--correctionLeft:0;--correctionWidth:0;--correctionHeight:0;--zIndex:5;--rotation:0deg;--ratio:1.2857142857143;pointer-events:auto}}@media (max-width:767px){.fb-block--jJLxOr .fb-element--el-2b16082cac310d{--top:11;--left:2;--width:8;--height:5;--correctionTop:0;--correctionLeft:0;--correctionWidth:0;--correctionHeight:0;--zIndex:5;--rotation:0deg;--ratio:1.6;pointer-events:auto}}@media (min-width:992px){.fb-block--jJLxOr .fb-element--el-562a017f6abe12{--top:14;--left:17;--width:7;--height:3;--correctionTop:0;--correctionLeft:0;--correctionWidth:0;--correctionHeight:0;--zIndex:4;--rotation:0deg;--ratio:2.3333333333333;pointer-events:auto}}@media (min-width:768px) and (max-width:991px){.fb-block--jJLxOr .fb-element--el-562a017f6abe12{--top:20;--left:17;--width:9;--height:3;--correctionTop:0;--correctionLeft:0;--correctionWidth:0;--correctionHeight:0;--zIndex:4;--rotation:0deg;--ratio:3;pointer-events:auto}}@media (max-width:767px){.fb-block--jJLxOr .fb-element--el-562a017f6abe12{--top:16;--left:2;--width:7;--height:3;--correctionTop:0;--correctionLeft:0;--correctionWidth:0;--correctionHeight:0;--zIndex:4;--rotation:0deg;--ratio:2.3333333333333;pointer-events:auto}}@media (min-width:992px){.fb-block--MoR0Kp .fb-element--el-1859e08e1dee88{--top:1;--left:2;--width:24;--height:2;--correctionTop:0;--correctionLeft:0;--correctionWidth:0;--correctionHeight:0;--zIndex:4;--rotation:0deg;--ratio:12;pointer-events:auto}}@media (min-width:768px) and (max-width:991px){.fb-block--MoR0Kp .fb-element--el-1859e08e1dee88{--top:1;--left:2;--width:24;--height:2;--correctionTop:0;--correctionLeft:0;--correctionWidth:0;--correctionHeight:0;--zIndex:4;--rotation:0deg;--ratio:12;pointer-events:auto}}@media (max-width:767px){.fb-block--MoR0Kp .fb-element--el-1859e08e1dee88{--top:1;--left:2;--width:8;--height:8;--correctionTop:0;--correctionLeft:0;--correctionWidth:0;--correctionHeight:0;--zIndex:4;--rotation:0deg;--ratio:1.3333333333333;pointer-events:auto}}@media (min-width:992px){.fb-block--MoR0Kp .fb-element--el-60ce7c204f6a29{--top:3;--left:11;--width:6;--height:2;--correctionTop:0;--correctionLeft:0;--correctionWidth:0;--correctionHeight:0;--zIndex:3;--rotation:0deg;--ratio:3;pointer-events:auto}}@media (min-width:768px) and (max-width:991px){.fb-block--MoR0Kp .fb-element--el-60ce7c204f6a29{--top:4;--left:10;--width:8;--height:2;--correctionTop:0;--correctionLeft:0;--correctionWidth:0;--correctionHeight:0;--zIndex:3;--rotation:0deg;--ratio:4;pointer-events:auto}}@media (max-width:767px){.fb-block--MoR0Kp .fb-element--el-60ce7c204f6a29{--top:10;--left:2;--width:8;--height:2;--correctionTop:0;--correctionLeft:0;--correctionWidth:0;--correctionHeight:0;--zIndex:3;--rotation:0deg;--ratio:4;pointer-events:auto}}@media (min-width:992px){.fb-block--MoR0Kp .fb-element--el-c670b4c5eb8356{--top:3;--left:25;--width:1;--height:2;--correctionTop:0;--correctionLeft:0;--correctionWidth:0;--correctionHeight:0;--zIndex:1;--rotation:0deg;--ratio:0.5;pointer-events:auto}}@media (min-width:768px) and (max-width:991px){.fb-block--MoR0Kp .fb-element--el-c670b4c5eb8356{--top:4;--left:25;--width:1;--height:2;--correctionTop:0;--correctionLeft:0;--correctionWidth:0;--correctionHeight:0;--zIndex:1;--rotation:0deg;--ratio:0.5;pointer-events:auto}}@media (max-width:767px){.fb-block--MoR0Kp .fb-element--el-c670b4c5eb8356{--top:12;--left:9;--width:1;--height:1;--correctionTop:0;--correctionLeft:0;--correctionWidth:0;--correctionHeight:0;--zIndex:1;--rotation:0deg;--ratio:1;pointer-events:auto}}@media (min-width:992px){.fb-block--MoR0Kp .fb-element--el-c71199e403b418{--top:3;--left:2;--width:8;--height:2;--correctionTop:0;--correctionLeft:0;--correctionWidth:0;--correctionHeight:0;--zIndex:2;--rotation:0deg;--ratio:4;pointer-events:auto}}@media (min-width:768px) and (max-width:991px){.fb-block--MoR0Kp .fb-element--el-c71199e403b418{--top:4;--left:2;--width:8;--height:2;--correctionTop:0;--correctionLeft:0;--correctionWidth:0;--correctionHeight:0;--zIndex:2;--rotation:0deg;--ratio:4;pointer-events:auto}}@media (max-width:767px){.fb-block--MoR0Kp .fb-element--el-c71199e403b418{--top:12;--left:2;--width:7;--height:1;--correctionTop:0;--correctionLeft:0;--correctionWidth:0;--correctionHeight:0;--zIndex:2;--rotation:0deg;--ratio:7;pointer-events:auto}}@media (min-width:992px){.fb-block--77xVjr .fb-element--el-320595afc4dfae{--top:1;--left:2;--width:7;--height:2;--correctionTop:0;--correctionLeft:0;--correctionWidth:0;--correctionHeight:0;--zIndex:0;--rotation:0deg;--ratio:3.5;pointer-events:auto}}@media (min-width:768px) and (max-width:991px){.fb-block--77xVjr .fb-element--el-320595afc4dfae{--top:1;--left:2;--width:12;--height:3;--correctionTop:0;--correctionLeft:0;--correctionWidth:0;--correctionHeight:0;--zIndex:0;--rotation:0deg;--ratio:4;pointer-events:auto}}@media (max-width:767px){.fb-block--77xVjr .fb-element--el-320595afc4dfae{--top:1;--left:2;--width:7;--height:2;--correctionTop:0;--correctionLeft:0;--correctionWidth:0;--correctionHeight:0;--zIndex:0;--rotation:0deg;--ratio:3.5;pointer-events:auto}}@media (min-width:992px){.fb-block--77xVjr .fb-element--el-7c3f1d873193c0{--top:1;--left:9;--width:17;--height:2;--correctionTop:0;--correctionLeft:0;--correctionWidth:0;--correctionHeight:0;--zIndex:0;--rotation:0deg;--ratio:8.5;pointer-events:auto}}@media (min-width:768px) and (max-width:991px){.fb-block--77xVjr .fb-element--el-7c3f1d873193c0{--top:1;--left:24;--width:2;--height:3;--correctionTop:0;--correctionLeft:0;--correctionWidth:0;--correctionHeight:0;--zIndex:0;--rotation:0deg;--ratio:0.66666666666667;pointer-events:auto}}@media (max-width:767px){.fb-block--77xVjr .fb-element--el-7c3f1d873193c0{--top:1;--left:9;--width:1;--height:2;--correctionTop:0;--correctionLeft:0;--correctionWidth:0;--correctionHeight:0;--zIndex:0;--rotation:0deg;--ratio:0.5;pointer-events:auto}}
+</style>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <div class="card">
-      <p>Hello, I’m Prince Awuku Anobaah, an aspiring Cybersecurity Analyst and BTech ICT student at Koforidua Technical University. I’m focused on network security, threat detection, Linux fundamentals, and security awareness.</p>
-    </div>
-  </section>
+  
 
-  <section id="projects">
-    <h2>Featured Projects</h2>
-    <div class="card">
-      <h3>Network Traffic Analysis Lab</h3>
-      <p>Analyzed packet captures using Wireshark to identify suspicious traffic patterns and anomalies.</p>
-    </div>
-    <div class="card">
-      <h3>Phishing Awareness Project</h3>
-      <p>Created a cybersecurity awareness presentation on phishing attacks, prevention, and social engineering defense.</p>
-    </div>
-    <div class="card">
-      <h3>DNS Enumeration Lab</h3>
-      <p>Performed reconnaissance and information gathering using dig, nslookup, and Subfinder.</p>
-    </div>
-  </section>
+  <link
+    rel="preconnect"
+    href="https://shared-pw-fonts.s3.us-west-2.amazonaws.com"
+  >
 
-  <section id="tools">
-    <h2>Tools & Skills</h2>
-    <div class="card">
-      <p>Wireshark • Nmap • TCPdump • Linux • dig • nslookup • Subfinder • Nikto • OpenVAS</p>
-    </div>
-  </section>
+  
+            <style>
+        @font-face {
+    font-family: "Izmir";
+    font-weight: 300;
+    font-style: normal;
+    font-display: auto;
+    src: url(https://fonts-pw.pixieset.com/fonts/izmir/n3.woff2?Expires=1784271610&Signature=VB32MI1gwtp35tLAsAZzl7PDPZ8sWxnDzWq2d2KCk~w28ipciD3lRcNQfJm1CIbZGLecN9gtheOdoA5zx6UhZs7g1T8sozgVttqmXj7nZ6rbnChbSqJbWf1YmBGwwBHiYFL1sNTOOJb6kRfBNgbw6W4-KIZ7OwDKKgIy1aLb1Stx0GGVkvisBQSKoiCk3U297UF~seTgIdyQlm5rWCkWNo6H17xpK~2yRA08gvHJDcmvldY8Ls-hZmFvTVqaXJmI38Rd6IcqCyjR1NJO7cnDgUXwIC2FLOUKraoQne6osOS9lBrvhHL4Dx~Mf-VhysK5mx6-DOZb55tEQvFRDSCtNw__&Key-Pair-Id=K3RI8219ESW2NK) format("woff2"), url(https://fonts-pw.pixieset.com/fonts/izmir/n3.woff?Expires=1784271610&Signature=DTAy~GhwtNHdu9pj2imnKVXK2tJwpvBEheAN55Xy0gBJiYv76LLwiOClpi3Dkdz9VLSibsfuG0KGuEuAW9KjXMm0AbspDmv-GrO0hXuU3t87zKixS03PZ7QacH5ksKWBgm8zf5cuuq-YpfKolNYd1UYyU3~Clm~2nxpKwtKxuoV-EeS7uRdoWhOahG3MHyflcc1iW5LSmaCy~iMJCc2r7uVQw4j2WV5ZF4Qnsaj6g2T~a-85uNCtq9o--gJAgcg-evi2ZEf2YgZ9We3OEYgyGj-zpTP9KtzrPOVVE3dz3pZS8ASj69QbWB9ulpwasv~Y3s10LPLXSn0TsM2JPZoVRw__&Key-Pair-Id=K3RI8219ESW2NK) format("woff");
+}
+@font-face {
+    font-family: "Izmir";
+    font-weight: 300;
+    font-style: italic;
+    font-display: auto;
+    src: url(https://fonts-pw.pixieset.com/fonts/izmir/i3.woff2?Expires=1784271610&Signature=NvFOyiLtmLNSo6OZgfPMoZJZRoyBDbxrFpe9U3uNvZL3gXMiAdB8uAM-mfYd~E0Y-4Aig59BAmg18~AsRTJ8kjPpO2NOK-ARL5xmJm49575lb9J6PujGYvQOht899NcvCqV6Uc49zjFJ2lsR-ncGTIWwCTrfoGetV8yuLYkUA9sln2kr9cMt~t6YoUDNjMNS6Zmt78EvSzz9RyhIjidhoI6hG0meC4Ttxt9Rg68~w4rOTFhbXsd~Ozw5rpBE-n2uWBOCZnKc0qp9jV3C9pFLh-xmLJmV1QFGKM2D64L23t~j3K3lK6MT9iBg~AuNC7RdHuqL~vvNi46xB0HjOvJ9Vw__&Key-Pair-Id=K3RI8219ESW2NK) format("woff2"), url(https://fonts-pw.pixieset.com/fonts/izmir/i3.woff?Expires=1784271610&Signature=RIe3qSe0uiyydQGXUEeh3LjAppIv8rX0tnREL8RZvmEoMPUm3nIJxta211Yhcw2GFGRALBRTFgHbTLSIDulVscf0vBP9lG5DsQYuA6EUmQ1lJM6bC5OAIFiY4-7~PvbR8dGCm3ZPWiiQeFnbqaMGK69PfQEC3B3jVJY650Xn8My7QGL4L1Y2mqrIT0fVuXz5N8FQv4ZrjXsl3NHL7M77qIijlYyivDeU6dXhGgggto~WzK3LF5s7qXnvaZTCArfZWRzWzOQwF9X0BGCflB2j-iHgpS5NJKzav98u-BZE4k8jeEpAasXXqcdN32CFKHOqqTeTxoycyJOqIIQ4PgrHCA__&Key-Pair-Id=K3RI8219ESW2NK) format("woff");
+}
+@font-face {
+    font-family: "Izmir";
+    font-weight: 400;
+    font-style: normal;
+    font-display: auto;
+    src: url(https://fonts-pw.pixieset.com/fonts/izmir/n4.woff2?Expires=1784271610&Signature=MmITzBMb4mI3vPC4dpBu4yxxwbKLoc4CEfMK8Ns8RkUABsr4V-4bhWnuaSM3GehVBwhvkVpBw1wPwcF-Ia7h2EcveJtXqzyWVkaE3IzUVlxch2ps2v4n45Ugof3twbK2tHAiSi~nFHal8iIYdAF4NUVvuyHoQLb5djiyDbBqkXxmIGWw4MYOU5e4redACUMdYyhr9Xn1-SnpDhpTx5WVGFzotDUDoh6yqwzX0bnqbk7Qh5b6X2oRRtgYRQtxYnTttKj4GIrFGMPKf968~ppHIGTv8dbyRcAtgX9rYjiLCVZ5FqyRfMz3E0HPTIxzslr7DAjCyauFOpkXGP9kgCm96g__&Key-Pair-Id=K3RI8219ESW2NK) format("woff2"), url(https://fonts-pw.pixieset.com/fonts/izmir/n4.woff?Expires=1784271610&Signature=c1YnHKQMcUzVvYAUT1n8DGz-Cg0ErAa~5LcszVAS5ePK4BK5K~pR1806EuxM-1vwRe~YMznJmSTyfex3HUbonrhtF4RVzYeujncpRfLK34UACohqIkZ5Flm7dJABRniYRiCq~vXyfCe-OMNP-FcSUE7VgfhSnd69~JE0-DJnP6xq0nkTZXgECRcbQVBRjSw-FKKgkr~7R2ePXsJle9HLA3DjlUvtdSNOMmKOQxoXvSutJaw-oB0vC4KxWiprsElIq4SljV9vfRMPg4KugUxfzWMvSeeWOGNesX5WI8iTbkeVDduIlrOU3m5JoJE9jfnGZ~hzP3PIagMgVfE0SOFlfw__&Key-Pair-Id=K3RI8219ESW2NK) format("woff");
+}
+@font-face {
+    font-family: "Izmir";
+    font-weight: 400;
+    font-style: italic;
+    font-display: auto;
+    src: url(https://fonts-pw.pixieset.com/fonts/izmir/i4.woff2?Expires=1784271610&Signature=lSVJCNO1Q9p3lUIDdOjJRLgWaFGf643lf2IRNSbBp2huLDpFvN2gotIvAVrMspxuQYWrELGYgOfFLIeXWGdfBTSonTrYWyNc8~7g-SP~Vq1opu54zTYXPUcHlbbY-g9x22rpx6k4mJpQTFbOJANijvNhG2YBSty9hnOqYXIv04e19BImIAr9Po2K7aplgZ7EUpSaUcILMe3reBfoJdZEWvhKx~xAoCTtgZI2R4w3I5ouncuy5k7if08HGmABUZ4laB7Vfm35XkTJLFRh9jhPsnK1HAzVUTZsU9Tss88x3wjEk4gb88-xr1Ddm-a9ETspdlRm7JSWe5NQi8NBtFUjsw__&Key-Pair-Id=K3RI8219ESW2NK) format("woff2"), url(https://fonts-pw.pixieset.com/fonts/izmir/i4.woff?Expires=1784271610&Signature=PirpvJRiXPmaqCkTi4Xcc3-4lOMZH1fbMWvhBF3wiP0JDO8cTHolUmUvXOkheVOVD0FMJhCUXFlZcsmuGIoLO7GpsVDg~5Pgkmdkeo8rtOrsZsUkBvmLX8-n-n3-vro0JFng8XuJUnBCQorCP3bnoAkwtl-OkJs7GY9dSZpgXWt2MxUy4FQUozPfZ6txwmyBkMQ3sf4bqb1lq2rPU0yUJL5MyOof1cb4al7Icnq~J2~G5vcVfSJJerTPuYenKfQdM6SIjGZcMwS8b7UJzhTKR8LBWx6s~xkA3feTn3zmlXiubU65RVxwBPF0jSrSKI3VhXaXFYdMW4fTpcVyPz3HEQ__&Key-Pair-Id=K3RI8219ESW2NK) format("woff");
+}
+@font-face {
+    font-family: "Izmir";
+    font-weight: 500;
+    font-style: normal;
+    font-display: auto;
+    src: url(https://fonts-pw.pixieset.com/fonts/izmir/n5.woff2?Expires=1784271610&Signature=HYS5L9bgY2rdiuXtFZ-n~QPpSJqcbCKSiozHEPfgo4v2HzqMt5jvxgK~knpuZSa7s8P2hnUpt~U1SwQ~oi8ETF780SfwcdHT3tG567tght1MSjGjbhgAIjCAvR-z8f17B4YaKGKwBLOJouamrkFQ6TWcmeg~~dU2D9aifxkN9WGa1hsKLWqg52PTz7rmLuCNVvUkZVjFx4DZFKUD8UCCnWfCCCF90Ywzn8pVOH~NWvC4-BGyd8OKIp0RGvJ8lvNsE27De2pUVWiRbGpBlsS945AjJUVyLmp5Z15eoATXI4AbXDmOwn4ufDIvsRfKAu4DCRY9htSOtqjaYGm2czTgYQ__&Key-Pair-Id=K3RI8219ESW2NK) format("woff2"), url(https://fonts-pw.pixieset.com/fonts/izmir/n5.woff?Expires=1784271610&Signature=D1rw5TdiRAcVAqfKiyy56rLlscDs2GTZ2nuK0FRtZ1bVRfgyLLU9FhOB4NQQyVsYX3pY7Jy18Y1xx0zqyiMODnSGPHqiTGUVrzts8D2aJjMZpcbU62zEK2HeY1MR7ArfGBG1LtrpOzDGxomyLpQkqwUKpDwVOcmwjdNJeTdughCKG7YNAYoYVi531FwwOQ9ePZgF5qHt22TNnOIg98vNURN7GJhRL0VysVFYmSRl27x07CLAh4CHyOahgalQfeBp9P72psyS~BoyejehcSbFA1FY7aecv3djenPb~Jioy6pGyLyw1JGCQ1~fYrE2M1SJs30NfSzK0eK5bk8Vb1CUIw__&Key-Pair-Id=K3RI8219ESW2NK) format("woff");
+}
+@font-face {
+    font-family: "Izmir";
+    font-weight: 500;
+    font-style: italic;
+    font-display: auto;
+    src: url(https://fonts-pw.pixieset.com/fonts/izmir/i5.woff2?Expires=1784271610&Signature=dvrKclF6~a9IkhEwwiT-ajPTtJAPVxOwE3jPc88iIpV6K7MFXd9Iipx5sCYqXDrykENEZcDsq-ZcCZ6sw7jQqQ0V3-ubMAZQEHcIAXQyJ36dlYzHZ2o2u31FtJTFmo1yM5VQao2WR5b7jrbaJMZrSmqMuM-Ng1vpztKubEL9FRKE3~7Am9kq~I3Duesp7JM40en6302XO3~0uiHMUbWHnW125UfhX0Fco9dUQx5Lk3y5qGl~d-zmDnecPzSA20WiC1iG-4~4kwRG5sjFxxD7pGP~TdPBBlHVEwPMxxB9EwZX0zVlW7IT0VLjHMtAqagrLaXXPtlfHJG3xacxcPoOnQ__&Key-Pair-Id=K3RI8219ESW2NK) format("woff2"), url(https://fonts-pw.pixieset.com/fonts/izmir/i5.woff?Expires=1784271610&Signature=HEI0aKA4Uo4UkUe3r5U4sigwZH6cGoS4bSWQcJKQ7IFTSD7KWw9~Lm6eDV~OdtdQQ2cDhTTdERh3Io6Jp3hk4hHNLR13GAYoGhbWo1ZWI1sOGjpURH5T8Ls05D1QPGgQSbO3J2T8bHtRtLztBVAdlkINJGxePlpjb2y-tvEzibXMd5AeDHmOqryRr7FR4XfhpdD5klNeUDeFYe-y4KGNoFWrWCPjcKEyOs4Gf~njPThzKIdK5uQZ-4WSEy08uelLvICt3dukNepQPxf7AvS336ArdjQ75Ktm~dmAg1aYrrKV8J--~6xeXH-BweH~i9T41Na7hMaVdfXnz722r01iew__&Key-Pair-Id=K3RI8219ESW2NK) format("woff");
+}
+@font-face {
+    font-family: "Izmir";
+    font-weight: 700;
+    font-style: normal;
+    font-display: auto;
+    src: url(https://fonts-pw.pixieset.com/fonts/izmir/n7.woff2?Expires=1784271610&Signature=jSXasqeUmCMc0OWSvOkV474B6AxoTepUME-3idp-K3giRn9ssuMRzUC14slsHIW1jJ8o2CWjLqlI0JiPMbpPRiZ-DvaG9v9wIvziJnOWVv7vbSNyrTxZjKiiLUvhz1DjZWR4LYxQfF-PSn6sPGurMhc-dDlmYAi08IZVzVrDwtSZfVr~4z-NLrcqLML5KB2p0Ci0a10drR6BFV5Q0wMCWipOmP4wjsT60f6AtKBTeblu5nScmLoAPWPWThrtHXN3p8AsiZL9neg11NOQZzfiHtCi5eSUwwfPOygX9qdrJvWqb~qR~z7XbHhGsT5kh2U5Yjn3doJQ4WK3hYZ2LjXtGw__&Key-Pair-Id=K3RI8219ESW2NK) format("woff2"), url(https://fonts-pw.pixieset.com/fonts/izmir/n7.woff?Expires=1784271610&Signature=hjPGG1nyZKw0wQUtvn3tIX9v6X5knMQS21ayQbGfg7jIcgtGJO4h4yrHjENl9COkAYdbvtcagBK1a2rIT5RhdN7QFM6FfXdumVugMInet3JBSW-oaF4Kg2RoaqInEC1SkPExPwPLXl1DT0MoVoy6eunyrddhq~2y~2ycfvlJJDic5jzUk30MGBloNdcdji9saV~DRktodlu-p5iW3h-kxEOpHbaLczTkw29sNz2C5p9ct7rXa-Eib~v~q5ai1eALNdgiJkdDNfMxaAh5PNpf-HF1uAGarvMkNAWCg74WH3~MgP3l4g0-XU1FWkJljF3mAbo2I~uxZteUQXMaW0bZkw__&Key-Pair-Id=K3RI8219ESW2NK) format("woff");
+}
+@font-face {
+    font-family: "Izmir";
+    font-weight: 700;
+    font-style: italic;
+    font-display: auto;
+    src: url(https://fonts-pw.pixieset.com/fonts/izmir/i7.woff2?Expires=1784271610&Signature=kASSYTrXCFbbjgH1aiHjceXSSA6dy~3ogQDDaeATh4a81ASAOo94bEl7R01hC1ibANExT~TcWEG24ADC3CEPeM84tsIi20IZPqa65DJF6NYacv-Ephu~tLcT2JKOsIvosWtmv~~5Wfw8ORPKJr25AjagNzKtzXadYAPZkY7btVF~VxU8IhSXFHlEoe3EA0X65k7oblLFloIWIgvSFjfkZoqdA3cHgLbmCQTWIQmFQRZl9G9L979QbbdIsmyASD7FqYYip05FxX6QluDHjjDKt6jFTkhHgDr7ToBVXA1iAmo0~GstEUCMvmRWenMF-8giCU2LYHXQb3p8SVATDT0FZQ__&Key-Pair-Id=K3RI8219ESW2NK) format("woff2"), url(https://fonts-pw.pixieset.com/fonts/izmir/i7.woff?Expires=1784271610&Signature=oYfN3eN~zSkEjm0T2O17Uc3f2AgzhK1Q8JUk5zb4~gbTdAfRunldz~Ufbha2GeTtjMSpTpNVloCk4AY5KLo8kwmq9AJeldR5CuDR04KQp83S-RivZMA~LQD4wZjC6Am~lQoHNxC5QdB1p6bCpCMw67ZlWWrkYntkeOR3xDpP9uXQ3SFRoBAnORAkrwLfyeqw3wD6~361IcuegIuNK8It99GCqfwiQtF6SZ1BxX3jOYmquPrIpTZ0TYjZPSFSUF27lOcBEm~xGww9r5k-B4xWyDhPC9czxujldNc6iu5cEqPITgH1J775Ml33GJqjznIjiyJEoAkbw2yW7G0k9psSZA__&Key-Pair-Id=K3RI8219ESW2NK) format("woff");
+}
+      </style>
+      
+  <link
+    href="https://assets-pw.pixieset.com/assets/client/css/themes/flex.v-7c8c113e.css"
+    rel="stylesheet"
+  >
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <div class="card">
-      <p>LinkedIn: <a href="https://www.linkedin.com/in/bemight/" style="color:#93c5fd;">linkedin.com/in/bemight</a></p>
-      <p>Portfolio: <a href="https://bemightsecurity.mypixieset.com/" style="color:#93c5fd;">bemightsecurity.mypixieset.com</a></p>
-      <p>Email: contact.bemightsec@gmail.com</p>
-    </div>
-  </section>
+  
+      <style>
+      :root {--base-size:16px;--display-heading_font-family:'Izmir', sans-serif;--display-heading_font-weight:400;--display-heading_font-style:normal;--display-heading_font-size-small: min(3.375rem, calc(1rem + 2.64 * (var(--static-vh) / 100)));--display-heading_font-size-preview-mobile: min(3.375rem, 1rem + 17.6088px);--display-heading_font-size-preview-tablet: min(3.375rem, 1rem + 27.0336px);--display-heading_font-size: min(3.375rem, 1rem + 2.64vw);--display-heading_font-size-large: 3.375rem;--display-heading_line-height:1.3em;--display-heading_letter-spacing:0em;--display-heading_text-transform:none;--display-subtitle_font-family:'Izmir', sans-serif;--display-subtitle_font-weight:400;--display-subtitle_font-style:normal;--display-subtitle_font-size-small: min(1rem, calc(1rem + 0 * (var(--static-vh) / 100)));--display-subtitle_font-size-preview-mobile: min(1rem, 1rem + 0px);--display-subtitle_font-size-preview-tablet: min(1rem, 1rem + 0px);--display-subtitle_font-size: min(1rem, 1rem + 0vw);--display-subtitle_font-size-large: 1rem;--display-subtitle_line-height:1.63em;--display-subtitle_letter-spacing:0.19em;--display-subtitle_text-transform:uppercase;--heading-1_font-family:'Izmir', sans-serif;--heading-1_font-weight:400;--heading-1_font-style:normal;--heading-1_font-size-small: min(2.375rem, calc(1rem + 1.53 * (var(--static-vh) / 100)));--heading-1_font-size-preview-mobile: min(2.375rem, 1rem + 10.2051px);--heading-1_font-size-preview-tablet: min(2.375rem, 1rem + 15.6672px);--heading-1_font-size: min(2.375rem, 1rem + 1.53vw);--heading-1_font-size-large: 2.375rem;--heading-1_line-height:1.5em;--heading-1_letter-spacing:-0.02em;--heading-1_text-transform:none;--heading-2_font-family:'Izmir', sans-serif;--heading-2_font-weight:400;--heading-2_font-style:normal;--heading-2_font-size-small: min(1.75rem, calc(1rem + 0.83 * (var(--static-vh) / 100)));--heading-2_font-size-preview-mobile: min(1.75rem, 1rem + 5.5361px);--heading-2_font-size-preview-tablet: min(1.75rem, 1rem + 8.4992px);--heading-2_font-size: min(1.75rem, 1rem + 0.83vw);--heading-2_font-size-large: 1.75rem;--heading-2_line-height:1.5em;--heading-2_letter-spacing:0em;--heading-2_text-transform:none;--heading-3_font-family:'Izmir', sans-serif;--heading-3_font-weight:400;--heading-3_font-style:normal;--heading-3_font-size-small: min(1.5rem, calc(1rem + 0.56 * (var(--static-vh) / 100)));--heading-3_font-size-preview-mobile: min(1.5rem, 1rem + 3.7352px);--heading-3_font-size-preview-tablet: min(1.5rem, 1rem + 5.7344px);--heading-3_font-size: min(1.5rem, 1rem + 0.56vw);--heading-3_font-size-large: 1.5rem;--heading-3_line-height:1.5em;--heading-3_letter-spacing:0em;--heading-3_text-transform:none;--heading-4_font-family:'Izmir', sans-serif;--heading-4_font-weight:400;--heading-4_font-style:normal;--heading-4_font-size-small: min(1.125rem, calc(1rem + 0.14 * (var(--static-vh) / 100)));--heading-4_font-size-preview-mobile: min(1.125rem, 1rem + 0.9338px);--heading-4_font-size-preview-tablet: min(1.125rem, 1rem + 1.4336px);--heading-4_font-size: min(1.125rem, 1rem + 0.14vw);--heading-4_font-size-large: 1.125rem;--heading-4_line-height:1.4em;--heading-4_letter-spacing:0.17em;--heading-4_text-transform:uppercase;--heading-5_font-family:'Izmir', sans-serif;--heading-5_font-weight:400;--heading-5_font-style:normal;--heading-5_font-size-small: min(0.875rem, calc(1rem + -0.14 * (var(--static-vh) / 100)));--heading-5_font-size-preview-mobile: min(0.875rem, 1rem + -0.9338px);--heading-5_font-size-preview-tablet: min(0.875rem, 1rem + -1.4336px);--heading-5_font-size: min(0.875rem, 1rem + -0.14vw);--heading-5_font-size-large: 0.875rem;--heading-5_line-height:1.6em;--heading-5_letter-spacing:0.2em;--heading-5_text-transform:uppercase;--heading-6_font-family:'Izmir', sans-serif;--heading-6_font-weight:400;--heading-6_font-style:normal;--heading-6_font-size-small: min(0.75rem, calc(1rem + -0.28 * (var(--static-vh) / 100)));--heading-6_font-size-preview-mobile: min(0.75rem, 1rem + -1.8676px);--heading-6_font-size-preview-tablet: min(0.75rem, 1rem + -2.8672px);--heading-6_font-size: min(0.75rem, 1rem + -0.28vw);--heading-6_font-size-large: 0.75rem;--heading-6_line-height:1.5em;--heading-6_letter-spacing:0.25em;--heading-6_text-transform:uppercase;--paragraph-1_font-family:'Izmir', sans-serif;--paragraph-1_font-weight:400;--paragraph-1_font-style:normal;--paragraph-1_font-size-small: min(1.125rem, calc(1rem + 0.14 * (var(--static-vh) / 100)));--paragraph-1_font-size-preview-mobile: min(1.125rem, 1rem + 0.9338px);--paragraph-1_font-size-preview-tablet: min(1.125rem, 1rem + 1.4336px);--paragraph-1_font-size: min(1.125rem, 1rem + 0.14vw);--paragraph-1_font-size-large: 1.125rem;--paragraph-1_line-height:1.78em;--paragraph-1_letter-spacing:0em;--paragraph-1_text-transform:none;--paragraph-2_font-family:'Izmir', sans-serif;--paragraph-2_font-weight:400;--paragraph-2_font-style:normal;--paragraph-2_font-size-small: min(0.9375rem, calc(1rem + -0.07 * (var(--static-vh) / 100)));--paragraph-2_font-size-preview-mobile: min(0.9375rem, 1rem + -0.4669px);--paragraph-2_font-size-preview-tablet: min(0.9375rem, 1rem + -0.7168px);--paragraph-2_font-size: min(0.9375rem, 1rem + -0.07vw);--paragraph-2_font-size-large: 0.9375rem;--paragraph-2_line-height:2em;--paragraph-2_letter-spacing:0em;--paragraph-2_text-transform:none;--paragraph-3_font-family:'Izmir', sans-serif;--paragraph-3_font-weight:400;--paragraph-3_font-style:normal;--paragraph-3_font-size-small: min(0.75rem, calc(1rem + -0.28 * (var(--static-vh) / 100)));--paragraph-3_font-size-preview-mobile: min(0.75rem, 1rem + -1.8676px);--paragraph-3_font-size-preview-tablet: min(0.75rem, 1rem + -2.8672px);--paragraph-3_font-size: min(0.75rem, 1rem + -0.28vw);--paragraph-3_font-size-large: 0.75rem;--paragraph-3_line-height:1.8em;--paragraph-3_letter-spacing:0em;--paragraph-3_text-transform:none;--site-title_font-family:'Izmir', sans-serif;--site-title_font-weight:500;--site-title_font-style:normal;--site-title_font-size-small: min(1.125rem, calc(1rem + 0.14 * (var(--static-vh) / 100)));--site-title_font-size-preview-mobile: min(1.125rem, 1rem + 0.9338px);--site-title_font-size-preview-tablet: min(1.125rem, 1rem + 1.4336px);--site-title_font-size: min(1.125rem, 1rem + 0.14vw);--site-title_font-size-large: 1.125rem;--site-title_line-height:1.63em;--site-title_letter-spacing:0.19em;--site-title_text-transform:uppercase;--navigation_font-family:'Izmir', sans-serif;--navigation_font-weight:400;--navigation_font-style:normal;--navigation_font-size-small: min(0.8125rem, calc(1rem + -0.21 * (var(--static-vh) / 100)));--navigation_font-size-preview-mobile: min(0.8125rem, 1rem + -1.4007px);--navigation_font-size-preview-tablet: min(0.8125rem, 1rem + -2.1504px);--navigation_font-size: min(0.8125rem, 1rem + -0.21vw);--navigation_font-size-large: 0.8125rem;--navigation_line-height:1.26em;--navigation_letter-spacing:0.2em;--navigation_text-transform:uppercase;--sub-navigation_font-family:'Izmir', sans-serif;--sub-navigation_font-weight:400;--sub-navigation_font-style:normal;--sub-navigation_font-size-small: min(0.85714285714286rem, calc(1rem + -0.16 * (var(--static-vh) / 100)));--sub-navigation_font-size-preview-mobile: min(0.85714285714286rem, 1rem + -1.0672px);--sub-navigation_font-size-preview-tablet: min(0.85714285714286rem, 1rem + -1.6384px);--sub-navigation_font-size: min(0.85714285714286rem, 1rem + -0.16vw);--sub-navigation_font-size-large: 0.85714285714286rem;--sub-navigation_line-height:1.5em;--sub-navigation_letter-spacing:0em;--sub-navigation_text-transform:none;--overlay-navigation_font-family:'Izmir', sans-serif;--overlay-navigation_font-weight:400;--overlay-navigation_font-style:normal;--overlay-navigation_font-size-small: min(2rem, calc(1rem + 1.11 * (var(--static-vh) / 100)));--overlay-navigation_font-size-preview-mobile: min(2rem, 1rem + 7.4037px);--overlay-navigation_font-size-preview-tablet: min(2rem, 1rem + 11.3664px);--overlay-navigation_font-size: min(2rem, 1rem + 1.11vw);--overlay-navigation_font-size-large: 2rem;--overlay-navigation_line-height:1.5em;--overlay-navigation_letter-spacing:0em;--overlay-navigation_text-transform:none;--overlay-sub-navigation_font-family:'Izmir', sans-serif;--overlay-sub-navigation_font-weight:400;--overlay-sub-navigation_font-style:normal;--overlay-sub-navigation_font-size-small: min(1.125rem, calc(1rem + 0.14 * (var(--static-vh) / 100)));--overlay-sub-navigation_font-size-preview-mobile: min(1.125rem, 1rem + 0.9338px);--overlay-sub-navigation_font-size-preview-tablet: min(1.125rem, 1rem + 1.4336px);--overlay-sub-navigation_font-size: min(1.125rem, 1rem + 0.14vw);--overlay-sub-navigation_font-size-large: 1.125rem;--overlay-sub-navigation_line-height:1.78em;--overlay-sub-navigation_letter-spacing:0em;--overlay-sub-navigation_text-transform:none;--button_font-family:'Izmir', sans-serif;--button_font-weight:400;--button_font-style:normal;--button_font-size-small: min(0.875rem, calc(1rem + -0.14 * (var(--static-vh) / 100)));--button_font-size-preview-mobile: min(0.875rem, 1rem + -0.9338px);--button_font-size-preview-tablet: min(0.875rem, 1rem + -1.4336px);--button_font-size: min(0.875rem, 1rem + -0.14vw);--button_font-size-large: 0.875rem;--button_line-height:1.6em;--button_letter-spacing:0.2em;--button_text-transform:uppercase;--form-label_font-family:'Izmir', sans-serif;--form-label_font-weight:400;--form-label_font-style:normal;--form-label_font-size-small: min(0.75rem, calc(1rem + -0.28 * (var(--static-vh) / 100)));--form-label_font-size-preview-mobile: min(0.75rem, 1rem + -1.8676px);--form-label_font-size-preview-tablet: min(0.75rem, 1rem + -2.8672px);--form-label_font-size: min(0.75rem, 1rem + -0.28vw);--form-label_font-size-large: 0.75rem;--form-label_line-height:1.5em;--form-label_letter-spacing:0.25em;--form-label_text-transform:uppercase;--pullquote_font-family:'Izmir', sans-serif;--pullquote_font-weight:400;--pullquote_font-style:normal;--pullquote_font-size-small: min(1.875rem, calc(1rem + 0.97 * (var(--static-vh) / 100)));--pullquote_font-size-preview-mobile: min(1.875rem, 1rem + 6.4699px);--pullquote_font-size-preview-tablet: min(1.875rem, 1rem + 9.9328px);--pullquote_font-size: min(1.875rem, 1rem + 0.97vw);--pullquote_font-size-large: 1.875rem;--pullquote_line-height:1.4em;--pullquote_letter-spacing:-0.02em;--pullquote_text-transform:none;--global-block-padding:5.3vmax;--horizontal-side-padding:2.38vw;--padding-scaling-xs:0.75;--padding-scaling-sm:1.00;--padding-scaling-md:1.00;--padding-scaling-lg:1.00;--max-page-width:1400px;--button-width:2.5rem;--button-height:0.6875rem;}
+    </style>
+    
+    <style id="js-ac-css-variables">:root {--primary-background:#FFFFFF;--primary-headings:#000000;--primary-paragraphs:#4C4C4C;--primary-details:#CDCDCD;--accent-background:#F2F2F2;--accent-headings:#000000;--accent-paragraphs:#4C4C4C;--accent-details:#C0C0C0;--button-background:#4C4C4C;--button-text:#FFFFFF;--button-background-hover:#000000;--button-text-hover:#FFFFFF;}</style>
+<style id="js-ac-css-definitions"></style>
+    
+    
+    
+    <script>
+	window.dataLayer = window.dataLayer || [];
 
-  <footer>
-    <p>© 2026 BeMight Security</p>
-  </footer>
-</body>
-</html>
+	function gtag() {
+		dataLayer.push(arguments);
+	}
+</script>
+
+
+<script
+	class='cookie-tracking-code'
+	defer
+	data-src="https://www.googletagmanager.com/gtag/js?id="
+></script>
+<script>
+	gtag('js', new Date());
+	gtag('config', '');
+</script>
+
+    
+    <script defer>
+	function initFacebookPixel() {
+		! function(f, b, e, v, n, t, s) {
+			if (f.fbq) return;
+			n = f.fbq = function() {
+				n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+			};
+			if (!f._fbq) f._fbq = n;
+			n.push = n;
+			n.loaded = !0;
+			n.version = '2.0';
+			n.queue = [];
+			t = b.createElement(e);
+			t.async = !0;
+			t.src = v;
+			s = b.getElementsByTagName(e)[0];
+			s.parentNode.insertBefore(t, s)
+		}(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+				fbq('init', '');
+		fbq('track', 'PageView');
+	}
+
+			// Dynamic injection of the script if client clicks on accept cookie banner
+		window.document.addEventListener('acceptedCookies', () => {
+			const button = window.document.querySelector('#cookie-consent-accept-btn');
+			if (button) {
+				initFacebookPixel();
+			}
+		});
+	</script>
+
+
+    
+    
+    
+          <script>
+	var fData = {
+		view: 'client',
+		constants: {
+			isFlexTheme: true,
+		},
+		flexThemeData: {
+			placeholderImages: {"banner_1.jpg":{"name":"Banner 1","version":1731076048000,"source":"prod","thumbnailUrl":"","sizes":{"XS":"banner_1_xs.jpg","SM":"banner_1_sm.jpg","MD":"banner_1_md.jpg","LG":"banner_1_lg.jpg","XL":"banner_1_xl.jpg"}},"banner_2.jpg":{"name":"Banner 2","version":1731076085000,"source":"prod","thumbnailUrl":"","sizes":{"XS":"banner_2_xs.jpg","SM":"banner_2_sm.jpg","MD":"banner_2_md.jpg","LG":"banner_2_lg.jpg","XL":"banner_2_xl.jpg"}},"banner_3.jpg":{"name":"Banner 3","version":1731076103000,"source":"prod","thumbnailUrl":"","sizes":{"XS":"banner_3_xs.jpg","SM":"banner_3_sm.jpg","MD":"banner_3_md.jpg","LG":"banner_3_lg.jpg","XL":"banner_3_xl.jpg"}},"banner_4.jpg":{"name":"Banner 4","version":1731076111000,"source":"prod","thumbnailUrl":"","sizes":{"XS":"banner_4_xs.jpg","SM":"banner_4_sm.jpg","MD":"banner_4_md.jpg","LG":"banner_4_lg.jpg","XL":"banner_4_xl.jpg"}},"banner_5.jpg":{"name":"Banner 5","version":1731076120000,"source":"prod","thumbnailUrl":"","sizes":{"XS":"banner_5_xs.jpg","SM":"banner_5_sm.jpg","MD":"banner_5_md.jpg","LG":"banner_5_lg.jpg","XL":"banner_5_xl.jpg"}},"banner_6.jpg":{"name":"Banner 6","version":1731076132000,"source":"prod","thumbnailUrl":"","sizes":{"XS":"banner_6_xs.jpg","SM":"banner_6_sm.jpg","MD":"banner_6_md.jpg","LG":"banner_6_lg.jpg","XL":"banner_6_xl.jpg"}},"portrait_1.jpg":{"name":"Portrait 1","version":1728568319000,"source":"prod","thumbnailUrl":"","sizes":{"XS":"portrait_1_xs.jpg","SM":"portrait_1_sm.jpg","MD":"portrait_1_md.jpg","LG":"portrait_1_lg.jpg","XL":"portrait_1_xl.jpg"}},"portrait_2.jpg":{"name":"Portrait 2","version":1728568320000,"source":"prod","thumbnailUrl":"","sizes":{"XS":"portrait_2_xs.jpg","SM":"portrait_2_sm.jpg","MD":"portrait_2_md.jpg","LG":"portrait_2_lg.jpg","XL":"portrait_2_xl.jpg"}},"portrait_3.jpg":{"name":"Portrait 3","version":1728568321000,"source":"prod","thumbnailUrl":"","sizes":{"XS":"portrait_3_xs.jpg","SM":"portrait_3_sm.jpg","MD":"portrait_3_md.jpg","LG":"portrait_3_lg.jpg","XL":"portrait_3_xl.jpg"}},"portrait_4.jpg":{"name":"Portrait 4","version":1728568322000,"source":"prod","thumbnailUrl":"","sizes":{"XS":"portrait_4_xs.jpg","SM":"portrait_4_sm.jpg","MD":"portrait_4_md.jpg","LG":"portrait_4_lg.jpg","XL":"portrait_4_xl.jpg"}},"portrait_5.jpg":{"name":"Portrait 5","version":1728568323000,"source":"prod","thumbnailUrl":"","sizes":{"XS":"portrait_5_xs.jpg","SM":"portrait_5_sm.jpg","MD":"portrait_5_md.jpg","LG":"portrait_5_lg.jpg","XL":"portrait_5_xl.jpg"}},"portrait_6.jpg":{"name":"Portrait 6","version":1728568324000,"source":"prod","thumbnailUrl":"","sizes":{"XS":"portrait_6_xs.jpg","SM":"portrait_6_sm.jpg","MD":"portrait_6_md.jpg","LG":"portrait_6_lg.jpg","XL":"portrait_6_xl.jpg"}},"horizontal_1.jpg":{"name":"Horizontal  1","version":1731076143000,"source":"prod","thumbnailUrl":"","sizes":{"XS":"horizontal_1_xs.jpg","SM":"horizontal_1_sm.jpg","MD":"horizontal_1_md.jpg","LG":"horizontal_1_lg.jpg","XL":"horizontal_1_xl.jpg"}},"horizontal_2.jpg":{"name":"Horizontal 2","version":1731076152000,"source":"prod","thumbnailUrl":"","sizes":{"XS":"horizontal_2_xs.jpg","SM":"horizontal_2_sm.jpg","MD":"horizontal_2_md.jpg","LG":"horizontal_2_lg.jpg","XL":"horizontal_2_xl.jpg"}},"horizontal_3.jpg":{"name":"Horizontal 3","version":1731076158000,"source":"prod","thumbnailUrl":"","sizes":{"XS":"horizontal_3_xs.jpg","SM":"horizontal_3_sm.jpg","MD":"horizontal_3_md.jpg","LG":"horizontal_3_lg.jpg","XL":"horizontal_3_xl.jpg"}},"horizontal_4.jpg":{"name":"Horizontal 4","version":1731076168000,"source":"prod","thumbnailUrl":"","sizes":{"XS":"horizontal_4_xs.jpg","SM":"horizontal_4_sm.jpg","MD":"horizontal_4_md.jpg","LG":"horizontal_4_lg.jpg","XL":"horizontal_4_xl.jpg"}},"horizontal_5.jpg":{"name":"Horizontal 5","version":1731076177000,"source":"prod","thumbnailUrl":"","sizes":{"XS":"horizontal_5_xs.jpg","SM":"horizontal_5_sm.jpg","MD":"horizontal_5_md.jpg","LG":"horizontal_5_lg.jpg","XL":"horizontal_5_xl.jpg"}},"horizontal_6.jpg":{"name":"Horizontal 6","version":1731076206000,"source":"prod","thumbnailUrl":"","sizes":{"XS":"horizontal_6_xs.jpg","SM":"horizontal_6_sm.jpg","MD":"horizontal_6_md.jpg","LG":"horizontal_6_lg.jpg","XL":"horizontal_6_xl.jpg"}},"horizontal_7.jpg":{"name":"Horizontal 7","version":1731076214000,"source":"prod","thumbnailUrl":"","sizes":{"XS":"horizontal_7_xs.jpg","SM":"horizontal_7_sm.jpg","MD":"horizontal_7_md.jpg","LG":"horizontal_7_lg.jpg","XL":"horizontal_7_xl.jpg"}},"horizontal_8.jpg":{"name":"Horizontal 8","version":1731076235000,"source":"prod","thumbnailUrl":"","sizes":{"XS":"horizontal_8_xs.jpg","SM":"horizontal_8_sm.jpg","MD":"horizontal_8_md.jpg","LG":"horizontal_8_lg.jpg","XL":"horizontal_8_xl.jpg"}},"horizontal_9.jpg":{"name":"Horizontal 9","version":1731076240000,"source":"prod","thumbnailUrl":"","sizes":{"XS":"horizontal_9_xs.jpg","SM":"horizontal_9_sm.jpg","MD":"horizontal_9_md.jpg","LG":"horizontal_9_lg.jpg","XL":"horizontal_9_xl.jpg"}},"horizontal_10.jpg":{"name":"Horizontal 10","version":1728568333000,"source":"prod","thumbnailUrl":"","sizes":{"XS":"horizontal_10_xs.jpg","SM":"horizontal_10_sm.jpg","MD":"horizontal_10_md.jpg","LG":"horizontal_10_lg.jpg","XL":"horizontal_10_xl.jpg"}},"vertical_1.jpg":{"name":"Vertical 1","version":1728568334000,"source":"prod","thumbnailUrl":"","sizes":{"XS":"vertical_1_xs.jpg","SM":"vertical_1_sm.jpg","MD":"vertical_1_md.jpg","LG":"vertical_1_lg.jpg","XL":"vertical_1_xl.jpg"}},"vertical_2.jpg":{"name":"Vertical 2","version":1728568335000,"source":"prod","thumbnailUrl":"","sizes":{"XS":"vertical_2_xs.jpg","SM":"vertical_2_sm.jpg","MD":"vertical_2_md.jpg","LG":"vertical_2_lg.jpg","XL":"vertical_2_xl.jpg"}},"vertical_3.jpg":{"name":"Vertical 3","version":1728568336000,"source":"prod","thumbnailUrl":"","sizes":{"XS":"vertical_3_xs.jpg","SM":"vertical_3_sm.jpg","MD":"vertical_3_md.jpg","LG":"vertical_3_lg.jpg","XL":"vertical_3_xl.jpg"}},"vertical_4.jpg":{"name":"Vertical 4","version":1728568337000,"source":"prod","thumbnailUrl":"","sizes":{"XS":"vertical_4_xs.jpg","SM":"vertical_4_sm.jpg","MD":"vertical_4_md.jpg","LG":"vertical_4_lg.jpg","XL":"vertical_4_xl.jpg"}},"vertical_5.jpg":{"name":"Vertical 5","version":1728568338000,"source":"prod","thumbnailUrl":"","sizes":{"XS":"vertical_5_xs.jpg","SM":"vertical_5_sm.jpg","MD":"vertical_5_md.jpg","LG":"vertical_5_lg.jpg","XL":"vertical_5_xl.jpg"}},"vertical_6.jpg":{"name":"Vertical 6","version":1728568339000,"source":"prod","thumbnailUrl":"","sizes":{"XS":"vertical_6_xs.jpg","SM":"vertical_6_sm.jpg","MD":"vertical_6_md.jpg","LG":"vertical_6_lg.jpg","XL":"vertical_6_xl.jpg"}},"vertical_7.jpg":{"name":"Vertical 7","version":1728568340000,"source":"prod","thumbnailUrl":"","sizes":{"XS":"vertical_7_xs.jpg","SM":"vertical_7_sm.jpg","MD":"vertical_7_md.jpg","LG":"vertical_7_lg.jpg","XL":"vertical_7_xl.jpg"}},"vertical_8.jpg":{"name":"Vertical 8","version":1728568341000,"source":"prod","thumbnailUrl":"","sizes":{"XS":"vertical_8_xs.jpg","SM":"vertical_8_sm.jpg","MD":"vertical_8_md.jpg","LG":"vertical_8_lg.jpg","XL":"vertical_8_xl.jpg"}},"vertical_9.jpg":{"name":"Vertical 9","version":1728568342000,"source":"prod","thumbnailUrl":"","sizes":{"XS":"vertical_9_xs.jpg","SM":"vertical_9_sm.jpg","MD":"vertical_9_md.jpg","LG":"vertical_9_lg.jpg","XL":"vertical_9_xl.jpg"}},"vertical_10.jpg":{"name":"Vertical 10","version":1728568343000,"source":"prod","thumbnailUrl":"","sizes":{"XS":"vertical_10_xs.jpg","SM":"vertical_10_sm.jpg","MD":"vertical_10_md.jpg","LG":"vertical_10_lg.jpg","XL":"vertical_10_xl.jpg"}},"logo_1.png":{"name":"Logo 1","version":1728568343000,"source":"prod","thumbnailUrl":"","sizes":{"XS":"logo_1_xs.png","SM":"logo_1_sm.png","MD":"logo_1_md.png","LG":"logo_1_lg.png","XL":"logo_1_xl.png"}},"logo_2.png":{"name":"Logo 2","version":1728568344000,"source":"prod","thumbnailUrl":"","sizes":{"XS":"logo_2_xs.png","SM":"logo_2_sm.png","MD":"logo_2_md.png","LG":"logo_2_lg.png","XL":"logo_2_xl.png"}},"logo_3.png":{"name":"Logo 3","version":1728568345000,"source":"prod","thumbnailUrl":"","sizes":{"XS":"logo_3_xs.png","SM":"logo_3_sm.png","MD":"logo_3_md.png","LG":"logo_3_lg.png","XL":"logo_3_xl.png"}},"logo_4.png":{"name":"Logo 4","version":1728568345000,"source":"prod","thumbnailUrl":"","sizes":{"XS":"logo_4_xs.png","SM":"logo_4_sm.png","MD":"logo_4_md.png","LG":"logo_4_lg.png","XL":"logo_4_xl.png"}},"logo_5.png":{"name":"Logo 5","version":1728568346000,"source":"prod","thumbnailUrl":"","sizes":{"XS":"logo_5_xs.png","SM":"logo_5_sm.png","MD":"logo_5_md.png","LG":"logo_5_lg.png","XL":"logo_5_xl.png"}},"logo_6.png":{"name":"Logo 6","version":1728568346000,"source":"prod","thumbnailUrl":"","sizes":{"XS":"logo_6_xs.png","SM":"logo_6_sm.png","MD":"logo_6_md.png","LG":"logo_6_lg.png","XL":"logo_6_xl.png"}},"logo_7.png":{"name":"Logo 7","version":"1","source":null,"thumbnailUrl":"","sizes":{"XS":"logo_7_xs.png","SM":"logo_7_sm.png","MD":"logo_7_md.png","LG":"logo_7_lg.png","XL":"logo_7_xl.png"}},"logo_8.png":{"name":"Logo 8","version":"1","source":null,"thumbnailUrl":"","sizes":{"XS":"logo_8_xs.png","SM":"logo_8_sm.png","MD":"logo_8_md.png","LG":"logo_8_lg.png","XL":"logo_8_xl.png"}},"gallery_1.jpg":{"name":"Gallery 1","version":1728568347000,"source":"prod","thumbnailUrl":"","sizes":{"XS":"gallery_1_xs.jpg","SM":"gallery_1_sm.jpg","MD":"gallery_1_md.jpg","LG":"gallery_1_lg.jpg","XL":"gallery_1_xl.jpg"}},"gallery_2.jpg":{"name":"Gallery 2","version":1728568348000,"source":"prod","thumbnailUrl":"","sizes":{"XS":"gallery_2_xs.jpg","SM":"gallery_2_sm.jpg","MD":"gallery_2_md.jpg","LG":"gallery_2_lg.jpg","XL":"gallery_2_xl.jpg"}},"gallery_3.jpg":{"name":"Gallery 3","version":1728568349000,"source":"prod","thumbnailUrl":"","sizes":{"XS":"gallery_3_xs.jpg","SM":"gallery_3_sm.jpg","MD":"gallery_3_md.jpg","LG":"gallery_3_lg.jpg","XL":"gallery_3_xl.jpg"}},"gallery_4.jpg":{"name":"Gallery 4","version":1728568350000,"source":"prod","thumbnailUrl":"","sizes":{"XS":"gallery_4_xs.jpg","SM":"gallery_4_sm.jpg","MD":"gallery_4_md.jpg","LG":"gallery_4_lg.jpg","XL":"gallery_4_xl.jpg"}},"gallery_5.jpg":{"name":"Gallery 5","version":1728568350000,"source":"prod","thumbnailUrl":"","sizes":{"XS":"gallery_5_xs.jpg","SM":"gallery_5_sm.jpg","MD":"gallery_5_md.jpg","LG":"gallery_5_lg.jpg","XL":"gallery_5_xl.jpg"}},"gallery_6.jpg":{"name":"Gallery 6","version":1728568351000,"source":"prod","thumbnailUrl":"","sizes":{"XS":"gallery_6_xs.jpg","SM":"gallery_6_sm.jpg","MD":"gallery_6_md.jpg","LG":"gallery_6_lg.jpg","XL":"gallery_6_xl.jpg"}},"gallery_7.jpg":{"name":"Gallery 7","version":1728568352000,"source":"prod","thumbnailUrl":"","sizes":{"XS":"gallery_7_xs.jpg","SM":"gallery_7_sm.jpg","MD":"gallery_7_md.jpg","LG":"gallery_7_lg.jpg","XL":"gallery_7_xl.jpg"}},"gallery_8.jpg":{"name":"Gallery 8","version":1728568353000,"source":"prod","thumbnailUrl":"","sizes":{"XS":"gallery_8_xs.jpg","SM":"gallery_8_sm.jpg","MD":"gallery_8_md.jpg","LG":"gallery_8_lg.jpg","XL":"gallery_8_xl.jpg"}},"gallery_9.jpg":{"name":"Gallery 9","version":1728568354000,"source":"prod","thumbnailUrl":"","sizes":{"XS":"gallery_9_xs.jpg","SM":"gallery_9_sm.jpg","MD":"gallery_9_md.jpg","LG":"gallery_9_lg.jpg","XL":"gallery_9_xl.jpg"}},"gallery_10.jpg":{"name":"Gallery 10","version":1728568355000,"source":"prod","thumbnailUrl":"","sizes":{"XS":"gallery_10_xs.jpg","SM":"gallery_10_sm.jpg","MD":"gallery_10_md.jpg","LG":"gallery_10_lg.jpg","XL":"gallery_10_xl.jpg"}},"gallery_11.jpg":{"name":"Gallery 11","version":1728568356000,"source":"prod","thumbnailUrl":"","sizes":{"XS":"gallery_11_xs.jpg","SM":"gallery_11_sm.jpg","MD":"gallery_11_md.jpg","LG":"gallery_11_lg.jpg","XL":"gallery_11_xl.jpg"}},"gallery_12.jpg":{"name":"Gallery 12","version":1728568357000,"source":"prod","thumbnailUrl":"","sizes":{"XS":"gallery_12_xs.jpg","SM":"gallery_12_sm.jpg","MD":"gallery_12_md.jpg","LG":"gallery_12_lg.jpg","XL":"gallery_12_xl.jpg"}},"gallery_13.jpg":{"name":"Gallery 13","version":1728568358000,"source":"prod","thumbnailUrl":"","sizes":{"XS":"gallery_13_xs.jpg","SM":"gallery_13_sm.jpg","MD":"gallery_13_md.jpg","LG":"gallery_13_lg.jpg","XL":"gallery_13_xl.jpg"}},"gallery_14.jpg":{"name":"Gallery 14","version":1728568359000,"source":"prod","thumbnailUrl":"","sizes":{"XS":"gallery_14_xs.jpg","SM":"gallery_14_sm.jpg","MD":"gallery_14_md.jpg","LG":"gallery_14_lg.jpg","XL":"gallery_14_xl.jpg"}},"gallery_15.jpg":{"name":"Gallery 15","version":"1","source":null,"thumbnailUrl":"","sizes":{"XS":"gallery_15_xs.jpg","SM":"gallery_15_sm.jpg","MD":"gallery_15_md.jpg","LG":"gallery_15_lg.jpg","XL":"gallery_15_xl.jpg"}},"gallery_16.jpg":{"name":"Gallery 16","version":"1","source":null,"thumbnailUrl":"","sizes":{"XS":"gallery_16_xs.jpg","SM":"gallery_16_sm.jpg","MD":"gallery_16_md.jpg","LG":"gallery_16_lg.jpg","XL":"gallery_16_xl.jpg"}},"gallery_17.jpg":{"name":"Gallery 17","version":"1","source":null,"thumbnailUrl":"","sizes":{"XS":"gallery_17_xs.jpg","SM":"gallery_17_sm.jpg","MD":"gallery_17_md.jpg","LG":"gallery_17_lg.jpg","XL":"gallery_17_xl.jpg"}},"gallery_18.jpg":{"name":"Gallery 18","version":"1","source":null,"thumbnailUrl":"","sizes":{"XS":"gallery_18_xs.jpg","SM":"gallery_18_sm.jpg","MD":"gallery_18_md.jpg","LG":"gallery_18_lg.jpg","XL":"gallery_18_xl.jpg"}},"gallery_19.jpg":{"name":"Gallery 19","version":"1","source":null,"thumbnailUrl":"","sizes":{"XS":"gallery_19_xs.jpg","SM":"gallery_19_sm.jpg","MD":"gallery_19_md.jpg","LG":"gallery_19_lg.jpg","XL":"gallery_19_xl.jpg"}},"gallery_20.jpg":{"name":"Gallery 20","version":"1","source":null,"thumbnailUrl":"","sizes":{"XS":"gallery_20_xs.jpg","SM":"gallery_20_sm.jpg","MD":"gallery_20_md.jpg","LG":"gallery_20_lg.jpg","XL":"gallery_20_xl.jpg"}}}		},
+		initialData: {
+			app: {
+				gmpk: 'AIzaSyCmeQ82q8DPgTorDfyToDngKGCV2J1Paas',
+				sUuid: 'gGdY8J',
+				contactUuid: '2MPVW1',
+				ppUuid: 'ljKqp3',
+				psUuid: 'NVd8wL',
+				resourceDomain: '//assets-pw.pixieset.com/flex/flex-themes',
+				placeHolderImage: 'https://assets-pw.pixieset.com/images/placeholder.png',
+				themeKey: 'skye_flex',
+				s3ImageStaticHost: '//images-pw.pixieset.com',
+				s3AssetsStaticHost: '//assets-pw.pixieset.com',
+				environment: 'production',
+			},
+		},
+		userMedia: {},
+		iIC: '',
+	}
+</script>
+
+<link rel="preload" as="style" href="https://assets-pw.pixieset.com/assets/flex-app/flex-clientStyles-CH8wpqD8.css" /><link rel="stylesheet" href="https://assets-pw.pixieset.com/assets/flex-app/flex-clientStyles-CH8wpqD8.css" />
+    
+  </head>
+
+  <body class="theme-flex theme-skye-flex photo--protected client-side pixieset-branding-enabled">
+    <div id="js-flex-builder"></div>
+    
+    <div class="page-container button_height-11 button_size-1 button_style-5 button_width-40 font_theme-0 menu_style-2 sticky_header-0">
+      <div
+        class="theme-container"
+        data-animation-type="none"
+	data-animation-duration="1"
+         style="--arrows-style: slideshow-controls-arrow-2; --site-arrows-size: 35px;"       >
+          <div
+  role="banner"
+  data-section="header"
+  class="absolute-header">
+      <div
+		class="block-container fb-block-outer-wrap js-fb-block-outer-wrap block-container-type--header"		id="block-container-77xVjr"
+		data-idhash="bl-3b57e6a3d72b2d"
+		data-blockkey="header-style-1-lxsvwa5y"
+	>
+		<div
+			class="block-container__block"
+								>
+			<div class="fb-block-outer js-fb-block-outer">
+									<div
+						class="fb-block-padding-wrap fb-block-padding-wrap--boxed"
+						style="background-color: transparent;"
+					>
+						
+						<div class="fb-block-subpadding-wrap">
+																													<div class="fb-block-wrap">
+	<div class="fb-block js-fb-block fb-block--77xVjr fb-block--gridWithGaps">
+		<div class="fb-block__elements fb-block__header-elements fb-block--header-style-1 fb-block--white-override">
+
+			<div class="fb-block__block-sizer"></div>
+			
+							<div class="fb-element fb-element--logo fb-element--mvaligned-center fb-element--el-320595afc4dfae fb-element--m-lowest fb-element--m-highest" data-uuid="QWLmlY">
+    <div class="fb-element__content">
+        <div class="fb-element-type-logo fb-element-type-logo--primary logo-content--image valign-d-center valign-t-center valign-m-center halign-d-left halign-t-left halign-m-left">
+	<a href="/">
+					<img
+				class="site-logo--img"
+				src="https://images-pw.pixieset.com/profile/7608121/2324b21870f8fce8d73d6b2c5eba1d81982087dd8cc211aabd6d66c7ace1acbd.png"
+				alt="site-logo"
+				style="--logo-height: 110px; --logo-height-mobile: 80px;"
+			>
+			</a>
+</div>
+    </div>
+</div>
+							<div class="fb-element fb-element--menu fb-element--mvaligned-center fb-element--el-7c3f1d873193c0 fb-element--m-lowest fb-element--m-highest" data-uuid="aDaJLM">
+    <div class="fb-element__content">
+        <div
+	class="fb-element-type-menu fb-element-type-menu--list header-menu valign-d-center valign-t-center valign-m-center halign-d-right halign-t-right halign-m-right"	id="header-menu"
+	style="--column-gap: 3.125rem; --column-gap--tablet: 1.25rem; --column-gap--mobile: 1.875rem;"
+	data-encoded-props="{&quot;menuType_desktop&quot;:&quot;list&quot;,&quot;menuType_tablet&quot;:&quot;button&quot;,&quot;menuType_mobile&quot;:&quot;button&quot;,&quot;menuContent_desktop&quot;:&quot;full&quot;,&quot;menuContent_tablet&quot;:&quot;full&quot;,&quot;menuContent_mobile&quot;:&quot;full&quot;,&quot;displayButtonInPopup_desktop&quot;:false,&quot;displayButtonInPopup_tablet&quot;:false,&quot;displayButtonInPopup_mobile&quot;:false}">
+	<div
+		class="navigation__wrapper"
+		style="--middle-index: 2"
+	>
+		<nav
+  class="navigation"
+  role="navigation"
+  aria-labelledby="headermenu"
+>
+  <ul class="navigation__items">
+          
+      <li class="navigation__item">
+        <div class="navigation__link-group">
+          <a
+            class="navigation__link js-menu-link"             href="/"                                   >
+            <span class='page-name'>
+              Home
+            </span>
+                      </a>
+                  </div>
+              </li>
+          
+      <li class="navigation__item">
+        <div class="navigation__link-group">
+          <a
+            class="navigation__link js-menu-link"             href="/about/"                                   >
+            <span class='page-name'>
+              About
+            </span>
+                      </a>
+                  </div>
+              </li>
+          
+      <li class="navigation__item">
+        <div class="navigation__link-group">
+          <a
+            class="navigation__link js-menu-link"             href="/portfolio/"                                   >
+            <span class='page-name'>
+              Portfolio
+            </span>
+                      </a>
+                  </div>
+              </li>
+          
+      <li class="navigation__item">
+        <div class="navigation__link-group">
+          <a
+            class="navigation__link js-menu-link"             href="/contact/"                                   >
+            <span class='page-name'>
+              Contact
+            </span>
+                      </a>
+                  </div>
+              </li>
+    
+    
+  </ul>
+</nav>
+	</div>
+
+	<div
+		class="fb-element-type-menu__expand-menu nav-toggle nav-toggle--style-1"		style="display: none;"
+		role="button"
+		tabindex="-1"
+		aria-expanded="false"
+		aria-controls="header-menu"
+		onkeydown="if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); this.click(); }"
+	>
+		<div class="nav-toggle__line"></div>
+	</div>
+
+</div>
+    </div>
+</div>
+			
+		</div>
+	</div>
+</div>
+																																			
+
+						</div>
+					</div>
+							</div>
+		</div>
+	</div>
+			  </div>
+
+
+<div
+	role="main"
+	class="main-body"
+	data-section="content"
+	id="body-section-13873709"
+>
+	<div
+		class="block-container fb-block-outer-wrap js-fb-block-outer-wrap block-container-type--slideshow"		id="block-container-9vwnQr"
+		data-idhash="bl-cd389ff25ee831"
+		data-blockkey="flex--slider_banner_100-block--skye_flex"
+	>
+		<div
+			class="block-container__block"
+								>
+			<div class="fb-block-outer js-fb-block-outer">
+									<div
+						class="fb-block-padding-wrap fb-block-padding-wrap--boxed"
+						style=""
+					>
+						
+						<div class="fb-block-subpadding-wrap">
+																						<div
+	class="fb-block-wrap fb-block-wrap--slideshow swiper"
+	data-slideshow="{&quot;autoplay&quot;:false,&quot;autoplayDuration&quot;:2,&quot;animationType&quot;:&quot;fadeIn&quot;}"
+>
+	
+		
+	<div class="fb-block js-fb-block fb-block--9vwnQr fb-block--gridWithGaps swiper-wrapper">
+					<div class="fb-block__elements swiper-slide">
+				
+																				<div class="fb-element fb-element--image fb-element--mvaligned-center fb-element--el-9dbec5bf76fec6 fb-element--m-lowest fb-element--m-highest fb-element--full-width" data-uuid="30Rqj3">
+    <div class="fb-element__content">
+        <div
+	class="fb-element-type-image--anchor"	
+>
+	<div
+		class="fb-element-type-image fb-element-type-image--use-overlay fb-radius"
+		style="
+		--border-width:1px;
+		--border-color: var(--accent-background);
+		--overlay-color: #000000;
+		--overlay-opacity: 0.32;
+		--border-radius: 0px;
+	"
+	>
+		<div class="valign-d-center valign-t-center valign-m-center halign-d-center halign-t-center halign-m-center fb-element-type-image__img-wrapper--fill fb-element-type-image__img-wrapper">
+			<div class='fb-element-type-image__overlay fb-radius'></div>
+			<img
+				class="fb-element-type-image__img-wrapper__img fb-radius"								src="//images-pw.pixieset.com/site/gGdY8J/b5EPW0/BeMight-57760d04-1500.jpg" srcset="//images-pw.pixieset.com/site/gGdY8J/b5EPW0/BeMight-fbce58ec-300.jpg 300w, //images-pw.pixieset.com/site/gGdY8J/b5EPW0/BeMight-003baac0-500.jpg 500w, //images-pw.pixieset.com/site/gGdY8J/b5EPW0/BeMight-612bb39d-1000.jpg 1000w, //images-pw.pixieset.com/site/gGdY8J/b5EPW0/BeMight-57760d04-1500.jpg 1500w, //images-pw.pixieset.com/site/gGdY8J/b5EPW0/BeMight-67d9eb89-2500.jpg 2500w" alt="" data-width="720" data-height="1009" sizes="(min-width: 992px) calc(26 * 100vw / 24), (min-width: 768px) calc(26 * 100vw / 24), 100vw"
+				style="
+				object-position:53.41881385216346% 0%;
+				 object-fit:cover; 				opacity:1;
+		"
+			>
+		</div>
+	</div>
+	</div>
+    </div>
+</div>
+																									<div class="fb-element fb-element--text fb-element--el-40e810b1f66c3e" data-uuid="8Mkq01">
+    <div class="fb-element__content">
+        <div
+	class="fb-element-type-text element-text valign-d-top valign-t-top valign-m-bottom"
+	style="--border-radius: 0;
+		border: none;
+		--background-color: inherit;
+		--opacity: 1;
+		;"
+>
+	<div class="text__text">
+		
+		<h6 class="ql-align-mobile-center"><span data-default-color="rgb(255, 255, 255)" style="color: rgb(255, 255, 255);">Making Cybersecurity Simple, Practical, and Accessible</span></h6>
+		
+	</div>
+</div>
+    </div>
+</div>
+																									<div class="fb-element fb-element--text fb-element--mvaligned-center fb-element--el-9b672d545fe7f3" data-uuid="vqaY7L">
+    <div class="fb-element__content">
+        <div
+	class="fb-element-type-text element-text valign-d-center valign-t-center valign-m-center"
+	style="--border-radius: 0;
+		border: none;
+		--background-color: inherit;
+		--opacity: 1;
+		;"
+>
+	<div class="text__text">
+		
+		<h1 class="ql-align-mobile-center ql-banner-heading"><span data-default-color="rgb(255, 255, 255)" style="color: rgb(242, 236, 236);">Junior Cybersecurity Analyst Focused on Threat Detection, Network Security, and Digital Protection</span></h1>
+		
+	</div>
+</div>
+    </div>
+</div>
+																									<div class="fb-element fb-element--button fb-element--el-24425bb70ca6ac" data-uuid="lq38KV">
+    <div class="fb-element__content">
+        <div
+	class="fb-element-type-button fb-element-type-button--white    valign-d-center valign-t-center valign-m-top halign-d-left halign-t-left halign-m-center"
+	style=""
+>
+	<a
+		class="button ps-button ps-button--md"
+		href="/portfolio/"
+		target="_self"
+	>
+		<span class="button__text ps-button__text">Explore My Work</span>
+	</a>
+</div>
+    </div>
+</div>
+																									<div class="fb-element fb-element--slideArrows fb-element--el-82247d74f6e1ec fb-element--m-lowest" data-uuid="P7n1Ko">
+    <div class="fb-element__content">
+        <div
+  class="fb-element-type-slide-arrows"  data-desktop-width="4"
+  data-tablet-width="5"
+  data-mobile-width="8"
+  style="--color: #ffffff; --hover-color: var(--primary-details); --arrows-size: 40px;  --arrows-size-tablet: 40px;  --arrows-size-mobile: 40px; --direction: row; --direction-tablet: row; --direction-mobile: row"
+>
+  <div class="fb-element-type-slide-arrows__arrow fb-element-type-slide-arrows__arrow--prev">
+    <i class="fb-icon-slideshow-controls-arrow-2--prev">
+      <span class="path1"></span>
+      <span class="path2"></span>
+    </i>
+  </div>
+  <div class="fb-element-type-slide-arrows__arrow fb-element-type-slide-arrows__arrow--next">
+    <i class="fb-icon-slideshow-controls-arrow-2--next">
+      <span class="path1"></span>
+      <span class="path2"></span>
+    </i>
+  </div>
+</div>
+    </div>
+</div>
+																									<div class="fb-element fb-element--slideIndicators fb-element--mvaligned-center fb-element--el-bb6867accba643 fb-element--m-lowest" data-uuid="P7n1Ky">
+    <div class="fb-element__content">
+        <div class="fb-element-type-slide-indicators valign-d-center valign-t-center valign-m-center halign-d-center halign-t-center halign-m-center">
+			<p style="color: #ffffff">
+			<span class="fb-element-type-slide-indicators__current-slide-nr">1</span>
+			 / 
+			<span class="fb-element-type-slide-indicators__total-slide-nr">1</span>
+		</p>
+	
+	
+	</div>
+    </div>
+</div>
+												</div>
+			</div>
+</div>
+																																										
+
+						</div>
+					</div>
+							</div>
+		</div>
+	</div>
+										<div
+		class="block-container fb-block-outer-wrap js-fb-block-outer-wrap block-container-type--regular"		id="block-container-1xJv1m"
+		data-idhash="bl-a1bf480ead8b71"
+		data-blockkey="flex--bio_100-block--skye_flex"
+	>
+		<div
+			class="block-container__block"
+								>
+			<div class="fb-block-outer js-fb-block-outer">
+									<div
+						class="fb-block-padding-wrap fb-block-padding-wrap--boxed"
+						style=""
+					>
+						
+						<div class="fb-block-subpadding-wrap">
+															<div class="fb-block-wrap">
+	<div class="fb-block js-fb-block fb-block--1xJv1m fb-block--gridWithGaps">
+		<div class="fb-block__elements">
+			<div class="fb-block__block-sizer"></div>
+							<div class="fb-element fb-element--text fb-element--mvaligned-center fb-element--el-fe6ef06f93426e fb-element--m-highest" data-uuid="8Mkqm1">
+    <div class="fb-element__content">
+        <div
+	class="fb-element-type-text element-text valign-d-top valign-t-top valign-m-center"
+	style="--border-radius: 0;
+		border: none;
+		--background-color: inherit;
+		--opacity: 1;
+		;"
+>
+	<div class="text__text">
+		
+		<h6 class="ql-align-mobile-left ql-align-desktop-right"><span data-default-color="var(--primary-headings)" style="color: var(--primary-headings);">Making Cybersecurity Simple, Practical, and Accessible</span></h6>
+		
+	</div>
+</div>
+    </div>
+</div>
+							<div class="fb-element fb-element--text fb-element--mvaligned-center fb-element--el-95b744d8c75266" data-uuid="WYkJOv">
+    <div class="fb-element__content">
+        <div
+	class="fb-element-type-text element-text valign-d-top valign-t-top valign-m-center"
+	style="--border-radius: 0;
+		border: none;
+		--background-color: inherit;
+		--opacity: 1;
+		;"
+>
+	<div class="text__text">
+		<p class="mobile-empty-p">&nbsp</p>
+		<h2><span data-default-color="var(--primary-headings)" style="color: var(--primary-headings);">I document my cybersecurity journey, practice real tools, and build hands-on security skills to identify and prevent digital threats.</span></h2>
+		<p class="mobile-empty-p">&nbsp</p>
+	</div>
+</div>
+    </div>
+</div>
+							<div class="fb-element fb-element--image fb-element--mvaligned-center fb-element--el-6a8d7f744456b4" data-uuid="M8YnQ6">
+    <div class="fb-element__content">
+        <div
+	class="fb-element-type-image--anchor"	
+>
+	<div
+		class="fb-element-type-image fb-element-type-image--use-border fb-radius"
+		style="
+		--border-width:0px;
+		--border-color: var(--accent-background);
+		--overlay-color: #000000;
+		--overlay-opacity: 0;
+		--border-radius: 35px;
+	"
+	>
+		<div class="valign-d-center valign-t-center valign-m-center halign-d-center halign-t-center halign-m-center fb-element-type-image__img-wrapper--fill fb-element-type-image__img-wrapper">
+			<div class='fb-element-type-image__overlay fb-radius'></div>
+			<img
+				class="fb-element-type-image__img-wrapper__img fb-radius"				 loading="lazy" 				src="//images-pw.pixieset.com/site/gGdY8J/D3WK5W/202612_51_00AM-3d9691d5-1500.png" srcset="//images-pw.pixieset.com/site/gGdY8J/D3WK5W/202612_51_00AM-912ec43d-300.png 300w, //images-pw.pixieset.com/site/gGdY8J/D3WK5W/202612_51_00AM-6adb3611-500.png 500w, //images-pw.pixieset.com/site/gGdY8J/D3WK5W/202612_51_00AM-0bcb2f4c-1000.png 1000w, //images-pw.pixieset.com/site/gGdY8J/D3WK5W/202612_51_00AM-3d9691d5-1500.png 1500w, //images-pw.pixieset.com/site/gGdY8J/D3WK5W/202612_51_00AM-0d397758-2500.png 2500w" alt="" data-width="1536" data-height="1024" sizes="(min-width: 992px) calc(7 * 100vw / 24), (min-width: 768px) calc(8 * 100vw / 24), 100vw"
+				style="
+				object-position:71.88035231370192% 32.05128596379207%;
+				 object-fit:cover; 				opacity:1;
+		"
+			>
+		</div>
+	</div>
+	</div>
+    </div>
+</div>
+							<div class="fb-element fb-element--text fb-element--el-89bdee414c4982" data-uuid="76eq19">
+    <div class="fb-element__content">
+        <div
+	class="fb-element-type-text element-text valign-d-top valign-t-top valign-m-top"
+	style="--border-radius: 0;
+		border: none;
+		--background-color: inherit;
+		--opacity: 1;
+		;"
+>
+	<div class="text__text">
+		
+		<p><span data-default-color="var(--primary-paragraphs)" style="color: var(--primary-paragraphs);">I’m Prince Awuku Anobaah, a cybersecurity learner and aspiring analyst currently undergoing structured training. I practice real-world tools, study modern security concepts, and document my progress to help others understand digital protection.</span></p>
+		
+	</div>
+</div>
+    </div>
+</div>
+							<div class="fb-element fb-element--button fb-element--el-47b15068256692 fb-element--m-lowest" data-uuid="vqaYzL">
+    <div class="fb-element__content">
+        <div
+	class="fb-element-type-button     valign-d-bottom valign-t-bottom valign-m-bottom halign-d-left halign-t-left halign-m-left"
+	style=""
+>
+	<a
+		class="button ps-button ps-button--md"
+		href="/about/"
+		target="_self"
+	>
+		<span class="button__text ps-button__text">More about me</span>
+	</a>
+</div>
+    </div>
+</div>
+					</div>
+	</div>
+</div>
+																																																	
+
+						</div>
+					</div>
+							</div>
+		</div>
+	</div>
+										<div
+		class="block-container fb-block-outer-wrap js-fb-block-outer-wrap block-container-type--regular"		id="block-container-O4E3R5"
+		data-idhash="bl-76a450e4e69780"
+		data-blockkey="flex--quote_100-block--skye_flex"
+	>
+		<div
+			class="block-container__block"
+								>
+			<div class="fb-block-outer js-fb-block-outer">
+									<div
+						class="fb-block-padding-wrap fb-block-padding-wrap--boxed"
+						style=""
+					>
+						
+						<div class="fb-block-subpadding-wrap">
+															<div class="fb-block-wrap">
+	<div class="fb-block js-fb-block fb-block--O4E3R5 fb-block--gridWithGaps">
+		<div class="fb-block__elements">
+			<div class="fb-block__block-sizer"></div>
+							<div class="fb-element fb-element--text fb-element--mvaligned-center fb-element--el-6a518934df7e3f fb-element--m-highest" data-uuid="lq38Qo">
+    <div class="fb-element__content">
+        <div
+	class="fb-element-type-text element-text valign-d-center valign-t-center valign-m-center"
+	style="--border-radius: 0;
+		border: none;
+		--background-color: inherit;
+		--opacity: 1;
+		;"
+>
+	<div class="text__text">
+		
+		<p class="ql-pullquote ql-align-mobile-right animatable animatable--fade-on-scaleDown animatable--fade-on-scaleUp animatable--fade-on-revealRight animatable--animated animatable--finished" style="--initial-opacity: 1; --initial-scale: 1; --initial-translateX: 0%; --initial-translateY: 0%;"><span data-default-color="var(--primary-paragraphs)" style="color: var(--primary-paragraphs);">"</span></p>
+		
+	</div>
+</div>
+    </div>
+</div>
+							<div class="fb-element fb-element--text fb-element--mvaligned-center fb-element--el-9d2986076b779f" data-uuid="0pbqwG">
+    <div class="fb-element__content">
+        <div
+	class="fb-element-type-text element-text valign-d-center valign-t-center valign-m-center"
+	style="--border-radius: 0;
+		border: none;
+		--background-color: inherit;
+		--opacity: 1;
+		;"
+>
+	<div class="text__text">
+		
+		<p class="ql-pullquote ql-align-desktop-center"><span data-default-color="var(--primary-headings)" style="color: var(--primary-headings);">Cybersecurity is not just a skill — it’s a responsibility to protect people, systems, and data.</span></p>
+		
+	</div>
+</div>
+    </div>
+</div>
+							<div class="fb-element fb-element--text fb-element--mvaligned-center fb-element--el-49041512d490d6" data-uuid="30Rq9y">
+    <div class="fb-element__content">
+        <div
+	class="fb-element-type-text element-text valign-d-center valign-t-center valign-m-center"
+	style="--border-radius: 0;
+		border: none;
+		--background-color: inherit;
+		--opacity: 1;
+		;"
+>
+	<div class="text__text">
+		
+		<p class="ql-pullquote animatable animatable--fade-on-scaleDown animatable--fade-on-scaleUp animatable--fade-on-revealRight animatable--animated animatable--finished" style="--initial-opacity: 1; --initial-scale: 1; --initial-translateX: 0%; --initial-translateY: 0%;"><span style="color: var(--primary-paragraphs);" data-default-color="var(--primary-paragraphs)">"</span></p>
+		
+	</div>
+</div>
+    </div>
+</div>
+							<div class="fb-element fb-element--text fb-element--mvaligned-center fb-element--el-0eb62e0ce0bb98 fb-element--m-lowest" data-uuid="8Mkqjd">
+    <div class="fb-element__content">
+        <div
+	class="fb-element-type-text element-text valign-d-center valign-t-center valign-m-center"
+	style="--border-radius: 0;
+		border: none;
+		--background-color: inherit;
+		--opacity: 1;
+		;"
+>
+	<div class="text__text">
+		
+		<h6 class="ql-align-desktop-center"><span data-default-color="var(--primary-headings)" style="color: var(--primary-headings);">(prince awuku anobaah)</span></h6>
+		
+	</div>
+</div>
+    </div>
+</div>
+					</div>
+	</div>
+</div>
+																																																	
+
+						</div>
+					</div>
+							</div>
+		</div>
+	</div>
+										<div
+		class="block-container fb-block-outer-wrap js-fb-block-outer-wrap block-container-type--regular"		id="block-container-zd9x1Y"
+		data-idhash="bl-30f4a09f28783c"
+		data-blockkey="flex--multiple_image_links_100-block--skye_flex"
+	>
+		<div
+			class="block-container__block"
+								>
+			<div class="fb-block-outer js-fb-block-outer">
+									<div
+						class="fb-block-padding-wrap fb-block-padding-wrap--boxed"
+						style=""
+					>
+						
+						<div class="fb-block-subpadding-wrap">
+															<div class="fb-block-wrap">
+	<div class="fb-block js-fb-block fb-block--zd9x1Y fb-block--gridWithGaps">
+		<div class="fb-block__elements">
+			<div class="fb-block__block-sizer"></div>
+							<div class="fb-element fb-element--image fb-element--mvaligned-center fb-element--el-e7da35b7dd5618 fb-element--m-highest" data-uuid="DL6kXL">
+    <div class="fb-element__content">
+        <a
+	class="fb-element-type-image--anchor"	href="/about/" target="_self"
+>
+	<div
+		class="fb-element-type-image fb-element-type-image--link fb-radius"
+		style="
+		--border-width:1px;
+		--border-color: var(--accent-background);
+		--overlay-color: #000000;
+		--overlay-opacity: 0;
+		--border-radius: 0px;
+	"
+	>
+		<div class="valign-d-center valign-t-center valign-m-center halign-d-center halign-t-center halign-m-center fb-element-type-image__img-wrapper--fill fb-element-type-image__img-wrapper">
+			<div class='fb-element-type-image__overlay fb-radius'></div>
+			<img
+				class="fb-element-type-image__img-wrapper__img fb-radius"				 loading="lazy" 				src="//images-pw.pixieset.com/site/gGdY8J/v5rRx7/MyPic-e184e9db-1500.jpg" srcset="//images-pw.pixieset.com/site/gGdY8J/v5rRx7/MyPic-4d3cbc33-300.jpg 300w, //images-pw.pixieset.com/site/gGdY8J/v5rRx7/MyPic-b6c94e1f-500.jpg 500w, //images-pw.pixieset.com/site/gGdY8J/v5rRx7/MyPic-d7d95742-1000.jpg 1000w, //images-pw.pixieset.com/site/gGdY8J/v5rRx7/MyPic-e184e9db-1500.jpg 1500w, //images-pw.pixieset.com/site/gGdY8J/v5rRx7/MyPic-d12b0f56-2500.jpg 2500w" alt="" data-width="640" data-height="640" sizes="(min-width: 992px) calc(8 * 100vw / 24), (min-width: 768px) calc(8 * 100vw / 24), 100vw"
+				style="
+				object-position:50% 50%;
+				 object-fit:cover; 				opacity:1;
+		"
+			>
+		</div>
+	</div>
+	</a>
+    </div>
+</div>
+							<div class="fb-element fb-element--text fb-element--el-f359dfaac230a0" data-uuid="x0VwWr">
+    <div class="fb-element__content">
+        <div
+	class="fb-element-type-text element-text valign-d-bottom valign-t-bottom valign-m-bottom"
+	style="--border-radius: 0;
+		border: none;
+		--background-color: inherit;
+		--opacity: 1;
+		;"
+>
+	<div class="text__text">
+		<p class="mobile-empty-p">&nbsp</p>
+		<h5 class="ql-align-desktop-center"><span style="color: var(--primary-headings);">My Cybersecurity Journey</span></h5>
+		
+	</div>
+</div>
+    </div>
+</div>
+							<div class="fb-element fb-element--text fb-element--el-fc36cb1597fcaf" data-uuid="XV8JvZ">
+    <div class="fb-element__content">
+        <div
+	class="fb-element-type-text element-text valign-d-top valign-t-top valign-m-top"
+	style="--border-radius: 0;
+		border: none;
+		--background-color: inherit;
+		--opacity: 1;
+		;"
+>
+	<div class="text__text">
+		
+		<p class="ql-align-desktop-center ql-paragraph-3"><a href="/about/" rel="noopener noreferrer" data-default-color="var(--primary-paragraphs)" style="color: var(--primary-paragraphs);">Who is Prince?</a></p>
+		
+	</div>
+</div>
+    </div>
+</div>
+							<div class="fb-element fb-element--image fb-element--mvaligned-center fb-element--el-157864d25cd495" data-uuid="dEwJmw">
+    <div class="fb-element__content">
+        <a
+	class="fb-element-type-image--anchor"	href="/portfolio/" target="_self"
+>
+	<div
+		class="fb-element-type-image fb-element-type-image--link fb-radius"
+		style="
+		--border-width:1px;
+		--border-color: var(--accent-background);
+		--overlay-color: #000000;
+		--overlay-opacity: 0;
+		--border-radius: 0px;
+	"
+	>
+		<div class="valign-d-center valign-t-center valign-m-center halign-d-center halign-t-center halign-m-center fb-element-type-image__img-wrapper--fill fb-element-type-image__img-wrapper">
+			<div class='fb-element-type-image__overlay fb-radius'></div>
+			<img
+				class="fb-element-type-image__img-wrapper__img fb-radius"				 loading="lazy" 				src="//images-pw.pixieset.com/site/gGdY8J/0P3QXE/Gemini_Generated_Image_9wbd7b9wbd7b9wbd-51f01cc4-1500.png" srcset="//images-pw.pixieset.com/site/gGdY8J/0P3QXE/Gemini_Generated_Image_9wbd7b9wbd7b9wbd-fd48492c-300.png 300w, //images-pw.pixieset.com/site/gGdY8J/0P3QXE/Gemini_Generated_Image_9wbd7b9wbd7b9wbd-06bdbb00-500.png 500w, //images-pw.pixieset.com/site/gGdY8J/0P3QXE/Gemini_Generated_Image_9wbd7b9wbd7b9wbd-67ada25d-1000.png 1000w, //images-pw.pixieset.com/site/gGdY8J/0P3QXE/Gemini_Generated_Image_9wbd7b9wbd7b9wbd-51f01cc4-1500.png 1500w, //images-pw.pixieset.com/site/gGdY8J/0P3QXE/Gemini_Generated_Image_9wbd7b9wbd7b9wbd-615ffa49-2500.png 2500w" alt="" data-width="1889" data-height="1889" sizes="(min-width: 992px) calc(8 * 100vw / 24), (min-width: 768px) calc(8 * 100vw / 24), 100vw"
+				style="
+				object-position:50% 50%;
+				 object-fit:cover; 				opacity:1;
+		"
+			>
+		</div>
+	</div>
+	</a>
+    </div>
+</div>
+							<div class="fb-element fb-element--text fb-element--el-09f8b203315491" data-uuid="eqnJOo">
+    <div class="fb-element__content">
+        <div
+	class="fb-element-type-text element-text valign-d-bottom valign-t-bottom valign-m-bottom"
+	style="--border-radius: 0;
+		border: none;
+		--background-color: inherit;
+		--opacity: 1;
+		;"
+>
+	<div class="text__text">
+		<p class="mobile-empty-p">&nbsp</p>
+		<h5 class="ql-align-desktop-center">Cybersecurity Projects</h5>
+		
+	</div>
+</div>
+    </div>
+</div>
+							<div class="fb-element fb-element--text fb-element--el-afd5b711c97453" data-uuid="E9MvXe">
+    <div class="fb-element__content">
+        <div
+	class="fb-element-type-text element-text valign-d-top valign-t-top valign-m-top"
+	style="--border-radius: 0;
+		border: none;
+		--background-color: inherit;
+		--opacity: 1;
+		;"
+>
+	<div class="text__text">
+		
+		<p class="ql-align-desktop-center ql-paragraph-3 animatable animatable--fade-on-scaleDown animatable--fade-on-scaleUp animatable--fade-on-revealRight animatable--animated animatable--finished" style="--initial-opacity: 1; --initial-scale: 1; --initial-translateX: 0%; --initial-translateY: 0%;"><a href="/portfolio/" rel="noopener noreferrer" data-default-color="var(--primary-paragraphs)" style="color: var(--primary-paragraphs);">View my work</a></p>
+		
+	</div>
+</div>
+    </div>
+</div>
+							<div class="fb-element fb-element--image fb-element--mvaligned-center fb-element--el-574dab37268a78" data-uuid="Rv9O3M">
+    <div class="fb-element__content">
+        <a
+	class="fb-element-type-image--anchor"	href="/experience/" target="_self"
+>
+	<div
+		class="fb-element-type-image fb-element-type-image--link fb-radius"
+		style="
+		--border-width:1px;
+		--border-color: var(--accent-background);
+		--overlay-color: #000000;
+		--overlay-opacity: 0;
+		--border-radius: 0px;
+	"
+	>
+		<div class="valign-d-center valign-t-center valign-m-center halign-d-center halign-t-center halign-m-center fb-element-type-image__img-wrapper--fill fb-element-type-image__img-wrapper">
+			<div class='fb-element-type-image__overlay fb-radius'></div>
+			<img
+				class="fb-element-type-image__img-wrapper__img fb-radius"				 loading="lazy" 				src="//images-pw.pixieset.com/site/gGdY8J/pxXOQo/sukejuringunopuronixuebuyudingguanli3tsunotekunikkutoha-6c5b12f0-1500.jpeg" srcset="//images-pw.pixieset.com/site/gGdY8J/pxXOQo/sukejuringunopuronixuebuyudingguanli3tsunotekunikkutoha-c0e34718-300.jpeg 300w, //images-pw.pixieset.com/site/gGdY8J/pxXOQo/sukejuringunopuronixuebuyudingguanli3tsunotekunikkutoha-3b16b534-500.jpeg 500w, //images-pw.pixieset.com/site/gGdY8J/pxXOQo/sukejuringunopuronixuebuyudingguanli3tsunotekunikkutoha-5a06ac69-1000.jpeg 1000w, //images-pw.pixieset.com/site/gGdY8J/pxXOQo/sukejuringunopuronixuebuyudingguanli3tsunotekunikkutoha-6c5b12f0-1500.jpeg 1500w, //images-pw.pixieset.com/site/gGdY8J/pxXOQo/sukejuringunopuronixuebuyudingguanli3tsunotekunikkutoha-5cf4f47d-2500.jpeg 2500w" alt="" data-width="736" data-height="387" sizes="(min-width: 992px) calc(8 * 100vw / 24), (min-width: 768px) calc(8 * 100vw / 24), 100vw"
+				style="
+				object-position:50% 50%;
+				 object-fit:cover; 				opacity:1;
+		"
+			>
+		</div>
+	</div>
+	</a>
+    </div>
+</div>
+							<div class="fb-element fb-element--text fb-element--el-133539a6aa4125" data-uuid="53bqXo">
+    <div class="fb-element__content">
+        <div
+	class="fb-element-type-text element-text valign-d-bottom valign-t-bottom valign-m-bottom"
+	style="--border-radius: 0;
+		border: none;
+		--background-color: inherit;
+		--opacity: 1;
+		;"
+>
+	<div class="text__text">
+		<p class="mobile-empty-p">&nbsp</p>
+		<h5 class="ql-align-desktop-center"><span style="color: var(--primary-headings);">Tools &amp; Skills</span></h5>
+		
+	</div>
+</div>
+    </div>
+</div>
+							<div class="fb-element fb-element--text fb-element--el-a7cc566633b059 fb-element--m-lowest" data-uuid="oXM7e7">
+    <div class="fb-element__content">
+        <div
+	class="fb-element-type-text element-text valign-d-top valign-t-top valign-m-top"
+	style="--border-radius: 0;
+		border: none;
+		--background-color: inherit;
+		--opacity: 1;
+		;"
+>
+	<div class="text__text">
+		
+		<p class="ql-align-desktop-center ql-paragraph-3 animatable animatable--fade-on-scaleDown animatable--fade-on-scaleUp animatable--fade-on-revealRight animatable--animated animatable--finished" style="--initial-opacity: 1; --initial-scale: 1; --initial-translateX: 0%; --initial-translateY: 0%;"><a href="/experience/" rel="noopener noreferrer" data-default-color="var(--primary-paragraphs)" style="color: var(--primary-paragraphs);">Check my process</a></p>
+		
+	</div>
+</div>
+    </div>
+</div>
+					</div>
+	</div>
+</div>
+																																																	
+
+						</div>
+					</div>
+							</div>
+		</div>
+	</div>
+										<div
+		class="block-container fb-block-outer-wrap js-fb-block-outer-wrap block-container-type--regular"		id="block-container-jJLxOr"
+		data-idhash="bl-bb243186ffa4e3"
+		data-blockkey="flex--cta_banner_100-block--skye_flex"
+	>
+		<div
+			class="block-container__block"
+								>
+			<div class="fb-block-outer js-fb-block-outer">
+									<div
+						class="fb-block-padding-wrap fb-block-padding-wrap--boxed fb-block-padding-wrap--showBackgroundImage"
+						style=""
+					>
+													<img
+								class="fb-block__background-image"
+								src="//images-pw.pixieset.com/site/gGdY8J/pxXYkO/FCOTechnologies-TechnicalSupportOnsiteHourlyRate100_00-3a8e2f55-1500.jpeg" srcset="//images-pw.pixieset.com/site/gGdY8J/pxXYkO/FCOTechnologies-TechnicalSupportOnsiteHourlyRate100_00-96367abd-300.jpeg 300w, //images-pw.pixieset.com/site/gGdY8J/pxXYkO/FCOTechnologies-TechnicalSupportOnsiteHourlyRate100_00-6dc38891-500.jpeg 500w, //images-pw.pixieset.com/site/gGdY8J/pxXYkO/FCOTechnologies-TechnicalSupportOnsiteHourlyRate100_00-0cd391cc-1000.jpeg 1000w, //images-pw.pixieset.com/site/gGdY8J/pxXYkO/FCOTechnologies-TechnicalSupportOnsiteHourlyRate100_00-3a8e2f55-1500.jpeg 1500w, //images-pw.pixieset.com/site/gGdY8J/pxXYkO/FCOTechnologies-TechnicalSupportOnsiteHourlyRate100_00-0a21c9d8-2500.jpeg 2500w" alt="" sizes="100vw"
+								style="object-position: 50% 50%; opacity: 1;"
+							/>
+															<div
+									class="fb-block__overlay"
+									style="background-color: #000000; opacity: 0.41"
+								></div>
+													
+						<div class="fb-block-subpadding-wrap">
+															<div class="fb-block-wrap">
+	<div class="fb-block js-fb-block fb-block--jJLxOr fb-block--gridWithGaps">
+		<div class="fb-block__elements">
+			<div class="fb-block__block-sizer"></div>
+							<div class="fb-element fb-element--text fb-element--el-24cb83e8018546 fb-element--m-highest" data-uuid="M8YnXX">
+    <div class="fb-element__content">
+        <div
+	class="fb-element-type-text element-text valign-d-bottom valign-t-bottom valign-m-top"
+	style="--border-radius: 0;
+		border: none;
+		--background-color: inherit;
+		--opacity: 1;
+		;"
+>
+	<div class="text__text">
+		
+		<h3><span data-default-color="rgb(255, 255, 255)" style="color: rgb(255, 255, 255);">Let’s Secure Your Digital World</span></h3><p><br></p>
+		
+	</div>
+</div>
+    </div>
+</div>
+							<div class="fb-element fb-element--text fb-element--el-2b16082cac310d" data-uuid="76eqXA">
+    <div class="fb-element__content">
+        <div
+	class="fb-element-type-text element-text valign-d-top valign-t-top valign-m-bottom"
+	style="--border-radius: 0;
+		border: none;
+		--background-color: inherit;
+		--opacity: 1;
+		;"
+>
+	<div class="text__text">
+		
+		<p class="ql-paragraph-1"><span data-default-color="rgb(255, 255, 255)" style="color: rgb(255, 255, 255);">Let’s secure your digital world — protecting your systems today so you can move confidently into the future.</span></p>
+		
+	</div>
+</div>
+    </div>
+</div>
+							<div class="fb-element fb-element--button fb-element--mvaligned-center fb-element--el-562a017f6abe12 fb-element--m-lowest" data-uuid="68pRXO">
+    <div class="fb-element__content">
+        <div
+	class="fb-element-type-button fb-element-type-button--white    valign-d-center valign-t-center valign-m-center halign-d-left halign-t-left halign-m-left"
+	style=""
+>
+	<a
+		class="button ps-button ps-button--md"
+		href="/contact/"
+		target="_self"
+	>
+		<span class="button__text ps-button__text">Let&#039;s connect</span>
+	</a>
+</div>
+    </div>
+</div>
+					</div>
+	</div>
+</div>
+																																																	
+
+						</div>
+					</div>
+							</div>
+		</div>
+	</div>
+			</div>
+
+
+<footer
+  role="contentinfo"
+  data-section="footer"
+>
+      <div
+		class="block-container fb-block-outer-wrap js-fb-block-outer-wrap block-container-type--footer"		id="block-container-MoR0Kp"
+		data-idhash="bl-733d62d2b96aee"
+		data-blockkey="footer-8d79c772"
+	>
+		<div
+			class="block-container__block"
+								>
+			<div class="fb-block-outer js-fb-block-outer">
+									<div
+						class="fb-block-padding-wrap fb-block-padding-wrap--boxed"
+						style=""
+					>
+						
+						<div class="fb-block-subpadding-wrap">
+																																				<div class="fb-block-wrap">
+	<div class="fb-block js-fb-block fb-block--MoR0Kp fb-block--gridWithGaps">
+		<div class="fb-block__elements fb-block__footer-elements">
+
+			<div class="fb-block__block-sizer"></div>
+							<div class="fb-element fb-element--menu fb-element--mvaligned-center fb-element--el-1859e08e1dee88 fb-element--m-highest" data-uuid="ylwnve">
+    <div class="fb-element__content">
+        <div
+	class="fb-element-type-menu fb-element-type-menu--list footer-menu valign-d-center valign-t-center valign-m-center halign-d-center halign-t-center halign-m-center"	id="footer-menu"
+	style="--column-gap: 3.125rem; --column-gap--tablet: 1.875rem; --column-gap--mobile: 1.875rem;"
+	data-encoded-props="{&quot;menuType_desktop&quot;:&quot;list&quot;,&quot;menuType_tablet&quot;:&quot;list&quot;,&quot;menuType_mobile&quot;:&quot;list&quot;,&quot;menuContent_desktop&quot;:&quot;full&quot;,&quot;menuContent_tablet&quot;:&quot;full&quot;,&quot;menuContent_mobile&quot;:&quot;full&quot;,&quot;displayButtonInPopup_desktop&quot;:false,&quot;displayButtonInPopup_tablet&quot;:false,&quot;displayButtonInPopup_mobile&quot;:false}">
+	<div
+		class="navigation__wrapper"
+		style="--middle-index: 2"
+	>
+		<nav
+  class="navigation"
+  role="navigation"
+  aria-labelledby="footermenu"
+>
+  <ul class="navigation__items">
+          
+      <li class="navigation__item">
+        <div class="navigation__link-group">
+          <a
+            class="navigation__link js-menu-link"             href="/"                                   >
+            <span class='page-name'>
+              Home
+            </span>
+                      </a>
+                  </div>
+              </li>
+          
+      <li class="navigation__item">
+        <div class="navigation__link-group">
+          <a
+            class="navigation__link js-menu-link"             href="/about/"                                   >
+            <span class='page-name'>
+              About
+            </span>
+                      </a>
+                  </div>
+              </li>
+          
+      <li class="navigation__item">
+        <div class="navigation__link-group">
+          <a
+            class="navigation__link js-menu-link"             href="/portfolio/"                                   >
+            <span class='page-name'>
+              Portfolio
+            </span>
+                      </a>
+                  </div>
+              </li>
+          
+      <li class="navigation__item">
+        <div class="navigation__link-group">
+          <a
+            class="navigation__link js-menu-link"             href="/contact/"                                   >
+            <span class='page-name'>
+              Contact
+            </span>
+                      </a>
+                  </div>
+              </li>
+    
+    
+  </ul>
+</nav>
+	</div>
+
+	<div
+		class="fb-element-type-menu__expand-menu nav-toggle nav-toggle--style-1"		style="display: none;"
+		role="button"
+		tabindex="-1"
+		aria-expanded="false"
+		aria-controls="header-menu"
+		onkeydown="if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); this.click(); }"
+	>
+		<div class="nav-toggle__line"></div>
+	</div>
+
+</div>
+    </div>
+</div>
+							<div class="fb-element fb-element--socialLinks fb-element--mvaligned-center fb-element--el-60ce7c204f6a29" data-uuid="WYkJWM">
+    <div class="fb-element__content">
+        <div class="fb-element-type-social-links valign-d-center valign-t-center valign-m-center jalign-d-evenly jalign-t-evenly jalign-m-evenly fb-element-type-social-links--style-clean fb-element-type-social-links--shape-circle fb-element-type-social-links--color-accent fb-element-type-social-links--size-small">
+	<div class="fb-element-type-social-links__wrapper jalign-wrapper">
+					<a
+				href="https://facebook.com/BeMight.me"
+				target="_blank"
+				class="fb-element-type-social-links__link fb-element-type-social-links__link--facebook"
+			>
+				
+									<i class="fb-icon-facebook"></i>
+							</a>
+					<a
+				href="https://www.youtube.com/@BeMightSecurity"
+				target="_blank"
+				class="fb-element-type-social-links__link fb-element-type-social-links__link--youtube"
+			>
+				
+									<i class="fb-icon-youtube"></i>
+							</a>
+					<a
+				href="https://www.linkedin.com/in/bemight"
+				target="_blank"
+				class="fb-element-type-social-links__link fb-element-type-social-links__link--linkedin"
+			>
+				
+									<i class="fb-icon-linkedin"></i>
+							</a>
+			</div>
+</div>
+    </div>
+</div>
+							<div class="fb-element fb-element--backToTop fb-element--mvaligned-center fb-element--el-c670b4c5eb8356 fb-element--m-lowest" data-uuid="vqaYMD">
+    <div class="fb-element__content">
+        <div class="fb-element-type-back-to-top valign-d-center valign-t-center valign-m-center halign-d-center halign-t-center halign-m-center">
+	<i
+		role="button"
+		class="fb-icon-to-top"
+	></i>
+</div>
+    </div>
+</div>
+							<div class="fb-element fb-element--copyright fb-element--mvaligned-center fb-element--el-c71199e403b418 fb-element--m-lowest" data-uuid="P7n10G">
+    <div class="fb-element__content">
+        <div class="fb-element-type-text element-text valign-d-center valign-t-center valign-m-center">
+	<div class="text__text">
+		<small><p><span style="color: var(--primary-paragraphs);">© 2026 BeMight Security </span></p><p><span style="color: var(--primary-paragraphs);">-Cybersecurity Education Platfo﻿rm</span></p></small>
+	</div>
+</div>
+    </div>
+</div>
+			
+		</div>
+	</div>
+</div>
+																												
+
+						</div>
+					</div>
+							</div>
+		</div>
+	</div>
+			  </footer>
+      </div>
+    </div>
+
+    
+          <div id="footer-section-pixieset-branding">
+        Powered by <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://pixieset.com/website/?utm_source=pixieset&utm_medium=ugc&utm_content=website"
+        >Pixieset</a>
+      </div>
+    
+    
+    <script>
+    var sentryConfig = {
+        dsn: 'https://dab2873be32f4034ad111643c52c98c0@sentry.io/1215049',
+        environment: 'production',
+        release: 'PW@master-20666',
+        // Performance Monitoring
+        tracesSampleRate: 0.0, // Traces Sample Rate (0.0 to 1.0)
+        // Session Replay
+        replaysSessionSampleRate: 0.0, // Session Replay Sample Rate (0.0 to 1.0)
+        replaysOnErrorSampleRate: 0.0, // Session Replay (for Sessions w/ Errors) Sample Rate (0.0 to 1.0)
+        ignoreErrors: [
+            'window.fd',
+
+            // Challenge timed-out.
+            '[Cloudflare Turnstile] Error: 1106',
+
+            // Potential bots.
+            '[Cloudflare Turnstile] Error: 300',
+            '[Cloudflare Turnstile] Error: 600',
+
+            // Axios ignored messages.
+            'Request failed with status code 422',
+            'Network Error',
+            'Request aborted'
+        ],
+        ignoreUrls: ['/googleapis\.com/',
+            '/pagead2\.googlesyndication\.com',
+            '/jquery\/dist\/jquery\.js/',
+            '/tiny-cookie\/tiny-cookie\.js/',
+            '/slick-carousel\/slick\/slick\.js/',
+            'addthis'
+        ],
+        denyUrls: [
+            // Chrome extensions
+            '/extensions\//i',
+            '/^chrome:\/\//i',
+        ],
+        initialScope: {
+            
+			
+			tags: { theme: "flex" }			
+        },
+        beforeSend(event) {
+            try {
+							// Resize Observer ignore
+							if (event.exception?.values?.[0]?.value.startsWith('ResizeObserver loop')) return null;
+
+							const frames = event.exception?.values?.[0]?.stacktrace?.frames;
+							if (!frames || !frames.length) return event;
+
+							// Ignore slick errors
+							const framesFromSlick = frames.findIndex((frame) => {
+									return frame?.filename && frame.filename.toLowerCase().includes('slick');
+							});
+							if (framesFromSlick !== -1) {
+									return null;
+							}
+
+							// Ignore quill errors
+							const framesFromQuill = frames.findIndex((frame) => {
+								return frame?.filename && frame.filename.toLowerCase().includes('quill');
+							});
+							if (framesFromQuill !== -1) {
+								return null;
+							}
+
+            } catch (e) {
+                console.error('Error in the beforeSend', e);
+                // Silence is gold
+            }
+            return event;
+        },
+    };
+</script>
+
+    
+          <script>
+	const cookieBannerOptions = {
+		enable: false,
+		message: "We use cookies to optimize your experience, personalize advertisements, and analyze traffic. You can accept or reject all non-essential cookies, or click \u201cManage\u201d to customize your preferences.",
+		linkText: "Learn more",
+		linkUrl: '',
+		ctaMessage: "Accept All",
+		declineMessage: "Decline All",
+	};
+</script>
+    
+    
+    <script src="https://assets-pw.pixieset.com/assets/client/js/manifest.v-8653371e.js"></script>
+    <script src="https://assets-pw.pixieset.com/assets/client/js/vendor.v-a7af0a2d.js"></script>
+    <script src="https://assets-pw.pixieset.com/assets/client/js/index.v-121752be.js"></script>
+
+                  <script src="https://assets-pw.pixieset.com/assets/client/js/themes/flex_theme.v-3cc5513c.js"></script>
+          
+    
+          <link rel="modulepreload" as="script" href="https://assets-pw.pixieset.com/assets/flex-app/flex-indexClient-BOlUuJWh.js" /><link rel="modulepreload" as="script" href="https://assets-pw.pixieset.com/assets/flex-app/flex-chunk-preload-helper-D9Z9MdNV.js" /><link rel="modulepreload" as="script" href="https://assets-pw.pixieset.com/assets/flex-app/flex-chunk-debugSharedHelpers-DRKlIW-Z.js" /><script type="module" src="https://assets-pw.pixieset.com/assets/flex-app/flex-indexClient-BOlUuJWh.js"></script>    
+    
+      
+  <script id="js-payload-pw" class="js-dom-cleanup" type="application/json">
+		{"s":{"t":{"tk":"flex"},"fblks":[]},"p":{"type":0,"blks":[],"fblks":[],"navUrl":"\/"}}
+	</script>
+  <script src="https://assets-pw.pixieset.com/assets/client/js/init-pw.v-aa294d1c.js"></script>
+
+    
+    
+    
+    
+      </body>
+
+  </html>
