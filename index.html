@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>BeMight | Cybersecurity Portfolio</title>
-  <link rel="icon" type="png"  sizes="32x32" href="fav.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="fav.png" />
   <meta
     name="description"
     content="BeMight - Junior Cybersecurity Analyst portfolio focused on threat detection, network security, digital protection, projects, tools, and certifications."
@@ -44,26 +44,26 @@
       font-family: Arial, Helvetica, sans-serif;
       color: var(--text);
       background:
-        radial-gradient(circle at top left, rgba(61,189,255,0.08), transparent 18%),
+        radial-gradient(circle at top left, rgba(61, 189, 255, 0.08), transparent 18%),
         linear-gradient(180deg, #f8fbff 0%, #f3f7fc 100%);
       line-height: 1.6;
     }
 
     a {
-  color: inherit;
-  text-decoration: none;
-}
+      color: inherit;
+      text-decoration: none;
+    }
 
-.bullet-list a {
-  color: #1b8fe0;
-  font-weight: 600;
-  transition: color 0.2s ease, text-decoration 0.2s ease;
-}
+    .bullet-list a {
+      color: #1b8fe0;
+      font-weight: 600;
+      transition: color 0.2s ease, text-decoration 0.2s ease;
+    }
 
-.bullet-list a:hover {
-  color: #3dbdff;
-  text-decoration: underline;
-}
+    .bullet-list a:hover {
+      color: #3dbdff;
+      text-decoration: underline;
+    }
 
     img {
       max-width: 100%;
@@ -88,7 +88,7 @@
 
     .hero-wrap {
       background:
-        radial-gradient(circle at 20% 10%, rgba(61,189,255,0.10), transparent 20%),
+        radial-gradient(circle at 20% 10%, rgba(61, 189, 255, 0.1), transparent 20%),
         linear-gradient(180deg, var(--navy) 0%, var(--navy-2) 100%);
       color: #fff;
       padding: 24px 0 38px;
@@ -101,7 +101,7 @@
       position: absolute;
       inset: 0;
       background:
-        radial-gradient(circle at 85% 15%, rgba(56,231,210,0.08), transparent 18%);
+        radial-gradient(circle at 85% 15%, rgba(56, 231, 210, 0.08), transparent 18%);
       pointer-events: none;
     }
 
@@ -127,42 +127,23 @@
       font-weight: 800;
     }
 
-    .brand-row .mini {
-  color: var(--cyan);
-  text-transform: uppercase;
-  letter-spacing: 1.4px;
-  font-size: 0.85rem;
-  font-weight: 800;
-  margin-bottom: 6px;
-}
+    .typing {
+      display: inline-block;
+      color: #ffffff;
+      white-space: nowrap;
+      overflow: hidden;
+      border-right: 3px solid var(--cyan);
+      width: 0;
+      animation:
+        typing 3.5s steps(22, end) forwards,
+        blink 0.75s step-end infinite;
+    }
 
-.brand-row h1 {
-  margin: 0;
-  font-size: clamp(2rem, 5vw, 3.6rem);
-  line-height: 1.06;
-  font-weight: 800;
-}
+    @keyframes typing {
+      from { width: 0; }
+      to { width: 22ch; }
+    }
 
-.typing {
-  display: inline-block;
-  color: #ffffff;
-  white-space: nowrap;
-  overflow: hidden;
-  border-right: 3px solid var(--cyan);
-  width: 0;
-  animation:
-    typing 3.5s steps(22, end) forwards,
-    blink 0.75s step-end infinite;
-}
-
-@keyframes typing {
-  from { width: 0; }
-  to { width: 22ch; }
-}
-
-@keyframes blink {
-  50% { border-color: transparent; }
-}
     @keyframes blink {
       50% { border-color: transparent; }
     }
@@ -172,21 +153,42 @@
       font-size: 0.82rem;
       letter-spacing: 2px;
       text-transform: uppercase;
-      color: rgba(255,255,255,0.7);
+      color: rgba(255, 255, 255, 0.7);
       font-weight: 700;
+    }
+
+    .top-nav-wrap {
+      margin-top: 22px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .menu-toggle {
+      display: none;
+      min-height: 46px;
+      min-width: 56px;
+      padding: 0 16px;
+      border: none;
+      border-radius: 12px;
+      background: linear-gradient(135deg, var(--blue), var(--cyan));
+      color: #07111f;
+      font-size: 1.4rem;
+      font-weight: 800;
+      cursor: pointer;
+      box-shadow: 0 10px 22px rgba(0, 0, 0, 0.18);
     }
 
     .top-nav {
       display: grid;
       grid-template-columns: repeat(5, 1fr);
       gap: 10px;
-      margin-top: 22px;
+      margin-top: 0;
       padding: 10px;
-      background: rgba(255,255,255,0.07);
-      border: 1px solid rgba(255,255,255,0.08);
+      background: rgba(255, 255, 255, 0.07);
+      border: 1px solid rgba(255, 255, 255, 0.08);
       border-radius: 18px;
       backdrop-filter: blur(10px);
-      box-shadow: 0 10px 22px rgba(0,0,0,0.18);
+      box-shadow: 0 10px 22px rgba(0, 0, 0, 0.18);
       position: relative;
       z-index: 1;
     }
@@ -200,9 +202,9 @@
       border-radius: 12px;
       font-size: 0.94rem;
       font-weight: 700;
-      color: rgba(255,255,255,0.78);
+      color: rgba(255, 255, 255, 0.78);
       transition: all 0.2s ease;
-      background: rgba(255,255,255,0.02);
+      background: rgba(255, 255, 255, 0.02);
     }
 
     .top-nav a.active,
@@ -224,9 +226,9 @@
     .hero-main,
     .hero-side {
       border-radius: var(--radius);
-      box-shadow: 0 18px 36px rgba(0,0,0,0.18);
-      border: 1px solid rgba(255,255,255,0.08);
-      background: rgba(255,255,255,0.04);
+      box-shadow: 0 18px 36px rgba(0, 0, 0, 0.18);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      background: rgba(255, 255, 255, 0.04);
     }
 
     .hero-main {
@@ -252,7 +254,7 @@
 
     .hero-main p {
       margin: 0;
-      color: rgba(255,255,255,0.78);
+      color: rgba(255, 255, 255, 0.78);
       max-width: 700px;
       font-size: 1rem;
     }
@@ -286,9 +288,9 @@
     }
 
     .btn-secondary {
-      background: rgba(255,255,255,0.07);
+      background: rgba(255, 255, 255, 0.07);
       color: #fff;
-      border-color: rgba(255,255,255,0.12);
+      border-color: rgba(255, 255, 255, 0.12);
     }
 
     .hero-side {
@@ -305,8 +307,8 @@
       gap: 14px;
       padding: 14px;
       border-radius: 16px;
-      background: rgba(255,255,255,0.05);
-      border: 1px solid rgba(255,255,255,0.08);
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.08);
     }
 
     .mini-profile img {
@@ -323,15 +325,15 @@
     }
 
     .mini-profile span {
-      color: rgba(255,255,255,0.72);
+      color: rgba(255, 255, 255, 0.72);
       font-size: 0.92rem;
     }
 
     .focus-box {
       border-radius: 18px;
       padding: 18px;
-      background: rgba(255,255,255,0.05);
-      border: 1px solid rgba(255,255,255,0.08);
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.08);
     }
 
     .focus-box h3 {
@@ -342,7 +344,7 @@
     .focus-box ul {
       margin: 0;
       padding-left: 18px;
-      color: rgba(255,255,255,0.76);
+      color: rgba(255, 255, 255, 0.76);
     }
 
     .focus-box li + li {
@@ -399,19 +401,18 @@
     }
 
     .project-link {
-  display: block;
-}
+      display: block;
+    }
 
-.project-link .panel {
-  height: 100%;
-}
+    .project-link .panel {
+      height: 100%;
+    }
 
-.project-link:hover .panel {
-  transform: translateY(-4px);
-  box-shadow: var(--shadow-hover);
-  border-color: #c7dbef;
-}
-    
+    .project-link:hover .panel {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-hover);
+      border-color: #c7dbef;
+    }
 
     .panel {
       background: var(--card);
@@ -577,7 +578,7 @@
 
     .footer-banner p {
       margin: 0;
-      color: rgba(255,255,255,0.82);
+      color: rgba(255, 255, 255, 0.82);
       text-transform: uppercase;
       font-size: 0.82rem;
       letter-spacing: 1.3px;
@@ -607,7 +608,7 @@
       color: var(--text);
     }
 
-    @media (max-width: 980px) {
+    @media (max-width: 900px) {
       .hero-panel,
       .about-card,
       .grid-3,
@@ -615,12 +616,34 @@
         grid-template-columns: 1fr;
       }
 
-      .top-nav {
-        grid-template-columns: repeat(2, 1fr);
-      }
-
       .section-sub {
         margin-left: 0;
+      }
+
+      .hero-main h2 {
+        font-size: clamp(1.8rem, 7vw, 2.6rem);
+      }
+
+      .about-card .portrait {
+        min-height: 260px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .menu-toggle {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .top-nav {
+        display: none;
+        grid-template-columns: 1fr;
+        margin-top: 12px;
+      }
+
+      .top-nav.show {
+        display: grid;
       }
     }
 
@@ -629,13 +652,14 @@
         font-size: 1rem;
       }
 
-      .top-nav {
-        grid-template-columns: 1fr;
+      .container {
+        width: min(100% - 18px, var(--max));
       }
 
       .hero-main,
-      .hero-side {
-        padding: 20px;
+      .hero-side,
+      .panel-body {
+        padding: 16px;
       }
 
       .hero-actions {
@@ -646,8 +670,31 @@
         width: 100%;
       }
 
+      .mini-profile {
+        align-items: flex-start;
+      }
+
+      .panel img {
+        height: auto;
+      }
+
+      .about-card .portrait {
+        width: 100%;
+        height: auto;
+        min-height: unset;
+      }
+
       .footer-row {
         flex-direction: column;
+        gap: 8px;
+      }
+
+      .footer-nav {
+        gap: 10px;
+      }
+
+      .section-title h2 {
+        font-size: 1.9rem;
       }
     }
   </style>
@@ -657,20 +704,24 @@
 
   <header class="hero-wrap">
     <div class="container">
-     <div class="brand-row">
-  <div class="mini">BeMight</div>
-  <h1>
-    <span class="typing">Cybersecurity Portfolio</span>
-  </h1>
-  <p>Simple • Practical • Accessible</p>
-</div>
+      <div class="brand-row">
+        <div class="mini">BeMight</div>
+        <h1>
+          <span class="typing">Cybersecurity Portfolio</span>
+        </h1>
+        <p>Simple • Practical • Accessible</p>
+      </div>
 
-      <nav class="top-nav">
-        <a class="active" href="#about">About Me</a>
-        <a href="#projects">Projects & Labs</a>
-        <a href="#tools">Tools & Skills</a>
-        <a href="#certifications">Certifications</a>
-        <a href="#contact">Contact</a>
+      <nav class="top-nav-wrap">
+        <button class="menu-toggle" aria-label="Open menu" onclick="toggleMenu()">☰</button>
+
+        <div class="top-nav" id="mobileMenu">
+          <a class="active" href="#about">About Me</a>
+          <a href="#projects">Projects & Labs</a>
+          <a href="#tools">Tools & Skills</a>
+          <a href="#certifications">Certifications</a>
+          <a href="#contact">Contact</a>
+        </div>
       </nav>
 
       <div class="hero-panel">
@@ -762,52 +813,56 @@
         </p>
 
         <div class="grid-3">
-          <article class="panel">
-            <div class="panel-top"></div>
-            <div class="panel-body">
-              <div class="panel-label">
-                <span>Project 01</span>
-                <span class="track">Analysis</span>
+          <a href="network-traffic-analysis.html" class="project-link">
+            <article class="panel">
+              <div class="panel-top"></div>
+              <div class="panel-body">
+                <div class="panel-label">
+                  <span>Project 01</span>
+                  <span class="track">Analysis</span>
+                </div>
+                <img src="project-traffic.jpg" alt="Network traffic analysis project" />
+                <h3>Network Traffic Analysis Lab</h3>
+                <p>
+                  Analyzed packet captures using Wireshark to identify suspicious traffic, detect anomalies, and document findings from a simulated environment.
+                </p>
               </div>
-              <img src="project-traffic.jpg" alt="Network traffic analysis project" />
-              <h3>Network Traffic Analysis Lab</h3>
-              <p>
-                Analyzed packet captures using Wireshark to identify suspicious traffic, detect anomalies, and document findings from a simulated environment.
-              </p>
-            </div>
-          </article>
+            </article>
+          </a>
 
-         <a href="https://docs.google.com/presentation/d/1bZ5p-kXjyngknw12JotNZ3lIN7X1tBro/edit?usp=sharing&ouid=112496117602264797179&rtpof=true&sd=true" target="_blank" rel="noreferrer" class="project-link">
-  <article class="panel">
-    <div class="panel-top orange"></div>
-    <div class="panel-body">
-      <div class="panel-label">
-        <span>Project 02</span>
-        <span class="track">Awareness</span>
-      </div>
-      <img src="project-phishing.jpg" alt="Phishing awareness project" />
-      <h3>Phishing Awareness Project</h3>
-      <p>
-        Created a cybersecurity awareness presentation explaining phishing attacks, social engineering risks, and safe digital practices for users and organisations.
-      </p>
-    </div>
-  </article>
-</a>
-
-          <article class="panel">
-            <div class="panel-top purple"></div>
-            <div class="panel-body">
-              <div class="panel-label">
-                <span>Project 03</span>
-                <span class="track">Reconnaissance</span>
+          <a href="https://docs.google.com/presentation/d/1bZ5p-kXjyngknw12JotNZ3lIN7X1tBro/edit?usp=sharing&ouid=112496117602264797179&rtpof=true&sd=true" target="_blank" rel="noreferrer" class="project-link">
+            <article class="panel">
+              <div class="panel-top orange"></div>
+              <div class="panel-body">
+                <div class="panel-label">
+                  <span>Project 02</span>
+                  <span class="track">Awareness</span>
+                </div>
+                <img src="project-phishing.jpg" alt="Phishing awareness project" />
+                <h3>Phishing Awareness Project</h3>
+                <p>
+                  Created a cybersecurity awareness presentation explaining phishing attacks, social engineering risks, and safe digital practices for users and organisations.
+                </p>
               </div>
-              <img src="project-dns.jpg" alt="DNS enumeration lab" />
-              <h3>DNS Enumeration Lab</h3>
-              <p>
-                Performed reconnaissance and information gathering using dig, nslookup, and Subfinder to analyze DNS records and domain infrastructure.
-              </p>
-            </div>
-          </article>
+            </article>
+          </a>
+
+          <a href="dns-enumeration.html" class="project-link">
+            <article class="panel">
+              <div class="panel-top purple"></div>
+              <div class="panel-body">
+                <div class="panel-label">
+                  <span>Project 03</span>
+                  <span class="track">Reconnaissance</span>
+                </div>
+                <img src="project-dns.jpg" alt="DNS enumeration lab" />
+                <h3>DNS Enumeration Lab</h3>
+                <p>
+                  Performed reconnaissance and information gathering using dig, nslookup, and Subfinder to analyze DNS records and domain infrastructure.
+                </p>
+              </div>
+            </article>
+          </a>
         </div>
       </div>
     </section>
@@ -902,7 +957,7 @@
             <div class="panel-body">
               <div class="panel-label">
                 <span>Program</span>
-                <span class="track">Ongoing</span>
+                <span class="track">Completed</span>
               </div>
               <h3>Cybersecurity Learning Journey</h3>
               <p>Structured hands-on training and self-driven practice</p>
@@ -964,7 +1019,7 @@
                 Currently building practical cybersecurity experience through projects, labs, tools practice, and structured learning.
               </p>
               <div style="margin-top:16px;">
-                <a class="btn btn-primary" href="mailto:contact.bemightsec@gmail.com" color="black" >Send Email</a>
+                <a class="btn btn-primary" href="mailto:contact.bemightsec@gmail.com">Send Email</a>
               </div>
             </div>
           </div>
@@ -990,5 +1045,18 @@
       </nav>
     </div>
   </footer>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById("mobileMenu");
+      menu.classList.toggle("show");
+    }
+
+    document.querySelectorAll("#mobileMenu a").forEach(link => {
+      link.addEventListener("click", () => {
+        document.getElementById("mobileMenu").classList.remove("show");
+      });
+    });
+  </script>
 </body>
 </html>
