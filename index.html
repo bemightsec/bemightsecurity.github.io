@@ -398,6 +398,21 @@
       gap: 18px;
     }
 
+    .project-link {
+  display: block;
+}
+
+.project-link .panel {
+  height: 100%;
+}
+
+.project-link:hover .panel {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-hover);
+  border-color: #c7dbef;
+}
+    
+
     .panel {
       background: var(--card);
       border: 1px solid var(--line);
@@ -762,20 +777,22 @@
             </div>
           </article>
 
-          <article class="panel">
-            <div class="panel-top orange"></div>
-            <div class="panel-body">
-              <div class="panel-label">
-                <span>Project 02</span>
-                <span class="track">Awareness</span>
-              </div>
-              <img src="project-phishing.jpg" alt="Phishing awareness project" />
-              <h3>Phishing Awareness Project</h3>
-              <p>
-                Created a cybersecurity awareness presentation explaining phishing attacks, social engineering risks, and safe digital practices for users and organisations.
-              </p>
-            </div>
-          </article>
+         <a href="https://docs.google.com/presentation/d/1bZ5p-kXjyngknw12JotNZ3lIN7X1tBro/edit?usp=sharing&ouid=112496117602264797179&rtpof=true&sd=true" target="_blank" rel="noreferrer" class="project-link">
+  <article class="panel">
+    <div class="panel-top orange"></div>
+    <div class="panel-body">
+      <div class="panel-label">
+        <span>Project 02</span>
+        <span class="track">Awareness</span>
+      </div>
+      <img src="images/project-phishing.jpg" alt="Phishing awareness project" />
+      <h3>Phishing Awareness Project</h3>
+      <p>
+        Created a cybersecurity awareness presentation explaining phishing attacks, social engineering risks, and safe digital practices for users and organisations.
+      </p>
+    </div>
+  </article>
+</a>
 
           <article class="panel">
             <div class="panel-top purple"></div>
