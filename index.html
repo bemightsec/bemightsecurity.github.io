@@ -597,14 +597,6 @@
       font-size: 0.95rem;
     }
 
-    .project-link {
-  display: block;
-}
-
-.project-link .panel {
-  height: 100%;
-}
-
     .footer-nav {
       display: flex;
       gap: 18px;
@@ -615,35 +607,22 @@
       color: var(--text);
     }
 
-    @media (max-width: 768px) {
-  .menu-toggle {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-  }
+    @media (max-width: 980px) {
+      .hero-panel,
+      .about-card,
+      .grid-3,
+      .grid-2 {
+        grid-template-columns: 1fr;
+      }
 
-  .top-nav {
-    display: none;
-    grid-template-columns: 1fr;
-    margin-top: 12px;
-  }
-
-  .top-nav.show {
-    display: grid;
-  }
+      .top-nav {
+        grid-template-columns: repeat(2, 1fr);
+      }
 
       .section-sub {
         margin-left: 0;
       }
     }
-
-    .project-link {
-  display: block;
-}
-
-.project-link .panel {
-  height: 100%;
-}
 
     @media (max-width: 640px) {
       .typing {
@@ -686,58 +665,13 @@
   <p>Simple • Practical • Accessible</p>
 </div>
 
-      .top-nav-wrap {
-  margin-top: 22px;
-  position: relative;
-  z-index: 1;
-}
-
-.menu-toggle {
-  display: none;
-  min-height: 46px;
-  min-width: 56px;
-  padding: 0 16px;
-  border: none;
-  border-radius: 12px;
-  background: linear-gradient(135deg, var(--blue), var(--cyan));
-  color: #07111f;
-  font-size: 1.4rem;
-  font-weight: 800;
-  cursor: pointer;
-  box-shadow: 0 10px 22px rgba(0,0,0,0.18);
-}
-
-.top-nav {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 10px;
-  padding: 10px;
-  background: rgba(255,255,255,0.07);
-  border: 1px solid rgba(255,255,255,0.08);
-  border-radius: 18px;
-  backdrop-filter: blur(10px);
-  box-shadow: 0 10px 22px rgba(0,0,0,0.18);
-}
-
-.top-nav a {
-  min-height: 48px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  border-radius: 12px;
-  font-size: 0.94rem;
-  font-weight: 700;
-  color: rgba(255,255,255,0.78);
-  transition: all 0.2s ease;
-  background: rgba(255,255,255,0.02);
-}
-
-.top-nav a.active,
-.top-nav a:hover {
-  background: linear-gradient(135deg, var(--blue), var(--cyan));
-  color: #07111f;
-}
+      <nav class="top-nav">
+        <a class="active" href="#about">About Me</a>
+        <a href="#projects">Projects & Labs</a>
+        <a href="#tools">Tools & Skills</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#contact">Contact</a>
+      </nav>
 
       <div class="hero-panel">
         <div class="hero-main">
@@ -828,22 +762,20 @@
         </p>
 
         <div class="grid-3">
-          <a href="network-traffic-analysis.html" class="project-link">
-  <article class="panel">
-    <div class="panel-top"></div>
-    <div class="panel-body">
-      <div class="panel-label">
-        <span>Project 01</span>
-        <span class="track">Analysis</span>
-      </div>
-      <img src="project-traffic.jpg" alt="Network traffic analysis project" />
-      <h3>Network Traffic Analysis Lab</h3>
-      <p>
-        Analyzed packet captures using Wireshark to identify suspicious traffic, detect anomalies, and document findings from a simulated environment.
-      </p>
-    </div>
-  </article>
-</a>
+          <article class="panel">
+            <div class="panel-top"></div>
+            <div class="panel-body">
+              <div class="panel-label">
+                <span>Project 01</span>
+                <span class="track">Analysis</span>
+              </div>
+              <img src="project-traffic.jpg" alt="Network traffic analysis project" />
+              <h3>Network Traffic Analysis Lab</h3>
+              <p>
+                Analyzed packet captures using Wireshark to identify suspicious traffic, detect anomalies, and document findings from a simulated environment.
+              </p>
+            </div>
+          </article>
 
          <a href="https://docs.google.com/presentation/d/1bZ5p-kXjyngknw12JotNZ3lIN7X1tBro/edit?usp=sharing&ouid=112496117602264797179&rtpof=true&sd=true" target="_blank" rel="noreferrer" class="project-link">
   <article class="panel">
@@ -862,22 +794,24 @@
   </article>
 </a>
 
-         <a href="dns-enumeration.html" class="project-link">
-  <article class="panel">
-    <div class="panel-top purple"></div>
-    <div class="panel-body">
-      <div class="panel-label">
-        <span>Project 03</span>
-        <span class="track">Reconnaissance</span>
+          <article class="panel">
+            <div class="panel-top purple"></div>
+            <div class="panel-body">
+              <div class="panel-label">
+                <span>Project 03</span>
+                <span class="track">Reconnaissance</span>
+              </div>
+              <img src="project-dns.jpg" alt="DNS enumeration lab" />
+              <h3>DNS Enumeration Lab</h3>
+              <p>
+                Performed reconnaissance and information gathering using dig, nslookup, and Subfinder to analyze DNS records and domain infrastructure.
+              </p>
+            </div>
+          </article>
+        </div>
       </div>
-      <img src="project-dns.jpg" alt="DNS enumeration lab" />
-      <h3>DNS Enumeration Lab</h3>
-      <p>
-        Performed reconnaissance and information gathering using dig, nslookup, and Subfinder to analyze DNS records and domain infrastructure.
-      </p>
-    </div>
-  </article>
-</a>
+    </section>
+
     <section id="tools" class="portal-section">
       <div class="container">
         <div class="section-title">
@@ -968,7 +902,7 @@
             <div class="panel-body">
               <div class="panel-label">
                 <span>Program</span>
-                <span class="track">COMPLETED</span>
+                <span class="track">Ongoing</span>
               </div>
               <h3>Cybersecurity Learning Journey</h3>
               <p>Structured hands-on training and self-driven practice</p>
@@ -1056,11 +990,5 @@
       </nav>
     </div>
   </footer>
-          <script>
-  function toggleMenu() {
-    const menu = document.getElementById("mobileMenu");
-    menu.classList.toggle("show");
-  }
-</script>
 </body>
 </html>
