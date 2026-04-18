@@ -3,18 +3,17 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>BeMight | Cybersecurity Master Portal</title>
+  <title>BeMight | Cybersecurity Portfolio</title>
   <meta
     name="description"
-    content="BeMight - Cybersecurity portfolio featuring projects, labs, tools, certifications, and contact information."
+    content="BeMight - Junior Cybersecurity Analyst portfolio focused on threat detection, network security, digital protection, projects, tools, and certifications."
   />
   <style>
     :root {
       --bg: #0a0f1c;
       --bg-2: #0f1728;
-      --panel: rgba(19, 28, 46, 0.88);
-      --panel-2: rgba(24, 36, 58, 0.95);
-      --panel-light: #131f35;
+      --panel: rgba(19, 28, 46, 0.9);
+      --panel-2: rgba(24, 36, 58, 0.96);
       --text: #eef4ff;
       --muted: #a7b7d6;
       --line: rgba(255,255,255,0.08);
@@ -30,13 +29,8 @@
       --max: 1180px;
     }
 
-    * {
-      box-sizing: border-box;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
 
     body {
       margin: 0;
@@ -185,9 +179,7 @@
       box-shadow: var(--shadow);
     }
 
-    .hero-main {
-      padding: 30px;
-    }
+    .hero-main { padding: 30px; }
 
     .eyebrow {
       display: inline-block;
@@ -477,32 +469,14 @@
       border-radius: 16px;
     }
 
-    .quiz-card {
-      margin-top: 20px;
-    }
-
-    .quiz-question {
-      font-weight: 700;
-      color: var(--text);
-      margin-bottom: 14px;
-      font-size: 1.02rem;
-    }
-
-    .quiz-option {
-      padding: 13px 14px;
+    .quote-box {
+      margin-top: 18px;
+      padding: 16px 18px;
+      border-radius: 16px;
+      background: rgba(255,255,255,0.04);
       border: 1px solid rgba(255,255,255,0.08);
-      border-radius: 12px;
-      margin-top: 10px;
-      background: rgba(255,255,255,0.03);
-      color: var(--muted);
-      font-weight: 600;
-      transition: 0.2s ease;
-    }
-
-    .quiz-option:hover {
-      border-color: rgba(76,194,255,0.35);
-      background: rgba(76,194,255,0.08);
-      color: var(--text);
+      color: #d9e7ff;
+      font-style: italic;
     }
 
     .footer-banner {
@@ -601,8 +575,7 @@
         padding: 20px;
       }
 
-      .hero-actions,
-      .intro-actions {
+      .hero-actions {
         flex-direction: column;
       }
 
@@ -623,29 +596,28 @@
     <div class="container">
       <div class="portal-head">
         <div class="mini">BeMight</div>
-        <h1>Cybersecurity <span class="accent">Master Portal</span></h1>
-        <p>Projects › Labs › Tools › Certifications › Growth</p>
+        <h1>Cybersecurity <span class="accent">Portfolio</span></h1>
+        <p>Simple • Practical • Accessible</p>
       </div>
 
       <nav class="top-nav">
         <a class="active" href="#about">About Me</a>
         <a href="#projects">Projects & Labs</a>
-        <a href="#tools">Security Toolkit</a>
+        <a href="#tools">Tools & Skills</a>
         <a href="#certifications">Certifications</a>
         <a href="#contact">Contact</a>
       </nav>
 
       <div class="hero-panel">
         <div class="hero-main">
-          <span class="eyebrow">Cybersecurity Portfolio</span>
-          <h2>Building practical cybersecurity skills through projects, labs, and real tools.</h2>
+          <span class="eyebrow">Making Cybersecurity Simple, Practical, and Accessible</span>
+          <h2>Junior Cybersecurity Analyst focused on threat detection, network security, and digital protection.</h2>
           <p>
-            I’m Prince Awuku Anobaah, an aspiring Cybersecurity Analyst and BTech ICT student focused on
-            network security, threat detection, Linux fundamentals, and security awareness.
+            I document my cybersecurity journey, practice real tools, and build hands-on security skills to identify and prevent digital threats.
           </p>
           <div class="hero-actions">
-            <a class="btn btn-primary" href="#projects">View My Work</a>
-            <a class="btn btn-secondary" href="#contact">Contact Me</a>
+            <a class="btn btn-primary" href="#projects">Explore My Work</a>
+            <a class="btn btn-secondary" href="#contact">Let’s Connect</a>
           </div>
         </div>
 
@@ -654,34 +626,20 @@
             <img src="images/profile.jpg" alt="Prince Awuku Anobaah" />
             <div>
               <strong>BeMight</strong>
-              <span>Aspiring Cybersecurity Analyst</span>
+              <span>Junior Cybersecurity Analyst</span>
             </div>
           </div>
 
           <div class="focus-box">
             <h3>Current Focus</h3>
             <ul>
-              <li>Network Security and Traffic Analysis</li>
-              <li>DNS Enumeration and Reconnaissance</li>
-              <li>Phishing Awareness and Digital Safety</li>
-              <li>Hands-on tools practice with Wireshark, Nmap, and Linux</li>
+              <li>Threat Detection</li>
+              <li>Network Security</li>
+              <li>Digital Protection</li>
+              <li>Hands-on tools practice and cybersecurity learning</li>
             </ul>
           </div>
         </aside>
-      </div>
-
-      <div class="panel quiz-card">
-        <div class="panel-top green"></div>
-        <div class="panel-body">
-          <div class="panel-label">
-            <span>Pathfinder Quiz</span>
-            <span class="track">Question 1 of 3</span>
-          </div>
-          <div class="quiz-question">When you find suspicious network traffic, what is your first instinct?</div>
-          <div class="quiz-option">Analyze the packets and identify the source of the anomaly.</div>
-          <div class="quiz-option">Ignore it and assume the system will handle it automatically.</div>
-          <div class="quiz-option">Disconnect everything immediately without investigation.</div>
-        </div>
       </div>
     </div>
   </header>
@@ -691,10 +649,10 @@
       <div class="container">
         <div class="section-title">
           <span class="section-number">1</span>
-          <h2>About Me</h2>
+          <h2>Who I Am</h2>
         </div>
         <p class="section-sub">
-          My background, current learning path, and the direction I’m building toward in cybersecurity.
+          My journey, learning path, and the direction I am building toward in cybersecurity.
         </p>
 
         <div class="panel about-card">
@@ -706,24 +664,22 @@
               <span>Profile</span>
               <span class="track">Current</span>
             </div>
-            <h3>Who I am</h3>
+            <h3>About Me</h3>
             <p>
-              I am currently studying Bachelor of Technology in Information and Communication Technology at
-              Koforidua Technical University while building cybersecurity skills through ALX, labs, projects,
-              and self-driven technical practice.
+              I’m Prince Awuku Anobaah, a cybersecurity learner and aspiring analyst currently undergoing structured training. I practice real-world tools, study modern security concepts, and document my progress to help others understand digital protection.
             </p>
-            <p style="margin-top:12px;">
-              My goal is to grow into a skilled cybersecurity professional who can help protect systems,
-              educate users, and contribute to safer digital environments. I also enjoy documenting my
-              progress and explaining technical concepts in simple, beginner-friendly ways.
-            </p>
+
+            <div class="quote-box">
+              “Cybersecurity is not just a skill — it’s a responsibility to protect people, systems, and data.”
+            </div>
+
             <div class="chips">
-              <span class="chip">Network Security</span>
               <span class="chip">Threat Detection</span>
-              <span class="chip">Linux Fundamentals</span>
-              <span class="chip">Security Awareness</span>
-              <span class="chip">Cybersecurity Labs</span>
-              <span class="chip">Digital Safety</span>
+              <span class="chip">Network Security</span>
+              <span class="chip">Digital Protection</span>
+              <span class="chip">Cybersecurity Journey</span>
+              <span class="chip">Hands-on Tools</span>
+              <span class="chip">Security Skills</span>
             </div>
           </div>
         </div>
@@ -737,7 +693,7 @@
           <h2>Projects & Labs</h2>
         </div>
         <p class="section-sub">
-          Hands-on work that demonstrates my growing experience in analysis, awareness, and reconnaissance.
+          A selection of projects and practical exercises that demonstrate my hands-on cybersecurity learning journey.
         </p>
 
         <div class="grid-3">
@@ -745,14 +701,13 @@
             <div class="panel-top"></div>
             <div class="panel-body">
               <div class="panel-label">
-                <span>Defensive</span>
-                <span class="track">Project</span>
+                <span>Project 01</span>
+                <span class="track">Analysis</span>
               </div>
               <img src="images/project-traffic.jpg" alt="Network traffic analysis project" />
               <h3>Network Traffic Analysis Lab</h3>
               <p>
-                Analyzed packet captures using Wireshark to identify suspicious traffic, detect anomalies,
-                and document findings from a simulated environment.
+                Analyzed packet captures using Wireshark to identify suspicious traffic, detect anomalies, and document findings from a simulated environment.
               </p>
             </div>
           </article>
@@ -761,14 +716,13 @@
             <div class="panel-top orange"></div>
             <div class="panel-body">
               <div class="panel-label">
-                <span>Awareness</span>
-                <span class="track">Project</span>
+                <span>Project 02</span>
+                <span class="track">Awareness</span>
               </div>
               <img src="images/project-phishing.jpg" alt="Phishing awareness project" />
               <h3>Phishing Awareness Project</h3>
               <p>
-                Created a cybersecurity awareness presentation explaining phishing attacks, social engineering
-                risks, and safe digital practices for users and organisations.
+                Created a cybersecurity awareness presentation explaining phishing attacks, social engineering risks, and safe digital practices for users and organisations.
               </p>
             </div>
           </article>
@@ -777,14 +731,13 @@
             <div class="panel-top purple"></div>
             <div class="panel-body">
               <div class="panel-label">
-                <span>Reconnaissance</span>
-                <span class="track">Lab</span>
+                <span>Project 03</span>
+                <span class="track">Reconnaissance</span>
               </div>
               <img src="images/project-dns.jpg" alt="DNS enumeration lab" />
               <h3>DNS Enumeration Lab</h3>
               <p>
-                Performed reconnaissance and information gathering using dig, nslookup, and Subfinder to
-                analyze DNS records and domain infrastructure.
+                Performed reconnaissance and information gathering using dig, nslookup, and Subfinder to analyze DNS records and domain infrastructure.
               </p>
             </div>
           </article>
@@ -796,10 +749,10 @@
       <div class="container">
         <div class="section-title">
           <span class="section-number">3</span>
-          <h2>Security Toolkit</h2>
+          <h2>Tools & Skills</h2>
         </div>
         <p class="section-sub">
-          Technical areas and tools I am actively practicing as I build my cybersecurity foundation.
+          Practical tools and skill areas I work with as I continue building my cybersecurity foundation.
         </p>
 
         <div class="grid-2">
@@ -825,16 +778,16 @@
             <div class="panel-top green"></div>
             <div class="panel-body">
               <div class="panel-label">
-                <span>Systems & Networking</span>
+                <span>Skills Focus</span>
                 <span class="track">Practice</span>
               </div>
               <ul class="bullet-list">
-                <li>Linux</li>
-                <li>TCP/IP</li>
-                <li>DNS</li>
-                <li>dig</li>
-                <li>nslookup</li>
+                <li>Threat Detection</li>
+                <li>Network Security</li>
+                <li>Linux Fundamentals</li>
+                <li>Digital Protection</li>
                 <li>Security Awareness</li>
+                <li>Hands-on Security Skills</li>
               </ul>
             </div>
           </div>
@@ -849,7 +802,7 @@
           <h2>Learning & Development</h2>
         </div>
         <p class="section-sub">
-          Certifications and academic learning that support my technical growth and professional development.
+          Certifications and structured learning that support my cybersecurity journey and technical growth.
         </p>
 
         <div class="grid-2">
@@ -884,8 +837,8 @@
                 <span>Program</span>
                 <span class="track">Ongoing</span>
               </div>
-              <h3>Cybersecurity Program</h3>
-              <p>ALX Africa — Ongoing</p>
+              <h3>Cybersecurity Learning Journey</h3>
+              <p>Structured hands-on training and self-driven practice</p>
             </div>
           </div>
 
@@ -897,7 +850,7 @@
                 <span class="track">Ongoing</span>
               </div>
               <h3>BTech ICT</h3>
-              <p>Koforidua Technical University — Ongoing</p>
+              <p>Koforidua Technical University</p>
             </div>
           </div>
         </div>
@@ -911,7 +864,7 @@
           <h2>Contact & Availability</h2>
         </div>
         <p class="section-sub">
-          I’m currently open to internships, collaborations, and cybersecurity learning opportunities.
+          Let’s secure your digital world — protecting your systems today so you can move confidently into the future.
         </p>
 
         <div class="grid-2">
@@ -923,7 +876,7 @@
                 <span class="track">Direct</span>
               </div>
               <h3>Let’s connect</h3>
-              <p>Based in Ghana and building practical cybersecurity experience through projects and labs.</p>
+              <p>Open to internships, collaborations, and cybersecurity learning opportunities.</p>
               <ul class="bullet-list">
                 <li><a href="mailto:contact.bemightsec@gmail.com">contact.bemightsec@gmail.com</a></li>
                 <li><a href="https://www.linkedin.com/in/bemight/" target="_blank" rel="noreferrer">linkedin.com/in/bemight</a></li>
@@ -939,10 +892,9 @@
                 <span>Availability</span>
                 <span class="track">Open</span>
               </div>
-              <h3>Internship-ready</h3>
+              <h3>Explore My Work</h3>
               <p>
-                Seeking internship opportunities in cybersecurity, IT security, SOC, or related technical
-                support roles that can strengthen my hands-on experience.
+                Currently building practical cybersecurity experience through projects, labs, tools practice, and structured learning.
               </p>
               <div style="margin-top:16px;">
                 <a class="btn btn-primary" href="mailto:contact.bemightsec@gmail.com">Send Email</a>
@@ -952,8 +904,8 @@
         </div>
 
         <div class="footer-banner">
-          <h3>Never Stop Adapting</h3>
-          <p>Cybersecurity mastery • Build projects • Keep growing</p>
+          <h3>Let’s Secure Your Digital World</h3>
+          <p>Protecting systems • Building skills • Growing with purpose</p>
         </div>
       </div>
     </section>
