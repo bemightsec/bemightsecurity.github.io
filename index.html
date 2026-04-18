@@ -23,6 +23,7 @@
       --muted: #60748a;
       --line: #dce6f0;
       --shadow: 0 10px 28px rgba(16, 37, 63, 0.10);
+      --shadow-hover: 0 16px 36px rgba(16, 37, 63, 0.16);
       --radius: 18px;
       --max: 1180px;
     }
@@ -144,6 +145,7 @@
       font-weight: 700;
       color: var(--muted);
       border: 1px solid transparent;
+      transition: all 0.2s ease;
     }
 
     .top-nav a.active,
@@ -154,7 +156,7 @@
 
     .intro-card {
       margin-top: 26px;
-      background: rgba(255,255,255,0.95);
+      background: rgba(255,255,255,0.96);
       color: var(--text);
       border-radius: 22px;
       box-shadow: var(--shadow);
@@ -290,6 +292,12 @@
       border-radius: 18px;
       box-shadow: var(--shadow);
       overflow: hidden;
+      transition: transform 0.22s ease, box-shadow 0.22s ease;
+    }
+
+    .panel:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-hover);
     }
 
     .panel-top {
@@ -397,6 +405,33 @@
       height: 100%;
       min-height: 300px;
       object-fit: cover;
+    }
+
+    .quiz-card {
+      margin-top: 22px;
+    }
+
+    .quiz-question {
+      font-weight: 700;
+      color: var(--navy);
+      margin-bottom: 14px;
+    }
+
+    .quiz-option {
+      padding: 13px 14px;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      margin-top: 10px;
+      background: #fbfdff;
+      color: var(--muted);
+      font-weight: 600;
+      transition: 0.2s ease;
+    }
+
+    .quiz-option:hover {
+      border-color: var(--sky);
+      background: #f4fbff;
+      color: var(--navy);
     }
 
     .footer-banner {
@@ -536,6 +571,27 @@
             <li>Hands-on tools practice with Wireshark, Nmap, and Linux</li>
           </ul>
         </aside>
+      </div>
+
+      <div class="intro-card quiz-card">
+        <div>
+          <div class="panel-label" style="margin-bottom: 14px;">
+            <span>Pathfinder Quiz</span>
+            <span class="track">Question 1 of 3</span>
+          </div>
+          <div class="quiz-question">When you find suspicious network traffic, what is your first instinct?</div>
+          <div class="quiz-option">Analyze the packets and identify the source of the anomaly.</div>
+          <div class="quiz-option">Ignore it and assume the system will handle it automatically.</div>
+          <div class="quiz-option">Disconnect everything immediately without investigation.</div>
+        </div>
+        <div class="focus-box">
+          <h3>Why this portal?</h3>
+          <ul>
+            <li>Showcases my cybersecurity journey</li>
+            <li>Documents projects, labs, and technical growth</li>
+            <li>Highlights internship readiness and practical skills</li>
+          </ul>
+        </div>
       </div>
     </div>
   </header>
