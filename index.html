@@ -57,10 +57,7 @@
       color: var(--text);
       font-family: Inter, "Segoe UI", Roboto, Arial, sans-serif;
       line-height: 1.65;
-      background:
-        radial-gradient(circle at 15% 8%, rgba(119, 242, 161, 0.12), transparent 26%),
-        radial-gradient(circle at 90% 10%, rgba(123, 215, 255, 0.09), transparent 24%),
-        linear-gradient(180deg, var(--bg) 0%, var(--bg-2) 44%, #0c120f 100%);
+      background: linear-gradient(180deg, #07100d 0%, #0a1511 48%, #0c120f 100%);
       overflow-x: hidden;
     }
 
@@ -69,10 +66,10 @@
       position: fixed;
       inset: 0;
       background-image:
-        linear-gradient(rgba(119, 242, 161, 0.035) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(119, 242, 161, 0.035) 1px, transparent 1px);
-      background-size: 42px 42px;
-      mask-image: linear-gradient(to bottom, black, transparent 80%);
+        linear-gradient(rgba(119, 242, 161, 0.022) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(119, 242, 161, 0.022) 1px, transparent 1px);
+      background-size: 44px 44px;
+      mask-image: linear-gradient(to bottom, black, transparent 76%);
       pointer-events: none;
       z-index: -1;
     }
@@ -379,9 +376,7 @@
       overflow: hidden;
       border-radius: var(--radius-lg);
       border: 1px solid var(--line);
-      background:
-        radial-gradient(circle at 80% 0%, rgba(119, 242, 161, 0.18), transparent 36%),
-        linear-gradient(180deg, var(--surface), var(--surface-2));
+      background: linear-gradient(180deg, var(--surface), var(--surface-2));
       box-shadow: var(--shadow);
     }
 
@@ -992,8 +987,8 @@
 
   <header class="site-header">
     <div class="container header-row">
-      <a class="brand" href="#home" aria-label="BeMight homepage">
-        <span class="brand-mark">B</span>
+      <a class="brand" href="bemightsec.github.io" aria-label="BeMight homepage">
+        <span class="brand-mark" img src="fav.png">B</span>
         <span class="brand-text">
           <strong>BeMight</strong>
           <span>Cybersecurity Portfolio</span>
@@ -1026,7 +1021,8 @@
         <span class="tag">Learning Path / Practical Security</span>
 
         <h1>
-          <span class="typing" data-text="BeMight Cybersecurity Portfolio" aria-label="BeMight Cybersecurity Portfolio"></span>
+          <span class="fixed-name">BeMight</span> 
+          <span class="typing" data-text="Cybersecurity Portfolio" aria-label="Cybersecurity Portfolio"></span>
         </h1>
 
         <p class="hero-lead">
@@ -1052,7 +1048,7 @@
             <img src="profile.png" alt="Prince Awuku Anobaah" />
             <div>
               <strong>BeMight</strong>
-              <span>Security learner • Portfolio builder</span>
+              <span>Junior Cybersecurity Analyst</span>
             </div>
           </div>
         </div>
@@ -1362,7 +1358,7 @@
     const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
     if (typingElement) {
-      const fullText = typingElement.dataset.text || "BeMight Cybersecurity Portfolio";
+      const fullText = typingElement.dataset.text || "Cybersecurity Portfolio";
 
       if (reduceMotion) {
         typingElement.textContent = fullText;
