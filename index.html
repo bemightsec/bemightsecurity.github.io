@@ -14,13 +14,12 @@
   <style>
     :root {
       --bg: #07100d;
-      --bg-2: #0b1612;
-      --nav: rgba(7, 16, 13, 0.9);
+      --bg-2: #0a1511;
+      --nav: rgba(7, 16, 13, 0.92);
       --surface: #101c17;
       --surface-2: #14231d;
-      --surface-3: #1b2d25;
-      --paper: #f5f2e9;
-      --paper-soft: #fffaf0;
+      --paper: #f7f3e9;
+      --paper-soft: #fffaf1;
       --paper-muted: #e8e2d5;
       --ink: #111a15;
       --ink-soft: #3f4f47;
@@ -31,17 +30,14 @@
       --green-2: #32d47d;
       --lime: #b8ff6a;
       --orange: #ffb36b;
-      --blue: #7bd7ff;
-      --danger: #ff6b6b;
       --line: rgba(233, 247, 239, 0.12);
-      --line-strong: rgba(119, 242, 161, 0.34);
-      --shadow: 0 28px 70px rgba(0, 0, 0, 0.35);
-      --shadow-soft: 0 18px 40px rgba(0, 0, 0, 0.14);
+      --line-strong: rgba(119, 242, 161, 0.28);
+      --shadow: 0 24px 60px rgba(0, 0, 0, 0.32);
+      --shadow-soft: 0 16px 34px rgba(0, 0, 0, 0.13);
       --radius-lg: 28px;
       --radius: 20px;
-      --radius-sm: 14px;
-      --max: 1180px;
       --article: 760px;
+      --max: 1180px;
     }
 
     * {
@@ -57,7 +53,7 @@
       color: var(--text);
       font-family: Inter, "Segoe UI", Roboto, Arial, sans-serif;
       line-height: 1.65;
-      background: linear-gradient(180deg, #07100d 0%, #0a1511 48%, #0c120f 100%);
+      background: linear-gradient(180deg, var(--bg) 0%, var(--bg-2) 48%, #0c120f 100%);
       overflow-x: hidden;
     }
 
@@ -80,8 +76,8 @@
     }
 
     img {
-      max-width: 100%;
       display: block;
+      max-width: 100%;
     }
 
     button,
@@ -120,7 +116,7 @@
     .top-accent {
       height: 5px;
       background: linear-gradient(90deg, var(--green), var(--lime), var(--orange));
-      box-shadow: 0 0 30px rgba(119, 242, 161, 0.35);
+      box-shadow: 0 0 22px rgba(119, 242, 161, 0.22);
     }
 
     .site-header {
@@ -147,18 +143,12 @@
       min-width: 0;
     }
 
-    .brand-mark {
-      width: 42px;
-      height: 42px;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      border-radius: 13px;
-      color: #07100d;
-      background: linear-gradient(135deg, var(--green), var(--lime));
-      font-weight: 950;
-      letter-spacing: -0.04em;
-      box-shadow: 0 0 28px rgba(119, 242, 161, 0.25);
+    .brand-logo {
+      width: 44px;
+      height: 44px;
+      object-fit: contain;
+      border-radius: 12px;
+      flex: 0 0 auto;
     }
 
     .brand-text strong {
@@ -218,8 +208,8 @@
 
     .nav-cta {
       color: #07100d !important;
-      background: linear-gradient(135deg, var(--green), var(--lime));
-      box-shadow: 0 12px 30px rgba(119, 242, 161, 0.16);
+      background: var(--green);
+      box-shadow: 0 12px 28px rgba(119, 242, 161, 0.12);
     }
 
     .hero {
@@ -234,10 +224,15 @@
       align-items: start;
     }
 
+    .hero-copy {
+      text-align: center;
+    }
+
     .crumbs {
       display: flex;
       flex-wrap: wrap;
       align-items: center;
+      justify-content: center;
       gap: 10px;
       margin-bottom: 22px;
       color: var(--muted);
@@ -260,13 +255,12 @@
     .tag {
       display: inline-flex;
       align-items: center;
-      gap: 8px;
       min-height: 32px;
       padding: 0 12px;
       border: 1px solid var(--line-strong);
       border-radius: 999px;
       color: var(--green);
-      background: rgba(119, 242, 161, 0.08);
+      background: rgba(119, 242, 161, 0.07);
       font-family: Consolas, "SFMono-Regular", Menlo, monospace;
       font-size: 0.78rem;
       font-weight: 900;
@@ -274,13 +268,29 @@
       text-transform: uppercase;
     }
 
-    .hero h1 {
+    .hero-title {
       margin: 18px 0 18px;
-      max-width: 880px;
       color: #fff;
-      font-size: clamp(2.7rem, 8vw, 6.3rem);
-      line-height: 0.95;
+    }
+
+    .hero-name {
+      display: block;
+      text-align: center;
+      color: #fff;
+      font-size: clamp(2.5rem, 7vw, 5.4rem);
+      line-height: 0.96;
       letter-spacing: -0.08em;
+      margin-bottom: 8px;
+    }
+
+    .hero-role {
+      display: block;
+      text-align: center;
+      color: #fff;
+      font-size: clamp(1.65rem, 4.5vw, 3.7rem);
+      line-height: 1.05;
+      letter-spacing: -0.055em;
+      white-space: nowrap;
     }
 
     .typing {
@@ -308,7 +318,7 @@
 
     .hero-lead {
       max-width: 790px;
-      margin: 0;
+      margin: 0 auto;
       color: var(--muted-2);
       font-size: clamp(1.08rem, 2vw, 1.32rem);
     }
@@ -318,6 +328,7 @@
       flex-wrap: wrap;
       gap: 12px;
       align-items: center;
+      justify-content: center;
       margin-top: 26px;
       color: var(--muted);
       font-size: 0.92rem;
@@ -338,6 +349,7 @@
     .hero-actions {
       display: flex;
       flex-wrap: wrap;
+      justify-content: center;
       gap: 12px;
       margin-top: 28px;
     }
@@ -360,8 +372,8 @@
 
     .btn-primary {
       color: #07100d;
-      background: linear-gradient(135deg, var(--green), var(--lime));
-      box-shadow: 0 16px 36px rgba(119, 242, 161, 0.18);
+      background: var(--green);
+      box-shadow: 0 14px 30px rgba(119, 242, 161, 0.14);
     }
 
     .btn-secondary {
@@ -737,7 +749,7 @@
 
     .side-panel-top {
       height: 4px;
-      background: linear-gradient(90deg, var(--green), var(--lime));
+      background: var(--green);
     }
 
     .side-panel-body {
@@ -792,14 +804,13 @@
       padding: 34px;
       border-radius: var(--radius-lg);
       border: 1px solid var(--line);
-      background:
-        radial-gradient(circle at 86% 18%, rgba(184, 255, 106, 0.2), transparent 28%),
-        linear-gradient(135deg, #10231a, #07100d 64%);
+      background: #10231a;
       box-shadow: var(--shadow);
+      text-align: center;
     }
 
     .cta-banner h2 {
-      margin: 0 0 10px;
+      margin: 0 auto 10px;
       max-width: 760px;
       color: #fff;
       font-size: clamp(2rem, 5vw, 3.8rem);
@@ -809,9 +820,41 @@
 
     .cta-banner p {
       max-width: 700px;
-      margin: 0;
+      margin: 0 auto;
       color: var(--muted-2);
       font-size: 1.02rem;
+    }
+
+    .back-to-top {
+      position: fixed;
+      right: 18px;
+      bottom: 18px;
+      width: 48px;
+      height: 48px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 999px;
+      background: var(--green);
+      color: #07100d;
+      font-size: 1.35rem;
+      font-weight: 950;
+      box-shadow: 0 12px 28px rgba(0, 0, 0, 0.24);
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(10px);
+      transition: opacity 0.25s ease, transform 0.25s ease, visibility 0.25s ease;
+      z-index: 999;
+    }
+
+    .back-to-top.show {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+
+    .back-to-top:hover {
+      transform: translateY(-2px);
     }
 
     .site-footer {
@@ -856,6 +899,7 @@
 
     @media (prefers-reduced-motion: reduce) {
       html { scroll-behavior: auto; }
+
       *, *::before, *::after {
         animation: none !important;
         transition: none !important;
@@ -871,10 +915,6 @@
       .hero-card,
       .side-stack {
         position: static;
-      }
-
-      .hero h1 {
-        max-width: 900px;
       }
     }
 
@@ -939,14 +979,15 @@
         padding: 42px 0 36px;
       }
 
-      .hero h1 {
-        font-size: clamp(2.25rem, 14vw, 4rem);
+      .hero-name {
+        font-size: clamp(2.4rem, 16vw, 4rem);
         letter-spacing: -0.065em;
       }
 
-      .hero-actions,
-      .profile-stats {
-        grid-template-columns: 1fr;
+      .hero-role {
+        font-size: clamp(1.42rem, 8.2vw, 2.6rem);
+        letter-spacing: -0.055em;
+        white-space: nowrap;
       }
 
       .hero-actions,
@@ -978,6 +1019,17 @@
         flex-direction: column;
       }
     }
+
+    @media (max-width: 400px) {
+      .hero-role {
+        font-size: clamp(1.2rem, 7.6vw, 1.75rem);
+      }
+
+      .typing::after {
+        width: 3px;
+        margin-left: 5px;
+      }
+    }
   </style>
 </head>
 
@@ -987,8 +1039,8 @@
 
   <header class="site-header">
     <div class="container header-row">
-      <a class="brand" href="bemightsec.github.io" aria-label="BeMight homepage">
-        <span class="brand-mark" img src="fav.png">B</span>
+      <a class="brand" href="#home" aria-label="BeMight homepage">
+        <img class="brand-logo" src="securitylogo.png" alt="BeMight Security logo" />
         <span class="brand-text">
           <strong>BeMight</strong>
           <span>Cybersecurity Portfolio</span>
@@ -1020,9 +1072,11 @@
 
         <span class="tag">Learning Path / Practical Security</span>
 
-        <h1>
-          <span class="fixed-name">BeMight</span> 
-          <span class="typing" data-text="Cybersecurity Portfolio" aria-label="Cybersecurity Portfolio"></span>
+        <h1 class="hero-title">
+          <span class="hero-name">BeMight</span>
+          <span class="hero-role">
+            <span class="typing" data-text="Cybersecurity Portfolio" aria-label="Cybersecurity Portfolio"></span>
+          </span>
         </h1>
 
         <p class="hero-lead">
@@ -1275,7 +1329,7 @@
 
             <article class="mini-card">
               <span class="mini-label">Available</span>
-              <h3>Work With Me</h3>
+              <h3>Contact & Opportunities</h3>
               <p>
                 Currently building practical cybersecurity experience through projects, labs, tools practice, and clear
                 documentation.
@@ -1295,7 +1349,6 @@
           </p>
           <div class="hero-actions">
             <a class="btn btn-primary" href="mailto:contact.bemightsec@gmail.com">Contact BeMight</a>
-            <a class="btn btn-secondary" href="#home">Back to Top</a>
           </div>
         </section>
       </div>
@@ -1340,6 +1393,8 @@
     </div>
   </main>
 
+  <a href="#home" class="back-to-top" id="backToTop" aria-label="Back to top">↑</a>
+
   <footer class="site-footer">
     <div class="container footer-row">
       <div>© 2026 BeMight. All rights reserved.</div>
@@ -1365,6 +1420,7 @@
         typingElement.classList.add("done");
       } else {
         let index = 0;
+
         const typeNextCharacter = () => {
           index += 1;
           typingElement.textContent = fullText.slice(0, index);
@@ -1375,6 +1431,7 @@
             typingElement.classList.add("done");
           }
         };
+
         typeNextCharacter();
       }
     }
@@ -1385,16 +1442,23 @@
     const tocLinks = [...document.querySelectorAll(".toc a")];
     const allTrackedLinks = [...navLinks, ...tocLinks];
     const sections = [...document.querySelectorAll("main section[id]")];
+    const backToTop = document.getElementById("backToTop");
 
     function setMenu(open) {
+      if (!siteNav || !menuButton) return;
       siteNav.classList.toggle("show", open);
       menuButton.setAttribute("aria-expanded", String(open));
     }
 
     if (menuButton && siteNav) {
-      menuButton.addEventListener("click", () => {
+      menuButton.addEventListener("click", (event) => {
+        event.stopPropagation();
         const isOpen = menuButton.getAttribute("aria-expanded") === "true";
         setMenu(!isOpen);
+      });
+
+      siteNav.addEventListener("click", (event) => {
+        event.stopPropagation();
       });
 
       navLinks.forEach((link) => {
@@ -1403,12 +1467,34 @@
         });
       });
 
+      document.addEventListener("click", (event) => {
+        const isMenuOpen = siteNav.classList.contains("show");
+        if (!isMenuOpen) return;
+
+        const clickedInsideMenu = siteNav.contains(event.target);
+        const clickedButton = menuButton.contains(event.target);
+
+        if (!clickedInsideMenu && !clickedButton) {
+          setMenu(false);
+        }
+      });
+
       window.addEventListener("resize", () => {
         if (window.innerWidth > 860) setMenu(false);
       });
 
       window.addEventListener("keydown", (event) => {
         if (event.key === "Escape") setMenu(false);
+      });
+    }
+
+    if (backToTop) {
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 300) {
+          backToTop.classList.add("show");
+        } else {
+          backToTop.classList.remove("show");
+        }
       });
     }
 
