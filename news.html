@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Latest Cybersecurity News | BeMight</title>
+  <title>Latest Cybersecurity News | BeMight Security</title>
   <link rel="icon" type="image/png" sizes="32x32" href="fav.png" />
   <meta
     name="description"
-    content="Latest cybersecurity news from Cyber Security News displayed on BeMight Security."
+    content="Latest cybersecurity news from Cyber Security News displayed in a clean BeMight Security news page."
   />
   <meta name="theme-color" content="#07100d" />
 
@@ -97,6 +97,68 @@
       box-shadow: 0 0 22px rgba(119, 242, 161, 0.22);
     }
 
+    .page-hero {
+      padding: 80px 0 34px;
+      text-align: center;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .crumbs {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      margin-bottom: 20px;
+      color: var(--muted);
+      font-size: 0.9rem;
+      font-weight: 800;
+    }
+
+    .crumbs a {
+      color: var(--green);
+    }
+
+    .crumb-dot {
+      width: 4px;
+      height: 4px;
+      border-radius: 999px;
+      background: var(--muted);
+      opacity: 0.8;
+    }
+
+    .tag {
+      display: inline-flex;
+      align-items: center;
+      min-height: 32px;
+      padding: 0 12px;
+      border: 1px solid var(--line-strong);
+      border-radius: 999px;
+      color: var(--green);
+      background: rgba(119, 242, 161, 0.07);
+      font-family: Consolas, "SFMono-Regular", Menlo, monospace;
+      font-size: 0.78rem;
+      font-weight: 900;
+      letter-spacing: 0.09em;
+      text-transform: uppercase;
+    }
+
+    .page-hero h1 {
+      max-width: 900px;
+      margin: 18px auto 14px;
+      color: #fff;
+      font-size: clamp(2.3rem, 6vw, 4.6rem);
+      line-height: 0.98;
+      letter-spacing: -0.06em;
+    }
+
+    .page-hero p {
+      max-width: 820px;
+      margin: 0 auto;
+      color: var(--muted-2);
+      font-size: clamp(1rem, 2vw, 1.18rem);
+    }
+
     .site-header {
       position: sticky;
       top: 0;
@@ -184,74 +246,11 @@
       transform: translateY(-1px);
     }
 
-    .page-hero {
-      padding: 54px 0 34px;
-      border-bottom: 1px solid var(--line);
-      text-align: center;
-    }
-
-    .crumbs {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
-      margin-bottom: 20px;
-      color: var(--muted);
-      font-size: 0.9rem;
-      font-weight: 800;
-    }
-
-    .crumbs a {
-      color: var(--green);
-    }
-
-    .crumb-dot {
-      width: 4px;
-      height: 4px;
-      border-radius: 999px;
-      background: var(--muted);
-      opacity: 0.8;
-    }
-
-    .tag {
-      display: inline-flex;
-      align-items: center;
-      min-height: 32px;
-      padding: 0 12px;
-      border: 1px solid var(--line-strong);
-      border-radius: 999px;
-      color: var(--green);
-      background: rgba(119, 242, 161, 0.07);
-      font-family: Consolas, "SFMono-Regular", Menlo, monospace;
-      font-size: 0.78rem;
-      font-weight: 900;
-      letter-spacing: 0.09em;
-      text-transform: uppercase;
-    }
-
-    .page-hero h1 {
-      max-width: 880px;
-      margin: 18px auto 14px;
-      color: #fff;
-      font-size: clamp(2rem, 6vw, 4.2rem);
-      line-height: 1;
-      letter-spacing: -0.055em;
-    }
-
-    .page-hero p {
-      max-width: 780px;
-      margin: 0 auto;
-      color: var(--muted-2);
-      font-size: clamp(1rem, 2vw, 1.18rem);
-    }
-
     .news-page {
       padding: 36px 0 54px;
     }
 
     .news-shell {
-      min-height: 70vh;
       padding: 24px;
       border-radius: var(--radius-lg);
       color: var(--ink);
@@ -265,7 +264,7 @@
       grid-template-columns: minmax(0, 1fr) auto;
       gap: 14px;
       align-items: center;
-      margin-bottom: 18px;
+      margin-bottom: 22px;
       padding: 14px;
       border: 1px solid rgba(17, 26, 21, 0.08);
       border-radius: 18px;
@@ -291,7 +290,8 @@
     }
 
     .news-refresh,
-    .source-link {
+    .source-link,
+    .btn {
       min-height: 42px;
       display: inline-flex;
       align-items: center;
@@ -303,12 +303,22 @@
       background: var(--green);
       cursor: pointer;
       font-weight: 900;
+      box-shadow: 0 14px 30px rgba(119, 242, 161, 0.14);
+      transition: transform 0.2s ease;
     }
 
-    .source-link {
+    .news-refresh:hover,
+    .source-link:hover,
+    .btn:hover {
+      transform: translateY(-2px);
+    }
+
+    .source-link,
+    .btn.secondary {
       color: #165936;
       background: #e7f7ec;
       border: 1px solid rgba(22, 89, 54, 0.08);
+      box-shadow: none;
     }
 
     .news-status {
@@ -416,6 +426,40 @@
       font-weight: 850;
     }
 
+    .cta-banner {
+      margin-top: 34px;
+      padding: 34px;
+      border-radius: var(--radius-lg);
+      color: var(--text);
+      background: linear-gradient(180deg, var(--surface), var(--surface-2));
+      border: 1px solid var(--line);
+      box-shadow: var(--shadow);
+      text-align: center;
+    }
+
+    .cta-banner h2 {
+      max-width: 760px;
+      margin: 0 auto 10px;
+      color: #fff;
+      font-size: clamp(1.8rem, 4vw, 3.2rem);
+      line-height: 1;
+      letter-spacing: -0.055em;
+    }
+
+    .cta-banner p {
+      max-width: 720px;
+      margin: 0 auto;
+      color: var(--muted-2);
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
+      margin-top: 24px;
+    }
+
     .back-to-top {
       position: fixed;
       right: 18px;
@@ -468,7 +512,7 @@
       color: var(--green);
     }
 
-    @media (max-width: 960px) {
+    @media (max-width: 1020px) {
       .news-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
       }
@@ -520,12 +564,21 @@
       }
 
       .page-hero {
-        padding: 40px 0 28px;
+        padding: 48px 0 28px;
       }
 
-      .news-shell {
-        padding: 16px;
+      .page-hero h1 {
+        font-size: clamp(2rem, 12vw, 3.2rem);
+      }
+
+      .news-shell,
+      .cta-banner {
+        padding: 18px;
         border-radius: 22px;
+      }
+
+      .news-grid {
+        grid-template-columns: 1fr;
       }
 
       .news-controls {
@@ -534,16 +587,17 @@
 
       .news-actions,
       .news-refresh,
-      .source-link {
+      .source-link,
+      .btn {
         width: 100%;
-      }
-
-      .news-grid {
-        grid-template-columns: 1fr;
       }
 
       .news-image-wrap {
         height: 210px;
+      }
+
+      .hero-actions {
+        flex-direction: column;
       }
 
       .footer-row {
@@ -555,6 +609,25 @@
 
 <body>
   <div class="top-accent" aria-hidden="true"></div>
+
+  <section class="page-hero" id="top">
+    <div class="container">
+      <div class="crumbs" aria-label="Page location">
+        <a href="index.html">Portfolio</a>
+        <span class="crumb-dot" aria-hidden="true"></span>
+        <span>Latest News</span>
+        <span class="crumb-dot" aria-hidden="true"></span>
+        <span>Cyber Security News</span>
+      </div>
+
+      <span class="tag">Auto-updating News Page</span>
+      <h1>Latest Cybersecurity News</h1>
+      <p>
+        A standalone news page that displays recent stories from Cyber Security News in a clean card layout with images.
+        When new posts are published, this page can reflect them automatically.
+      </p>
+    </div>
+  </section>
 
   <header class="site-header">
     <div class="container header-row">
@@ -579,25 +652,6 @@
     </div>
   </header>
 
-  <section class="page-hero" id="top">
-    <div class="container">
-      <div class="crumbs" aria-label="Page location">
-        <a href="index.html">Portfolio</a>
-        <span class="crumb-dot" aria-hidden="true"></span>
-        <span>Latest News</span>
-        <span class="crumb-dot" aria-hidden="true"></span>
-        <span>Cyber Security News</span>
-      </div>
-
-      <span class="tag">Auto-updating News Page</span>
-      <h1>Latest Cybersecurity News</h1>
-      <p>
-        A standalone news page that displays recent stories from Cyber Security News in a clean card layout with images.
-        When new posts are published, this page can reflect them automatically.
-      </p>
-    </div>
-  </section>
-
   <main class="news-page">
     <div class="container">
       <section class="news-shell" aria-labelledby="news-title">
@@ -613,6 +667,17 @@
 
         <p class="news-status" id="newsStatus">Loading latest stories...</p>
         <div class="news-grid" id="newsGrid" aria-live="polite"></div>
+      </section>
+
+      <section class="cta-banner" aria-labelledby="cta-title">
+        <h2 id="cta-title">Turn Cyber Awareness Into Everyday Protection</h2>
+        <p>
+          Follow BeMight Security for practical tips, safer digital habits, and beginner-friendly cybersecurity education.
+        </p>
+        <div class="hero-actions">
+          <a class="btn" href="https://whatsapp.com/channel/0029VaHqXRa84Om5CcZx2o13" target="_blank" rel="noopener noreferrer">Join WhatsApp Channel</a>
+          <a class="btn secondary" href="index.html#projects">View Portfolio Projects</a>
+        </div>
       </section>
     </div>
   </main>
@@ -642,7 +707,7 @@
     const newsStatus = document.getElementById("newsStatus");
     const refreshNews = document.getElementById("refreshNews");
 
-    const WORDPRESS_API = "https://cybersecuritynews.com/wp-json/wp/v2/posts?_embed=wp:featuredmedia&per_page=12";
+    const WORDPRESS_API = "https://cybersecuritynews.com/wp-json/wp/v2/posts?_embed=wp:featuredmedia,wp:term&per_page=10";
     const RSS_PROXY_API = "https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fcybersecuritynews.com%2Ffeed%2F";
     const FALLBACK_IMAGE = "securitylogo.png";
 
@@ -747,7 +812,7 @@
     function getCategory(post) {
       const terms = post?._embedded?.["wp:term"]?.flat?.() || [];
       const category = terms.find((term) => term.taxonomy === "category");
-      return category?.name || "Cybersecurity";
+      return category?.name || "Cyber Security News";
     }
 
     function normalizeWordPressPost(post) {
@@ -774,7 +839,7 @@
         link: item?.link || "https://cybersecuritynews.com/",
         image: extractImageFromRSSItem(item),
         date: item?.pubDate,
-        category: item?.categories?.[0] || "Cybersecurity"
+        category: item?.categories?.[0] || "Cyber Security News"
       };
     }
 
@@ -821,7 +886,7 @@
       const response = await fetch(RSS_PROXY_API);
       if (!response.ok) throw new Error("RSS proxy failed");
       const data = await response.json();
-      return (data.items || []).slice(0, 12).map(normalizeRSSItem);
+      return (data.items || []).slice(0, 10).map(normalizeRSSItem);
     }
 
     async function loadLatestNews() {
@@ -841,14 +906,413 @@
           newsStatus.textContent = "News could not load. Check your internet connection or open the source website.";
           newsGrid.innerHTML = "";
         }
+        <a href="index.html">Portfolio</a>
+        <span class="crumb-dot" aria-hidden="true"></span>
+        <span>Cyber Alerts</span>
+        <span class="crumb-dot" aria-hidden="true"></span>
+        <span>News & Safety</span>
+      </div>
+
+      <span class="tag">Live Threat Feed / BeMight Security</span>
+      <h1>Cyber Alerts & Latest Security News</h1>
+      <p>
+        A practical cyber safety page for tracking common digital threats, public awareness tips, and recent
+        cybersecurity stories from Cyber Security News.
+      </p>
+
+      <div class="hero-actions">
+        <a class="btn" href="#threats">View Threat Matrix</a>
+        <a class="btn secondary" href="#latest-news">Latest News</a>
+        <a class="btn secondary" href="#report">Report Suspicious Activity</a>
+      </div>
+    </div>
+  </section>
+
+  <main class="alerts-page">
+    <div class="container">
+      <section class="section-block" aria-labelledby="feed-title">
+        <div class="section-head">
+          <div>
+            <div class="section-kicker">Live Threat Feed</div>
+            <h2 id="feed-title">Current Alert Overview</h2>
+            <p>
+              Quick view of common threats affecting students, mobile money users, job seekers, and everyday internet users.
+            </p>
+          </div>
+          <span class="status-pill" id="lastUpdated">Updated today</span>
+        </div>
+
+        <div class="stats-grid">
+          <article class="stat-card">
+            <span>Critical Alerts</span>
+            <strong>2</strong>
+            <p>Immediate caution recommended.</p>
+          </article>
+
+          <article class="stat-card">
+            <span>Active Patterns</span>
+            <strong>3</strong>
+            <p>Still being reported by users.</p>
+          </article>
+
+          <article class="stat-card">
+            <span>Rising Signals</span>
+            <strong>1</strong>
+            <p>Watch closely and warn others.</p>
+          </article>
+
+          <article class="stat-card">
+            <span>News Source</span>
+            <strong>CSN</strong>
+            <p>Cyber Security News feed.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-block" id="threats" aria-labelledby="threats-title">
+        <div class="section-head">
+          <div>
+            <div class="section-kicker">Threat Matrix</div>
+            <h2 id="threats-title">Active Scam & Cyber Threat Alerts</h2>
+            <p>
+              Simple, practical warnings for common threats. This section is written for awareness and prevention.
+            </p>
+          </div>
+          <span class="status-pill">Ghana-focused safety</span>
+        </div>
+
+        <div class="threat-grid">
+          <article class="threat-card">
+            <div class="threat-top">
+              <span class="threat-number">01</span>
+              <span class="severity critical">Critical</span>
+            </div>
+            <h3>MoMo Reversal Scam</h3>
+            <p>Scammers may call claiming they sent money by mistake and pressure you to reverse a fake transaction.</p>
+            <div class="what-to-do">
+              <strong>What to do now</strong>
+              <p>Do not rush. Check your official MoMo balance and confirm directly in the app or through official support.</p>
+              <span class="target-pill">Target: Mobile money users</span>
+            </div>
+          </article>
+
+          <article class="threat-card">
+            <div class="threat-top">
+              <span class="threat-number">02</span>
+              <span class="severity critical">Critical</span>
+            </div>
+            <h3>SIM Swap Attack</h3>
+            <p>Attackers try to take over your phone number so they can receive OTPs and access sensitive accounts.</p>
+            <div class="what-to-do">
+              <strong>What to do now</strong>
+              <p>Use strong account protections, do not share OTPs, and contact your network provider quickly if your SIM stops working.</p>
+              <span class="target-pill">Target: Phone users</span>
+            </div>
+          </article>
+
+          <article class="threat-card">
+            <div class="threat-top">
+              <span class="threat-number">03</span>
+              <span class="severity rising">Rising</span>
+            </div>
+            <h3>AI Voice Impersonation</h3>
+            <p>Fraudsters may imitate familiar voices to create urgency and request money or private information.</p>
+            <div class="what-to-do">
+              <strong>What to do now</strong>
+              <p>Call the person back using a trusted number and agree on a family verification phrase for emergencies.</p>
+              <span class="target-pill">Target: Families & friends</span>
+            </div>
+          </article>
+
+          <article class="threat-card">
+            <div class="threat-top">
+              <span class="threat-number">04</span>
+              <span class="severity active-alert">Active</span>
+            </div>
+            <h3>Fake Job Recruitment</h3>
+            <p>Fake job offers may ask for registration fees, document uploads, or payment before an interview.</p>
+            <div class="what-to-do">
+              <strong>What to do now</strong>
+              <p>Verify the company website, check official email domains, and avoid paying money for job interviews.</p>
+              <span class="target-pill">Target: Job seekers</span>
+            </div>
+          </article>
+
+          <article class="threat-card">
+            <div class="threat-top">
+              <span class="threat-number">05</span>
+              <span class="severity active-alert">Active</span>
+            </div>
+            <h3>Fake Scholarship Portal</h3>
+            <p>Fraudulent scholarship pages may collect personal details or demand application fees from students.</p>
+            <div class="what-to-do">
+              <strong>What to do now</strong>
+              <p>Use official school, embassy, or foundation websites and avoid sharing IDs with unknown pages.</p>
+              <span class="target-pill">Target: Students</span>
+            </div>
+          </article>
+
+          <article class="threat-card">
+            <div class="threat-top">
+              <span class="threat-number">06</span>
+              <span class="severity stable">Monitored</span>
+            </div>
+            <h3>WhatsApp Account Takeover</h3>
+            <p>Attackers may trick users into sharing verification codes so they can take over WhatsApp accounts.</p>
+            <div class="what-to-do">
+              <strong>What to do now</strong>
+              <p>Never share verification codes and turn on two-step verification inside WhatsApp settings.</p>
+              <span class="target-pill">Target: WhatsApp users</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-block" id="safety" aria-labelledby="safety-title">
+        <div class="section-head">
+          <div>
+            <div class="section-kicker">Protection Guide</div>
+            <h2 id="safety-title">Quick Cyber Safety Actions</h2>
+            <p>Small habits that reduce risk for students, families, and small businesses.</p>
+          </div>
+        </div>
+
+        <div class="two-col">
+          <article class="mini-panel">
+            <h3>Before You Click or Pay</h3>
+            <ul>
+              <li>Check the real website address before entering personal details.</li>
+              <li>Do not share OTPs, PINs, recovery codes, or card details with anyone.</li>
+              <li>Pause when a message creates fear, pressure, or urgency.</li>
+              <li>Confirm money requests through a second trusted contact method.</li>
+            </ul>
+          </article>
+
+          <article class="mini-panel report-card" id="report">
+            <h3>Seen Something Suspicious?</h3>
+            <p>
+              Report suspicious links, fake job offers, MoMo scam attempts, or account takeover messages. Your report can help
+              create better awareness for others.
+            </p>
+            <a class="btn" href="mailto:contact.bemightsec@gmail.com?subject=Suspicious%20Activity%20Report%20-%20BeMight%20Security">Report by Email</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-block" id="latest-news" aria-labelledby="news-title">
+        <div class="section-head">
+          <div>
+            <div class="section-kicker">Latest Cyber News</div>
+            <h2 id="news-title">Cyber Security News Feed</h2>
+            <p>
+              Recent stories are displayed from Cyber Security News in a clean BeMight Security layout with images.
+            </p>
+          </div>
+        </div>
+
+        <div class="news-controls">
+          <div class="news-source">
+            <strong>Source:</strong> Cyber Security News • auto-loaded public posts
+          </div>
+          <div class="news-actions">
+            <button class="news-refresh" type="button" id="refreshNews">Refresh News</button>
+            <a class="source-link" href="https://cybersecuritynews.com/" target="_blank" rel="noopener noreferrer">Open Source</a>
+          </div>
+        </div>
+
+        <p class="news-status" id="newsStatus">Loading latest stories...</p>
+        <div class="news-grid" id="newsGrid" aria-live="polite"></div>
+      </section>
+
+      <section class="cta-banner" aria-labelledby="cta-title">
+        <h2 id="cta-title">Turn Cyber Awareness Into Everyday Protection</h2>
+        <p>
+          Follow BeMight Security for practical tips, safer digital habits, and beginner-friendly cybersecurity education.
+        </p>
+        <div class="hero-actions">
+          <a class="btn" href="https://whatsapp.com/channel/0029VaHqXRa84Om5CcZx2o13" target="_blank" rel="noopener noreferrer">Join WhatsApp Channel</a>
+          <a class="btn secondary" href="index.html#projects">View Portfolio Projects</a>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <a href="#top" class="back-to-top" id="backToTop" aria-label="Back to top">↑</a>
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <div>© 2026 BeMight Security. All rights reserved.</div>
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="index.html#about">About</a>
+        <a href="index.html#projects">Projects</a>
+        <a href="news.html">Alerts</a>
+        <a href="index.html#tools">Tools</a>
+        <a href="index.html#certifications">Certifications</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script>
+    const menuButton = document.querySelector(".menu-btn");
+    const siteNav = document.getElementById("site-nav");
+    const navLinks = [...document.querySelectorAll(".site-nav a")];
+    const backToTop = document.getElementById("backToTop");
+    const newsGrid = document.getElementById("newsGrid");
+    const newsStatus = document.getElementById("newsStatus");
+    const refreshNews = document.getElementById("refreshNews");
+    const lastUpdated = document.getElementById("lastUpdated");
+
+    const WORDPRESS_API = "https://cybersecuritynews.com/wp-json/wp/v2/posts?_embed=wp:featuredmedia,wp:term&per_page=9";
+    const RSS_PROXY_API = "https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fcybersecuritynews.com%2Ffeed%2F";
+    const FALLBACK_IMAGE = "securitylogo.png";
+
+    function setMenu(open) {
+      if (!siteNav || !menuButton) return;
+      siteNav.classList.toggle("show", open);
+      menuButton.setAttribute("aria-expanded", String(open));
+    }
+
+    if (menuButton && siteNav) {
+      menuButton.addEventListener("click", (event) => {
+        event.stopPropagation();
+        const isOpen = menuButton.getAttribute("aria-expanded") === "true";
+        setMenu(!isOpen);
+      });
+
+      siteNav.addEventListener("click", (event) => {
+        event.stopPropagation();
+      });
+
+      navLinks.forEach((link) => {
+        link.addEventListener("click", () => {
+          if (window.innerWidth <= 860) setMenu(false);
+        });
+      });
+
+      document.addEventListener("click", (event) => {
+        const isMenuOpen = siteNav.classList.contains("show");
+        if (!isMenuOpen) return;
+
+        const clickedInsideMenu = siteNav.contains(event.target);
+        const clickedButton = menuButton.contains(event.target);
+
+        if (!clickedInsideMenu && !clickedButton) {
+          setMenu(false);
+        }
+      });
+
+      window.addEventListener("resize", () => {
+        if (window.innerWidth > 860) setMenu(false);
+      });
+
+      window.addEventListener("keydown", (event) => {
+        if (event.key === "Escape") setMenu(false);
+      });
+    }
+
+    if (backToTop) {
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 300) {
+          backToTop.classList.add("show");
+        } else {
+          backToTop.classList.remove("show");
+        }
+      });
+    }
+
+    if (lastUpdated) {
+      const now = new Date();
+      lastUpdated.textContent = `Updated ${now.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" })}`;
+    }
+
+    function decodeHTML(html) {
+      const textarea = document.createElement("textarea");
+      textarea.innerHTML = html || "";
+      return textarea.value;
+    }
+
+    function stripHTML(html) {
+      const div = document.createElement("div");
+      div.innerHTML = html || "";
+      return div.textContent || div.innerText || "";
+    }
+
+    function escapeHTML(value) {
+      return String(value || "").replace(/[&<>'"]/g, (char) => ({
+        "&": "&amp;",
+        "<": "&lt;",
+        ">": "&gt;",
+        "'": "&#39;",
+        "\"": "&quot;"
+      }[char]));
+    }
+
+    function formatDate(dateValue) {
+      if (!dateValue) return "Recent";
+      const date = new Date(dateValue);
+      if (Number.isNaN(date.getTime())) return "Recent";
+
+      return date.toLocaleDateString(undefined, {
+        year: "numeric",
+        month: "short",
+        day: "numeric"
+      });
+    }
+
+    function getFeaturedImage(post) {
+      const media = post?._embedded?.["wp:featuredmedia"]?.[0];
+      return (
+        media?.media_details?.sizes?.medium_large?.source_url ||
+        media?.media_details?.sizes?.large?.source_url ||
+        media?.source_url ||
+        FALLBACK_IMAGE
+      );
+    }
+
+    function getCategory(post) {
+      const terms = post?._embedded?.["wp:term"]?.flat?.() || [];
+      const category = terms.find((term) => term.taxonomy === "category");
+      return category?.name || "Cybersecurity";
+    }
+
+    function normalizeWordPressPost(post) {
+      return {
+        title: decodeHTML(post?.title?.rendered || "Untitled story"),
+        excerpt: stripHTML(post?.excerpt?.rendered || "Open the story to read the full article."),
+        link: post?.link || "https://cybersecuritynews.com/",
+        image: getFeaturedImage(post),
+        date: post?.date,
+        category: getCategory(post)
+      };
+    }
+
+    function extractImageFromRSSItem(item) {
+      const html = item?.content || item?.description || "";
+      const match = html.match(/<img[^>]+src=["']([^"']+)["']/i);
+      return item?.thumbnail || item?.enclosure?.link || match?.[1] || FALLBACK_IMAGE;
+    }
+
+    function normalizeRSSItem(item) {
+      return {
+        title: decodeHTML(item?.title || "Untitled story"),
+        excerpt: stripHTML(item?.description || "Open the story to read the full article."),
+        link: item?.link || "https://cybersecuritynews.com/",
+        image: extractImageFromRSSItem(item),
+        date: item?.pubDate,
+        category: item?.categories?.[0] || "Cybersecurity"
+      };
+    }
+
+    function renderNews(stories) {
+      if (!newsGrid || !newsStatus) return;
+
+      if (!stories.length) {
+        newsStatus.textContent = "No stories could be loaded right now. Please refresh or open the source website.";
+        newsGrid.innerHTML = "";
+        return;
       }
-    }
 
-    if (refreshNews) {
-      refreshNews.addEventListener("click", loadLatestNews);
-    }
-
-    loadLatestNews();
-  </script>
-</body>
-</html>
+      newsStatus.textContent = "Latest Cyber Security News stories loaded.";
+      newsGrid.innerHTML = stories.map((story) => {
+        const excerpt = sto
