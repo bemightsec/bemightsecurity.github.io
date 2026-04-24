@@ -1484,11 +1484,7 @@
         }
       });
 
-      window.addEventListener("resize", () => {
-        if (window.innerWidth > 860) setMenu(false);
-      });
-
-      window.addEventListener("keydown", (event) => {
+            window.addEventListener("keydown", (event) => {
         if (event.key === "Escape") setMenu(false);
       });
     }
