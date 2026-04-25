@@ -1,17 +1,28 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Latest Cybersecurity News | BeMight Security</title>
   <link rel="icon" type="image/png" sizes="32x32" href="fav.png" />
-  <meta
-    name="description"
-    content="Latest cybersecurity news from Cyber Security News displayed in a clean BeMight Security news page."
-  />
-  <meta name="theme-color" content="#07100d" />
+  <link rel="canonical" href="https://bemightsec.github.io/news.html" /><meta
+name="description"
+content="Stay updated with recent cybersecurity stories, threat developments, and security insights presented in a clean BeMight Security layout."
+/> <meta name="theme-color" content="#07100d" />
 
-  <style>
+  <meta property="og:title" content="Latest Cybersecurity News | BeMight Security" />
+  <meta
+    property="og:description"
+    content="Stay updated with recent cybersecurity stories, threat developments, and security insights presented in a clean BeMight Security layout."
+  />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://bemightsec.github.io/news.html" />
+  <meta property="og:image" content="https://bemightsec.github.io/securitylogo.png" />  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Latest Cybersecurity News | BeMight Security" />
+  <meta
+    name="twitter:description"
+    content="Stay updated with recent cybersecurity stories, threat developments, and security insights presented in a clean BeMight Security layout."
+  />
+  <meta name="twitter:image" content="https://bemightsec.github.io/securitylogo.png" />  <style>
     :root {
       --bg: #07100d;
       --bg-2: #0a1511;
@@ -619,13 +630,8 @@
         flex-direction: column;
       }
     }
-  </style>
-</head>
-
-<body>
-  <div class="top-accent" aria-hidden="true"></div>
-
-  <section class="page-hero" id="top">
+  </style></head><body>
+  <div class="top-accent" aria-hidden="true"></div>  <section class="page-hero" id="top">
     <div class="container">
       <div class="crumbs" aria-label="Page location">
         <a href="index.html">Portfolio</a>
@@ -633,73 +639,63 @@
         <span>Latest News</span>
         <span class="crumb-dot" aria-hidden="true"></span>
         <span>Cyber Security News</span>
-      </div>
+      </div><span class="tag">Auto-updating News Page</span>
+  <h1>Latest Cybersecurity News</h1>
+  <p>
+    Stay updated with recent cybersecurity stories, threat developments, and security insights from Cyber Security News,
+    presented here in a clean and easy-to-read BeMight Security layout.
+  </p>
+</div>
 
-      <span class="tag">Auto-updating News Page</span>
-      <h1>Latest Cybersecurity News</h1>
-      <p>
-        <p>
-  Stay updated with recent cybersecurity stories, threat developments, and security insights from Cyber Security News,
-  presented here in a clean and easy-to-read BeMight Security layout.
-</p>
-      </p>
-    </div>
-  </section>
-
-  <header class="site-header">
+  </section>  <header class="site-header">
     <div class="container header-row">
       <a class="brand" href="index.html" aria-label="Back to BeMight homepage">
-        <img class="brand-logo" src="fav.png" alt="BeMight Security logo" />
+        <img class="brand-logo" src="securitylogo.png" alt="BeMight Security logo" />
         <span class="brand-text">
           <strong>BeMight</strong>
           <span>Cybersecurity Portfolio</span>
         </span>
-      </a>
+      </a><button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
 
-      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+  <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
+    <a href="index.html#about">About</a>
+    <a href="index.html#projects">Projects</a>
+    <a href="index.html#tools">Tools</a>
+    <a href="index.html#certifications">Certifications</a>
+    <a href="index.html#contact">Contact</a>
+    <a href="alerts.html">Alerts</a>
+    <a href="news.html" class="active">News</a>
+  </nav>
+</div>
 
-      <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
-        <a href="index.html#about">About</a>
-        <a href="index.html#projects">Projects</a>
-        <a href="index.html#tools">Tools</a>
-        <a href="index.html#certifications">Certifications</a>
-        <a href="index.html#contact">Contact</a>
-        <a href="news.html" class="active">News</a>
-      </nav>
-    </div>
-  </header>
-
-  <main class="news-page">
+  </header>  <main class="news-page">
     <div class="container">
       <section class="news-shell" aria-labelledby="news-title">
         <div class="news-controls">
           <div class="news-source">
-            <strong id="news-title">Source:</strong> Cyber Security News • image cards generated from their latest public posts
+            <strong id="news-title">Source:</strong> Cyber Security News • latest RSS stories refreshed automatically
           </div>
           <div class="news-actions">
             <button class="news-refresh" type="button" id="refreshNews">Refresh News</button>
             <a class="source-link" href="https://cybersecuritynews.com/" target="_blank" rel="noopener noreferrer">Open Source</a>
           </div>
-        </div>
+        </div><p class="news-status" id="newsStatus">Loading latest stories...</p>
+    <div class="news-grid" id="newsGrid" aria-live="polite"></div>
+  </section>
 
-        <p class="news-status" id="newsStatus">Loading latest stories...</p>
-        <div class="news-grid" id="newsGrid" aria-live="polite"></div>
-      </section>
-
-      <section class="cta-banner" aria-labelledby="cta-title">
-        <h2 id="cta-title">Turn Cyber Awareness Into Everyday Protection</h2>
-        <p>
-          Follow BeMight Security for practical tips, safer digital habits, and beginner-friendly cybersecurity education.
-        </p>
-        <div class="hero-actions">
-          <a class="btn" href="https://whatsapp.com/channel/0029VaHqXRa84Om5CcZx2o13" target="_blank" rel="noopener noreferrer">Join WhatsApp Channel</a>
-          <a class="btn secondary" href="index.html#projects">View Portfolio Projects</a>
-        </div>
-      </section>
+  <section class="cta-banner" aria-labelledby="cta-title">
+    <h2 id="cta-title">Turn Cyber Awareness Into Everyday Protection</h2>
+    <p>
+      Follow BeMight Security for practical tips, safer digital habits, and beginner-friendly cybersecurity education.
+    </p>
+    <div class="hero-actions">
+      <a class="btn" href="https://whatsapp.com/channel/0029VaHqXRa84Om5CcZx2o13" target="_blank" rel="noopener noreferrer">Join WhatsApp Channel</a>
+      <a class="btn secondary" href="index.html#projects">View Portfolio Projects</a>
     </div>
-  </main>
+  </section>
+</div>
 
-  <a href="#top" class="back-to-top" id="backToTop" aria-label="Back to top">↑</a>
+  </main><a href="#top" class="back-to-top" id="backToTop" aria-label="Back to top">↑</a>
 
   <footer class="site-footer">
     <div class="container footer-row">
@@ -710,12 +706,11 @@
         <a href="index.html#tools">Tools</a>
         <a href="index.html#certifications">Certifications</a>
         <a href="index.html#contact">Contact</a>
+        <a href="alerts.html">Alerts</a>
         <a href="news.html">News</a>
       </nav>
     </div>
-  </footer>
-
-  <script>
+  </footer>  <script>
     const menuButton = document.querySelector(".menu-btn");
     const siteNav = document.getElementById("site-nav");
     const navLinks = [...document.querySelectorAll(".site-nav a")];
@@ -724,10 +719,12 @@
     const newsStatus = document.getElementById("newsStatus");
     const refreshNews = document.getElementById("refreshNews");
 
+    const CYBERSECURITY_RSS = "https://cybersecuritynews.com/feed/";
+    const RSS_PROXY_API = `https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(CYBERSECURITY_RSS)}`;
+    const ALL_ORIGINS_RSS = `https://api.allorigins.win/raw?url=${encodeURIComponent(CYBERSECURITY_RSS)}`;
     const WORDPRESS_API = "https://cybersecuritynews.com/wp-json/wp/v2/posts?_embed=1&per_page=10";
-    const RSS_PROXY_API = "https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fcybersecuritynews.com%2Ffeed%2F";
-    const ALL_ORIGINS_RSS = "https://api.allorigins.win/raw?url=https%3A%2F%2Fcybersecuritynews.com%2Ffeed%2F";
     const FALLBACK_IMAGE = "securitylogo.png";
+    const AUTO_REFRESH_INTERVAL = 10 * 60 * 1000;
 
     function setMenu(open) {
       if (!siteNav || !menuButton) return;
@@ -783,7 +780,7 @@
       });
     }
 
-    function fetchWithTimeout(url, options = {}, timeout = 12000) {
+    function fetchWithTimeout(url, options = {}, timeout = 15000) {
       const controller = new AbortController();
       const timer = setTimeout(() => controller.abort(), timeout);
 
@@ -792,6 +789,11 @@
         signal: controller.signal,
         cache: "no-store"
       }).finally(() => clearTimeout(timer));
+    }
+
+    function buildFreshUrl(url) {
+      const separator = url.includes("?") ? "&" : "?";
+      return `${url}${separator}fresh=${Date.now()}`;
     }
 
     function decodeHTML(html) {
@@ -828,6 +830,14 @@
       });
     }
 
+    function extractImageFromHTML(html) {
+      const htmlText = String(html || "");
+      const imgMatch = htmlText.match(/<img[^>]+src=["']([^"']+)["']/i);
+      const mediaMatch = htmlText.match(/<media:content[^>]+url=["']([^"']+)["']/i);
+      const enclosureMatch = htmlText.match(/<enclosure[^>]+url=["']([^"']+)["']/i);
+      return imgMatch?.[1] || mediaMatch?.[1] || enclosureMatch?.[1] || FALLBACK_IMAGE;
+    }
+
     function getFeaturedImage(post) {
       const media = post?._embedded?.["wp:featuredmedia"]?.[0];
       return (
@@ -856,11 +866,6 @@
       };
     }
 
-    function extractImageFromHTML(html) {
-      const match = String(html || "").match(/<img[^>]+src=["']([^"']+)["']/i);
-      return match?.[1] || FALLBACK_IMAGE;
-    }
-
     function normalizeRSSItem(item) {
       return {
         title: decodeHTML(item?.title || "Untitled story"),
@@ -883,20 +888,22 @@
         const pubDate = item.querySelector("pubDate")?.textContent || "";
         const category = item.querySelector("category")?.textContent || "Cyber Security News";
         const encoded = item.getElementsByTagName("content:encoded")?.[0]?.textContent || "";
+        const mediaContent = item.getElementsByTagName("media:content")?.[0]?.getAttribute("url") || "";
+        const enclosure = item.querySelector("enclosure")?.getAttribute("url") || "";
         const description = item.querySelector("description")?.textContent || encoded || "Open the story to read the full article.";
 
         return {
           title: decodeHTML(title),
           excerpt: stripHTML(description),
           link,
-          image: extractImageFromHTML(encoded || description),
+          image: mediaContent || enclosure || extractImageFromHTML(encoded || description),
           date: pubDate,
           category
         };
       });
     }
 
-    function renderNews(stories) {
+    function renderNews(stories, sourceName = "Cyber Security News") {
       if (!newsGrid || !newsStatus) return;
 
       if (!stories.length) {
@@ -904,8 +911,10 @@
         return;
       }
 
-      newsStatus.textContent = "Latest Cyber Security News stories loaded.";
-      newsGrid.innerHTML = stories.map((story) => {
+      const now = new Date();
+      newsStatus.textContent = `Latest Cyber Security News stories loaded. Refreshed at ${now.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" })}.`;
+
+      newsGrid.innerHTML = stories.slice(0, 10).map((story) => {
         const cleanExcerpt = story.excerpt || "Open the story to read the full article.";
         const excerpt = cleanExcerpt.length > 135 ? `${cleanExcerpt.slice(0, 135).trim()}...` : cleanExcerpt;
 
@@ -913,7 +922,7 @@
           <a class="news-card" href="${escapeHTML(story.link)}" target="_blank" rel="noopener noreferrer">
             <div class="news-image-wrap">
               <img src="${escapeHTML(story.image || FALLBACK_IMAGE)}" alt="${escapeHTML(story.title)}" loading="lazy" onerror="this.src='${FALLBACK_IMAGE}'" />
-              <span class="news-category">${escapeHTML(story.category || "Cyber Security News")}</span>
+              <span class="news-category">${escapeHTML(story.category || sourceName)}</span>
             </div>
             <div class="news-card-body">
               <h2>${escapeHTML(story.title)}</h2>
@@ -941,25 +950,25 @@
       `;
     }
 
-    async function loadFromWordPressAPI() {
-      const response = await fetchWithTimeout(WORDPRESS_API);
-      if (!response.ok) throw new Error("WordPress API failed");
-      const posts = await response.json();
-      return posts.map(normalizeWordPressPost);
-    }
-
     async function loadFromRSSProxy() {
-      const response = await fetchWithTimeout(RSS_PROXY_API);
+      const response = await fetchWithTimeout(buildFreshUrl(RSS_PROXY_API));
       if (!response.ok) throw new Error("RSS proxy failed");
       const data = await response.json();
       return (data.items || []).slice(0, 10).map(normalizeRSSItem);
     }
 
     async function loadFromAllOriginsRSS() {
-      const response = await fetchWithTimeout(ALL_ORIGINS_RSS);
+      const response = await fetchWithTimeout(buildFreshUrl(ALL_ORIGINS_RSS));
       if (!response.ok) throw new Error("AllOrigins RSS failed");
       const xmlText = await response.text();
       return parseRSSXML(xmlText);
+    }
+
+    async function loadFromWordPressAPI() {
+      const response = await fetchWithTimeout(buildFreshUrl(WORDPRESS_API));
+      if (!response.ok) throw new Error("WordPress API failed");
+      const posts = await response.json();
+      return posts.map(normalizeWordPressPost);
     }
 
     async function loadLatestNews() {
@@ -968,7 +977,7 @@
       newsStatus.textContent = "Loading latest Cyber Security News stories...";
       newsGrid.innerHTML = "";
 
-      const loaders = [loadFromWordPressAPI, loadFromRSSProxy, loadFromAllOriginsRSS];
+      const loaders = [loadFromRSSProxy, loadFromAllOriginsRSS, loadFromWordPressAPI];
       const errors = [];
 
       for (const loader of loaders) {
@@ -992,6 +1001,6 @@
     }
 
     loadLatestNews();
-  </script>
-</body>
-</html>
+    window.setInterval(loadLatestNews, AUTO_REFRESH_INTERVAL);
+  </script></body>
+  </html>
