@@ -48,13 +48,9 @@ content="Stay updated with recent cybersecurity stories, threat developments, an
       --max: 1180px;
     }
 
-    * {
-      box-sizing: border-box;
-    }
+    * { box-sizing: border-box; }
 
-    html {
-      scroll-behavior: smooth;
-    }
+    html { scroll-behavior: smooth; }
 
     body {
       margin: 0;
@@ -78,19 +74,9 @@ content="Stay updated with recent cybersecurity stories, threat developments, an
       z-index: -1;
     }
 
-    a {
-      color: inherit;
-      text-decoration: none;
-    }
-
-    img {
-      display: block;
-      max-width: 100%;
-    }
-
-    button {
-      font: inherit;
-    }
+    a { color: inherit; text-decoration: none; }
+    img { display: block; max-width: 100%; }
+    button { font: inherit; }
 
     :focus-visible {
       outline: 3px solid var(--green);
@@ -126,9 +112,7 @@ content="Stay updated with recent cybersecurity stories, threat developments, an
       font-weight: 800;
     }
 
-    .crumbs a {
-      color: var(--green);
-    }
+    .crumbs a { color: var(--green); }
 
     .crumb-dot {
       width: 4px;
@@ -257,9 +241,7 @@ content="Stay updated with recent cybersecurity stories, threat developments, an
       transform: translateY(-1px);
     }
 
-    .news-page {
-      padding: 36px 0 54px;
-    }
+    .news-page { padding: 36px 0 54px; }
 
     .news-shell {
       padding: 24px;
@@ -288,9 +270,7 @@ content="Stay updated with recent cybersecurity stories, threat developments, an
       font-weight: 750;
     }
 
-    .news-source strong {
-      color: #165936;
-    }
+    .news-source strong { color: #165936; }
 
     .news-actions {
       display: flex;
@@ -320,9 +300,7 @@ content="Stay updated with recent cybersecurity stories, threat developments, an
 
     .news-refresh:hover,
     .source-link:hover,
-    .btn:hover {
-      transform: translateY(-2px);
-    }
+    .btn:hover { transform: translateY(-2px); }
 
     .source-link,
     .btn.secondary {
@@ -376,9 +354,7 @@ content="Stay updated with recent cybersecurity stories, threat developments, an
       transition: transform 0.28s ease;
     }
 
-    .news-card:hover .news-image-wrap img {
-      transform: scale(1.04);
-    }
+    .news-card:hover .news-image-wrap img { transform: scale(1.04); }
 
     .news-category {
       position: absolute;
@@ -435,6 +411,11 @@ content="Stay updated with recent cybersecurity stories, threat developments, an
       border: 1px solid rgba(22, 89, 54, 0.08);
       font-size: 0.75rem;
       font-weight: 850;
+    }
+
+    .time-pill {
+      color: #4b3000;
+      background: #fff1c7;
     }
 
     .fallback-box {
@@ -534,20 +515,14 @@ content="Stay updated with recent cybersecurity stories, threat developments, an
       gap: 16px;
     }
 
-    .footer-nav a:hover {
-      color: var(--green);
-    }
+    .footer-nav a:hover { color: var(--green); }
 
     @media (max-width: 1020px) {
-      .news-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-      }
+      .news-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
     }
 
     @media (max-width: 860px) {
-      .header-row {
-        min-height: 68px;
-      }
+      .header-row { min-height: 68px; }
 
       .menu-btn {
         display: inline-flex;
@@ -570,9 +545,7 @@ content="Stay updated with recent cybersecurity stories, threat developments, an
         box-shadow: var(--shadow);
       }
 
-      .site-nav.show {
-        display: flex;
-      }
+      .site-nav.show { display: flex; }
 
       .site-nav a {
         justify-content: flex-start;
@@ -581,54 +554,17 @@ content="Stay updated with recent cybersecurity stories, threat developments, an
     }
 
     @media (max-width: 680px) {
-      .container {
-        width: min(100% - 22px, var(--max));
-      }
-
-      .brand-text span {
-        display: none;
-      }
-
-      .page-hero {
-        padding: 48px 0 28px;
-      }
-
-      .page-hero h1 {
-        font-size: clamp(2rem, 12vw, 3.2rem);
-      }
-
-      .news-shell,
-      .cta-banner {
-        padding: 18px;
-        border-radius: 22px;
-      }
-
-      .news-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .news-controls {
-        grid-template-columns: 1fr;
-      }
-
-      .news-actions,
-      .news-refresh,
-      .source-link,
-      .btn {
-        width: 100%;
-      }
-
-      .news-image-wrap {
-        height: 210px;
-      }
-
-      .hero-actions {
-        flex-direction: column;
-      }
-
-      .footer-row {
-        flex-direction: column;
-      }
+      .container { width: min(100% - 22px, var(--max)); }
+      .brand-text span { display: none; }
+      .page-hero { padding: 48px 0 28px; }
+      .page-hero h1 { font-size: clamp(2rem, 12vw, 3.2rem); }
+      .news-shell, .cta-banner { padding: 18px; border-radius: 22px; }
+      .news-grid { grid-template-columns: 1fr; }
+      .news-controls { grid-template-columns: 1fr; }
+      .news-actions, .news-refresh, .source-link, .btn { width: 100%; }
+      .news-image-wrap { height: 210px; }
+      .hero-actions { flex-direction: column; }
+      .footer-row { flex-direction: column; }
     }
   </style></head><body>
   <div class="top-accent" aria-hidden="true"></div>  <section class="page-hero" id="top">
@@ -725,6 +661,9 @@ content="Stay updated with recent cybersecurity stories, threat developments, an
     const WORDPRESS_API = "https://cybersecuritynews.com/wp-json/wp/v2/posts?_embed=1&per_page=10";
     const FALLBACK_IMAGE = "securitylogo.png";
     const AUTO_REFRESH_INTERVAL = 10 * 60 * 1000;
+    const TIME_AGO_REFRESH_INTERVAL = 60 * 1000;
+
+    let latestStories = [];
 
     function setMenu(open) {
       if (!siteNav || !menuButton) return;
@@ -739,9 +678,7 @@ content="Stay updated with recent cybersecurity stories, threat developments, an
         setMenu(!isOpen);
       });
 
-      siteNav.addEventListener("click", (event) => {
-        event.stopPropagation();
-      });
+      siteNav.addEventListener("click", (event) => event.stopPropagation());
 
       navLinks.forEach((link) => {
         link.addEventListener("click", () => {
@@ -756,9 +693,7 @@ content="Stay updated with recent cybersecurity stories, threat developments, an
         const clickedInsideMenu = siteNav.contains(event.target);
         const clickedButton = menuButton.contains(event.target);
 
-        if (!clickedInsideMenu && !clickedButton) {
-          setMenu(false);
-        }
+        if (!clickedInsideMenu && !clickedButton) setMenu(false);
       });
 
       window.addEventListener("resize", () => {
@@ -772,11 +707,7 @@ content="Stay updated with recent cybersecurity stories, threat developments, an
 
     if (backToTop) {
       window.addEventListener("scroll", () => {
-        if (window.scrollY > 300) {
-          backToTop.classList.add("show");
-        } else {
-          backToTop.classList.remove("show");
-        }
+        backToTop.classList.toggle("show", window.scrollY > 300);
       });
     }
 
@@ -827,6 +758,49 @@ content="Stay updated with recent cybersecurity stories, threat developments, an
         year: "numeric",
         month: "short",
         day: "numeric"
+      });
+    }
+
+    function formatTime(dateValue) {
+      if (!dateValue) return "Time unavailable";
+      const date = new Date(dateValue);
+      if (Number.isNaN(date.getTime())) return "Time unavailable";
+
+      return date.toLocaleTimeString(undefined, {
+        hour: "2-digit",
+        minute: "2-digit"
+      });
+    }
+
+    function timeAgo(dateValue) {
+      if (!dateValue) return "Recently";
+      const date = new Date(dateValue);
+      if (Number.isNaN(date.getTime())) return "Recently";
+
+      const seconds = Math.floor((Date.now() - date.getTime()) / 1000);
+
+      if (seconds < 0) return "Just now";
+      if (seconds < 60) return "Just now";
+
+      const minutes = Math.floor(seconds / 60);
+      if (minutes < 60) return `${minutes} minute${minutes === 1 ? "" : "s"} ago`;
+
+      const hours = Math.floor(minutes / 60);
+      if (hours < 24) return `${hours} hour${hours === 1 ? "" : "s"} ago`;
+
+      const days = Math.floor(hours / 24);
+      if (days < 7) return `${days} day${days === 1 ? "" : "s"} ago`;
+
+      const weeks = Math.floor(days / 7);
+      if (weeks < 5) return `${weeks} week${weeks === 1 ? "" : "s"} ago`;
+
+      return formatDate(dateValue);
+    }
+
+    function refreshTimeAgoLabels() {
+      document.querySelectorAll("[data-time-ago]").forEach((element) => {
+        const dateValue = element.getAttribute("data-time-ago");
+        element.textContent = timeAgo(dateValue);
       });
     }
 
@@ -911,12 +885,14 @@ content="Stay updated with recent cybersecurity stories, threat developments, an
         return;
       }
 
+      latestStories = stories.slice(0, 10);
       const now = new Date();
       newsStatus.textContent = `Latest Cyber Security News stories loaded. Refreshed at ${now.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" })}.`;
 
-      newsGrid.innerHTML = stories.slice(0, 10).map((story) => {
+      newsGrid.innerHTML = latestStories.map((story) => {
         const cleanExcerpt = story.excerpt || "Open the story to read the full article.";
         const excerpt = cleanExcerpt.length > 135 ? `${cleanExcerpt.slice(0, 135).trim()}...` : cleanExcerpt;
+        const safeDate = escapeHTML(story.date || "");
 
         return `
           <a class="news-card" href="${escapeHTML(story.link)}" target="_blank" rel="noopener noreferrer">
@@ -929,6 +905,8 @@ content="Stay updated with recent cybersecurity stories, threat developments, an
               <p>${escapeHTML(excerpt)}</p>
               <div class="news-meta">
                 <span class="news-pill">${escapeHTML(formatDate(story.date))}</span>
+                <span class="news-pill">${escapeHTML(formatTime(story.date))}</span>
+                <span class="news-pill time-pill" data-time-ago="${safeDate}">${escapeHTML(timeAgo(story.date))}</span>
                 <span class="news-pill">Cyber Security News</span>
               </div>
             </div>
@@ -996,11 +974,10 @@ content="Stay updated with recent cybersecurity stories, threat developments, an
       showFallback("News could not load. Check your internet connection or open the source website.");
     }
 
-    if (refreshNews) {
-      refreshNews.addEventListener("click", loadLatestNews);
-    }
+    if (refreshNews) refreshNews.addEventListener("click", loadLatestNews);
 
     loadLatestNews();
     window.setInterval(loadLatestNews, AUTO_REFRESH_INTERVAL);
+    window.setInterval(refreshTimeAgoLabels, TIME_AGO_REFRESH_INTERVAL);
   </script></body>
   </html>
