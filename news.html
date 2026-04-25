@@ -593,29 +593,30 @@ content="Stay updated with recent cybersecurity stories, threat developments, an
         </span>
       </a><button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
 
-  <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
-    <a href="index.html#about">About</a>
-    <a href="index.html#projects">Projects</a>
-    <a href="index.html#tools">Tools</a>
-    <a href="index.html#certifications">Certifications</a>
-    <a href="index.html#contact">Contact</a>
-    <a href="alerts.html">Alerts</a>
-    <a href="local-news.html">Ghana Tech</a>
-    <a href="news.html" class="active">News</a>
-  </nav>
+  <!-- 1. Replace your current news.html navbar with this clean navbar -->
+<nav class="site-nav" id="site-nav" aria-label="Primary navigation">
+  <a href="index.html#about">About</a>
+  <a href="index.html#projects">Projects</a>
+  <a href="index.html#tools">Tools</a>
+  <a href="index.html#certifications">Certifications</a>
+  <a href="index.html#contact">Contact</a>
+  <a href="news.html" class="active">News</a>
+</nav>
 </div>
 
   </header>  <main class="news-page">
     <div class="container">
       <section class="news-shell" aria-labelledby="news-title">
-        <div class="news-controls">
-          <div class="news-source">
-            <strong id="news-title">Source:</strong> Cyber Security News • latest RSS stories refreshed automatically
-          </div>
-          <div class="news-actions">
-            <button class="news-refresh" type="button" id="refreshNews">Refresh News</button>
-            <a class="source-link" href="https://cybersecuritynews.com/" target="_blank" rel="noopener noreferrer">Open Source</a>
-          </div>
+        <!-- 2. Replace the news controls area with this -->
+<div class="news-controls">
+  <div class="news-source">
+    <strong id="news-title">Source:</strong> Cyber Security News • latest RSS stories refreshed automatically
+  </div>
+  <div class="news-actions">
+    <button class="news-refresh" type="button" id="refreshNews">Refresh News</button>
+    <a class="source-link" href="local-news.html">Ghana Tech News</a>
+  </div>
+</div>
         </div><p class="news-status" id="newsStatus">Loading latest stories...</p>
     <div class="news-grid" id="newsGrid" aria-live="polite"></div>
   </section>
@@ -636,17 +637,15 @@ content="Stay updated with recent cybersecurity stories, threat developments, an
   </main><a href="#top" class="back-to-top" id="backToTop" aria-label="Back to top">↑</a>
 
   <footer class="site-footer">
-    <div class="container footer-row">
-      <div>© 2026 BeMight. All rights reserved.</div>
-      <nav class="footer-nav" aria-label="Footer navigation">
-        <a href="index.html#about">About</a>
-        <a href="index.html#projects">Projects</a>
-        <a href="index.html#tools">Tools</a>
-        <a href="index.html#certifications">Certifications</a>
-        <a href="index.html#contact">Contact</a>
-        <a href="alerts.html">Alerts</a>
-        <a href="news.html">News</a>
-      </nav>
+   <!-- 3. Replace your footer navigation with this clean footer nav -->
+<nav class="footer-nav" aria-label="Footer navigation">
+  <a href="index.html#about">About</a>
+  <a href="index.html#projects">Projects</a>
+  <a href="index.html#tools">Tools</a>
+  <a href="index.html#certifications">Certifications</a>
+  <a href="index.html#contact">Contact</a>
+  <a href="news.html">News</a>
+</nav>
     </div>
   </footer>  <script>
     const menuButton = document.querySelector(".menu-btn");
